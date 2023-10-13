@@ -21,13 +21,12 @@ To get started with the Virginia Living Conditions Database, follow these steps:
    git clone https://github.com/cmsc-vcu/cmsc508-fa2023-prj-VA_better_placegroup39.git
 
 
-Install Dependencies:
+2. **Install Dependencies:**
 
  Navigate to the project directory
-cd virginia-better-place
-
- Install required dependencies (if any)
-npm install
+   ```bash
+   cd virginia-better-place
+   ```
 
 
 Set Up the Database:
