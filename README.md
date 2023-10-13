@@ -19,23 +19,23 @@ To get started with the Virginia Living Conditions Database, follow these steps:
 
    ```bash
    git clone https://github.com/cmsc-vcu/cmsc508-fa2023-prj-VA_better_placegroup39.git
-
+   ```
 
 2. **Install Dependencies:**
 
- Navigate to the project directory
+  Navigate to the project directory
    ```bash
    cd virginia-better-place
    ```
 
 
-Set Up the Database:
+3. **Set Up the Database:**
 
-Create a new database in your preferred database management system (e.g., MySQL, PostgreSQL).
-Import the database schema and data provided in the repository.
-Run the Project:
+    Create a new database in your preferred database management system (e.g., MySQL, PostgreSQL).
+    Import the database schema and data provided in the repository.
+    Run the Project:
 
-Start the project to access the Virginia Better Place Database.
+    Start the project to access the Virginia Better Place Database.
 
 ## How to Use the Project
 The Virginia Better Place Database allows you to query and explore data related to living conditions in Virginia. You can use SQL queries or a user-friendly interface to retrieve information about education, housing, jobs, crime activity, transportation, and population by zip code. Customize your queries to find the best living conditions in Virginia.
@@ -44,7 +44,9 @@ The Virginia Better Place Database allows you to query and explore data related 
 This project is made possible by the contributions of the following individuals and organizations:
 
 Aislin John
+
 Donna Guzman
+
 Dawit Tekeste
 
 
