@@ -23,9 +23,9 @@ To get started with the Virginia Living Conditions Database, follow these steps:
 
 2. **Install Dependencies:**
 
-  Navigate to the project directory
+   Navigate to the project directory
    ```bash
-   cd virginia-better-place
+    cd virginia-better-place
    ```
 
 
