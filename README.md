@@ -2,7 +2,7 @@
 
 ## Project Description
 
-The Virginia Living Conditions Database is a comprehensive resource for assessing and comparing living conditions across different zip codes in Virginia. It provides data on various aspects, including education, housing, employment, crime activity, transportation, and population. With this database, you can explore and analyze living conditions to make informed decisions.
+The Virginia Better Place Database is a comprehensive resource for assessing and comparing living conditions across different counties in Virginia. It provides data on various aspects, including education, housing, employment, crime activity, transportation, and population. With this database, you can explore and analyze living conditions to make informed decisions.
 
 ## Table of Contents
 
@@ -13,7 +13,7 @@ The Virginia Living Conditions Database is a comprehensive resource for assessin
 
 ## How to Install and Run the Project
 
-To get started with the Virginia Living Conditions Database, follow these steps:
+To get started with the Virginia Better Place Database, follow these steps:
 
 1. **Clone the Repository:**
 
