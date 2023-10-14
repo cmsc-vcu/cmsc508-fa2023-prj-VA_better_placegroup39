@@ -1,0 +1,38 @@
+## Chen Notation
+
+```{dot}
+//| echo: false
+graph ER {
+    fontname="Helvetica,Arial,sans-serif"
+    node [fontname="Helvetica,Arial,sans-serif"]
+    edge [fontname="Helvetica,Arial,sans-serif"]
+    layout=neato
+    node [shape=box]; zipcode; education; transportation; population; houseMarket; jobSecurity; criminalActivity;
+    node [shape=ellipse]; {node [label="diversity"] }
+    {node [label="zipCode"] }
+        
+    node [shape=diamond,style=filled,color=lightgrey]; "with"; "carries"; "own";"retains";"having"; "has"; 
+    
+    zipcode -- "with" [label="1",len=1.00];
+    "with" -- education [label="n",len=1.00];
+    
+    zipcode -- "having" [label="1",len=1.00];
+    "having" -- transportation [label="n",len=1.00];
+    
+    zipcode -- "retains" [label="1",len=1.00];
+    "retains" -- houseMarket [label="n",len=1.00];
+
+    zipcode -- "own" [label="1",len=1.00];
+    "own" -- population [label="n",len=1.00];
+    
+    zipcode -- "carries" [label="1",len=1.00];
+    "carries" -- jobSecurity [label="n",len=1.00];
+   
+    zipcode -- "has" [label="1",len=1.00];
+    "has" -- criminalActivity [label="n",len=1.00];
+  
+
+    fontsize=20;
+
+}
+```

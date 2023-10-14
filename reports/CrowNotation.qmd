@@ -1,0 +1,65 @@
+---
+title: "Virginia Database ER Diagrams"
+output: html_document
+---
+
+<div style="display: flex; flex-wrap: wrap; gap: 16px;">
+
+```{mermaid}
+erDiagram
+    EducationSystem ||--|{ ZipCode : identified_by
+    EducationSystem {
+        int PublicSchoolNumbers
+        float Diversity
+        string QualityOfSchools
+    }
+    JobSecurity ||--|{ ZipCode : identified_by
+    JobSecurity {
+        int numOpenJobs
+        float layoffRate
+    }
+    CriminalActivity ||--|{ ZipCode : identified_by
+    CriminalActivity {
+        string PoliceCoverage
+        string SafetyRating
+    }
+    
+    Population ||--|{ ZipCode : identified_by
+    Population {
+        int PopulationNumber
+        float Diversity
+    }
+    Transportation ||--|{ ZipCode : identified_by
+    Transportation {
+        int bikeRoutes
+        boolean hasLightTrains
+    }
+    HouseMarket ||--|{ ZipCode : identified_by
+    HouseMarket {
+        int AvgRent
+        int AvgPrice
+        int housesForSale
+    }
+    SafetyRating ||--|{ ZipCode : identified_by
+    SafetyRating ||--|{ RecordID : logs
+    SafetyRating {
+        string CrimeType
+        int NumberOfCrimes
+        string HighestCrimeActivityTime
+        int SeverityPoints
+    }
+    RecordID {
+        int ID(PK)
+    }
+    ZipCode {
+        int code(PK)
+    }
+    
+    
+
+
+
+
+
+```
+</div>

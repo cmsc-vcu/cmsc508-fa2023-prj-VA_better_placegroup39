@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>chendiagram</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="ChenDiagram_files/libs/clipboard/clipboard.min.js"></script>
+<script src="ChenDiagram_files/libs/quarto-html/quarto.js"></script>
+<script src="ChenDiagram_files/libs/quarto-html/popper.min.js"></script>
+<script src="ChenDiagram_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="ChenDiagram_files/libs/quarto-html/anchor.min.js"></script>
+<link href="ChenDiagram_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="ChenDiagram_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="ChenDiagram_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="ChenDiagram_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="ChenDiagram_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+
+
+<section id="chen-notation" class="level2">
+<h2 class="anchored" data-anchor-id="chen-notation">Chen Notation</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<div>
+<svg width="672" height="480" viewbox="0.00 0.00 385.66 373.28" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" style="; max-width: none; max-height: none">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 369.28)">
+<title>
+ER
+</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-369.28 381.66,-369.28 381.66,4 -4,4"></polygon> <!-- zipcode --> <g id="node1" class="node">
+<title>
+zipcode
+</title>
+<polygon fill="none" stroke="black" points="219.62,-200.55 160.55,-200.55 160.55,-164.55 219.62,-164.55 219.62,-200.55"></polygon> <text text-anchor="middle" x="190.08" y="-178.35" font-family="Helvetica,Arial,sans-serif" font-size="14.00">zipcode</text> </g> <!-- with --> <g id="node8" class="node">
+<title>
+with
+</title>
+<polygon fill="lightgrey" stroke="lightgrey" points="267.19,-165.9 227.41,-147.9 267.19,-129.9 306.96,-147.9 267.19,-165.9"></polygon> <text text-anchor="middle" x="267.19" y="-143.7" font-family="Helvetica,Arial,sans-serif" font-size="14.00">with</text> </g> <!-- zipcode&#45;&#45;with --> <g id="edge1" class="edge">
+<title>
+zipcode–with
+</title>
+<path fill="none" stroke="black" d="M219.67,-169.25C228.85,-165.13 238.73,-160.69 247.1,-156.93"></path> <text text-anchor="middle" x="229.89" y="-167.29" font-family="Helvetica,Arial,sans-serif" font-size="14.00">1</text> </g> <!-- carries --> <g id="node9" class="node">
+<title>
+carries
+</title>
+<polygon fill="lightgrey" stroke="lightgrey" points="113.1,-235.45 61.1,-217.45 113.1,-199.45 165.09,-217.45 113.1,-235.45"></polygon> <text text-anchor="middle" x="113.1" y="-213.25" font-family="Helvetica,Arial,sans-serif" font-size="14.00">carries</text> </g> <!-- zipcode&#45;&#45;carries --> <g id="edge9" class="edge">
+<title>
+zipcode–carries
+</title>
+<path fill="none" stroke="black" d="M160.54,-195.94C152.4,-199.63 143.69,-203.58 135.99,-207.07"></path> <text text-anchor="middle" x="144.76" y="-188.91" font-family="Helvetica,Arial,sans-serif" font-size="14.00">1</text> </g> <!-- own --> <g id="node10" class="node">
+<title>
+own
+</title>
+<polygon fill="lightgrey" stroke="lightgrey" points="181.72,-284.52 142.46,-266.52 181.72,-248.52 220.97,-266.52 181.72,-284.52"></polygon> <text text-anchor="middle" x="181.72" y="-262.32" font-family="Helvetica,Arial,sans-serif" font-size="14.00">own</text> </g> <!-- zipcode&#45;&#45;own --> <g id="edge7" class="edge">
+<title>
+zipcode–own
+</title>
+<path fill="none" stroke="black" d="M188.27,-200.77C186.84,-215.14 184.85,-235.06 183.44,-249.2"></path> <text text-anchor="middle" x="182.36" y="-229.18" font-family="Helvetica,Arial,sans-serif" font-size="14.00">1</text> </g> <!-- retains --> <g id="node11" class="node">
+<title>
+retains
+</title>
+<polygon fill="lightgrey" stroke="lightgrey" points="258.51,-249.88 206.49,-231.88 258.51,-213.88 310.53,-231.88 258.51,-249.88"></polygon> <text text-anchor="middle" x="258.51" y="-227.68" font-family="Helvetica,Arial,sans-serif" font-size="14.00">retains</text> </g> <!-- zipcode&#45;&#45;retains --> <g id="edge5" class="edge">
+<title>
+zipcode–retains
+</title>
+<path fill="none" stroke="black" d="M215.17,-200.64C223.87,-206.91 233.41,-213.79 241.33,-219.5"></path> <text text-anchor="middle" x="224.75" y="-197.47" font-family="Helvetica,Arial,sans-serif" font-size="14.00">1</text> </g> <!-- having --> <g id="node12" class="node">
+<title>
+having
+</title>
+<polygon fill="lightgrey" stroke="lightgrey" points="121.41,-151.48 68.85,-133.48 121.41,-115.48 173.96,-133.48 121.41,-151.48"></polygon> <text text-anchor="middle" x="121.41" y="-129.28" font-family="Helvetica,Arial,sans-serif" font-size="14.00">having</text> </g> <!-- zipcode&#45;&#45;having --> <g id="edge3" class="edge">
+<title>
+zipcode–having
+</title>
+<path fill="none" stroke="black" d="M164.51,-164.28C155.81,-158.06 146.32,-151.28 138.45,-145.66"></path> <text text-anchor="middle" x="147.98" y="-159.17" font-family="Helvetica,Arial,sans-serif" font-size="14.00">1</text> </g> <!-- has --> <g id="node13" class="node">
+<title>
+has
+</title>
+<polygon fill="lightgrey" stroke="lightgrey" points="198.76,-116.56 165.13,-98.56 198.76,-80.56 232.39,-98.56 198.76,-116.56"></polygon> <text text-anchor="middle" x="198.76" y="-94.36" font-family="Helvetica,Arial,sans-serif" font-size="14.00">has</text> </g> <!-- zipcode&#45;&#45;has --> <g id="edge11" class="edge">
+<title>
+zipcode–has
+</title>
+<path fill="none" stroke="black" d="M191.97,-164.33C193.45,-149.95 195.51,-130.03 196.97,-115.89"></path> <text text-anchor="middle" x="190.97" y="-144.31" font-family="Helvetica,Arial,sans-serif" font-size="14.00">1</text> </g> <!-- education --> <g id="node2" class="node">
+<title>
+education
+</title>
+<polygon fill="none" stroke="black" points="377.87,-135.95 307.03,-135.95 307.03,-99.95 377.87,-99.95 377.87,-135.95"></polygon> <text text-anchor="middle" x="342.45" y="-113.75" font-family="Helvetica,Arial,sans-serif" font-size="14.00">education</text> </g> <!-- transportation --> <g id="node3" class="node">
+<title>
+transportation
+</title>
+<polygon fill="none" stroke="black" points="102.6,-103.99 9.08,-103.99 9.08,-67.99 102.6,-67.99 102.6,-103.99"></polygon> <text text-anchor="middle" x="55.84" y="-81.79" font-family="Helvetica,Arial,sans-serif" font-size="14.00">transportation</text> </g> <!-- population --> <g id="node4" class="node">
+<title>
+population
+</title>
+<polygon fill="none" stroke="black" points="212.23,-365.28 136.47,-365.28 136.47,-329.28 212.23,-329.28 212.23,-365.28"></polygon> <text text-anchor="middle" x="174.35" y="-343.08" font-family="Helvetica,Arial,sans-serif" font-size="14.00">population</text> </g> <!-- houseMarket --> <g id="node5" class="node">
+<title>
+houseMarket
+</title>
+<polygon fill="none" stroke="black" points="367.86,-298.71 278.68,-298.71 278.68,-262.71 367.86,-262.71 367.86,-298.71"></polygon> <text text-anchor="middle" x="323.27" y="-276.51" font-family="Helvetica,Arial,sans-serif" font-size="14.00">houseMarket</text> </g> <!-- jobSecurity --> <g id="node6" class="node">
+<title>
+jobSecurity
+</title>
+<polygon fill="none" stroke="black" points="80.32,-270.96 0.23,-270.96 0.23,-234.96 80.32,-234.96 80.32,-270.96"></polygon> <text text-anchor="middle" x="40.27" y="-248.76" font-family="Helvetica,Arial,sans-serif" font-size="14.00">jobSecurity</text> </g> <!-- criminalActivity --> <g id="node7" class="node">
+<title>
+criminalActivity
+</title>
+<polygon fill="none" stroke="black" points="260.76,-36 152.7,-36 152.7,0 260.76,0 260.76,-36"></polygon> <text text-anchor="middle" x="206.73" y="-13.8" font-family="Helvetica,Arial,sans-serif" font-size="14.00">criminalActivity</text> </g> <!-- with&#45;&#45;education --> <g id="edge2" class="edge">
+<title>
+with–education
+</title>
+<path fill="none" stroke="black" d="M288.55,-139.4C294.38,-137.08 300.84,-134.51 307.22,-131.97"></path> <text text-anchor="middle" x="294.39" y="-123.08" font-family="Helvetica,Arial,sans-serif" font-size="14.00">n</text> </g> <!-- carries&#45;&#45;jobSecurity --> <g id="edge10" class="edge">
+<title>
+carries–jobSecurity
+</title>
+<path fill="none" stroke="black" d="M91.25,-228.1C86.81,-230.27 82.02,-232.6 77.22,-234.94"></path> <text text-anchor="middle" x="87.73" y="-235.72" font-family="Helvetica,Arial,sans-serif" font-size="14.00">n</text> </g> <!-- own&#45;&#45;population --> <g id="edge8" class="edge">
+<title>
+own–population
+</title>
+<path fill="none" stroke="black" d="M180.12,-284.04C178.9,-297.4 177.23,-315.74 176,-329.23"></path> <text text-anchor="middle" x="174.56" y="-310.84" font-family="Helvetica,Arial,sans-serif" font-size="14.00">n</text> </g> <!-- retains&#45;&#45;houseMarket --> <g id="edge6" class="edge">
+<title>
+retains–houseMarket
+</title>
+<path fill="none" stroke="black" d="M275.19,-244.46C282.53,-250 291.3,-256.6 299.33,-262.65"></path> <text text-anchor="middle" x="283.76" y="-257.76" font-family="Helvetica,Arial,sans-serif" font-size="14.00">n</text> </g> <!-- having&#45;&#45;transportation --> <g id="edge4" class="edge">
+<title>
+having–transportation
+</title>
+<path fill="none" stroke="black" d="M104.52,-121.25C97.31,-116.02 88.75,-109.82 80.83,-104.09"></path> <text text-anchor="middle" x="89.17" y="-100.07" font-family="Helvetica,Arial,sans-serif" font-size="14.00">n</text> </g> <!-- has&#45;&#45;criminalActivity --> <g id="edge12" class="edge">
+<title>
+has–criminalActivity
+</title>
+<path fill="none" stroke="black" d="M200.49,-81.08C201.81,-67.75 203.62,-49.46 204.95,-36"></path> <text text-anchor="middle" x="199.22" y="-62.74" font-family="Helvetica,Arial,sans-serif" font-size="14.00">n</text> </g> </g>
+</svg>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

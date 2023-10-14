@@ -1,0 +1,81 @@
+
+
+## Education System
+| ZipCode(Pk) | PublicSchoolNumbers | Diversity(white population) |
+|-----------|--------|------------|------------------|
+| 23220       | 100   | 30%      | 
+| 23221       | 23    | 54%      |
+| 23222       | 45   | 31%      |
+| 23223       | 12   | 22%      |
+| 23224       | 33   | 18%      |
+| 23225       | 17   | 26%      |
+
+## Criminal Activity
+(Note: The `Safety Rating` is derived from the sum of (`Severity` multiplied by `Number of Crimes`) for all crimes in a given `zipCode`. Lower summed points indicate a higher safety rating.)
+
+| ZipCode(Pk) | Police Coverage | Safety Rating | 
+|-----------|--------|------------|------------------|
+| 23220       | B   | A     |  
+| 23221       | A   | C      | 
+| 23222       | A   | B      | 
+| 23223       | D   | F     |
+| 23224       | B   | A      |
+| 23225       | C   | B      |
+
+### Safety Rating
+(Note `Highest Crime Activity` only shows a 3 hour window)
+
+| RecordID | ZipCode | Crime Type | Number of Crimes | Highest Crime Activity Time | Severity Points |
+|----------|---------|------------|------------------|-----------------------------|-----------------|
+| 1        | 23220   | Shoplifting   | 100     | 18-21 | 0 |
+| 2        | 23220   | Armored Robbery   | 3      | 12-03 | 3 |
+| 3        | 23220   | Grand Theft   | 13     | 21-24 | 2 |
+| 4        | 23221   | Shoplifting   | 10     | 11-14 | 0 |
+| 5        | 23221   | Armored Robbery   | 1      | 12-03 | 3 |
+| 6        | 23221   | Grand Theft   | 4     | 22-01 | 2 | 
+| 7        | 23222   | Shoplifting   | 100     | 18-23 | 0 |
+| 8        | 23222   | Armored Robbery   | 3      | 12-03 | 3 |
+| 9        | 23222   | Grand Theft   | 13     | 05-08 | 2 | 
+
+## Population
+
+| ZipCode(Pk) | PopulationNumber | Diversity(white population) | 
+|-----------|--------|------------|------------------|
+| 23220       | 50000   | 35%     |  
+| 23221       | 33000   | 60%      | 
+| 23222       | 76000   | 40%      |
+| 23223       | 54000   | 45%      |
+| 23224       | 62000   | 37%      |
+| 23225       | 77000   | 35%      | 
+
+## Transportation
+
+| ZipCode(Pk) | bikeRoutes | hasLightTrains | 
+|-----------|--------|------------|------------------|
+| 23220       | 12   | TRUE     |  
+| 23221       | 3   | FALSE      | 
+| 23222       | 9   | TRUE      | 
+| 23223       | 19   | TRUE      | 
+| 23224       | 11   | FALSE      | 
+| 23225       | 8   | FALSE      | 
+
+## House Market
+
+| ZipCode(Pk) | AvgRent | AvgPrice | housesForSale | 
+|-----------|--------|------------|------------------|
+| 23220       | 1100   | 1200500     |  20 |
+| 23221       | 1300   | 130111     | 25 |
+| 23222       | 900   | 90120      | 24 |
+| 23223       | 1000   | 100120      | 21 |
+| 23224       | 1200   | 110120      | 18 |
+| 23225       | 800   | 390120      | 24 |
+
+## Job Security
+| ZipCode(Pk) | numOpenJobs | layoffRate | 
+|-----------|--------|------------|------------------|
+| 23220       | 100   | 10%     |
+| 23221       | 90   | 12%     | 
+| 23222       | 130   | 13%      | 
+| 23223       | 160   | 25%      | 
+| 23224       | 30   | 34%      | 
+| 23225       | 50   | 27%      | 

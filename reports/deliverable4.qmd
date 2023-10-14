@@ -1,6 +1,6 @@
 ---
 title: VA Better Place #1
-author: Aislin John, Donna Guzman, Davit Tekeste 
+author: Aislin John, Donna Guzman, Dawit Tekeste 
 date: last-modified
 format:
     html:
@@ -8,151 +8,126 @@ format:
         embed-resources: true
 ---
 
-## Project overview and key deliverables
-"VA Better Place" focuses on creating a comprehensive database that assesses the quality of living conditions in different ZIP codes within Virginia. This project aims to provide valuable insights into education, employment, housing, crime activity, transportation, and population data, ultimately aiding residents, policymakers, and researchers in making informed decisions to enhance the overall quality of life in the state.
+# Virginia Better Place
 
-**Key deliverables:**
+## Project Description
 
-[Pitch video](url)
+The Virginia Better Place Database is a comprehensive resource for assessing and comparing living conditions across different counties in Virginia. It provides data on various aspects, including education, housing, employment, crime activity, transportation, and population. With this database, you can explore and analyze living conditions to make informed decisions.
 
-[Design video](url)
+## Table of Contents
 
-[GITHUB repository](url)
+- [How to Install and Run the Project](#how-to-install-and-run-the-project)
+- [How to Use the Project](#how-to-use-the-project)
+- [Credits](#credits)
+
+## Important Links
+* [Pitch Video](https://drive.google.com/file/d/1Sikim-ladH6ERmn24CFSi-oMzZA6jGdi/view?usp=sharing)
+* [Phase 1](https://google.com)
+* [Github Project](https://github.com/cmsc-vcu/cmsc508-fa2023-prj-VA_better_placegroup39)
 
 
-## Problem Description 
+## Problem domain
+* There are a lot of factors that come into consideration when moving from one place to another and a new place can be overwhelming when looking at all the data needed to ingest to make a decision where it is for a 3 month move or permanent relocation this application provides important data to help a user rank where the best zip code is to move. Scouring all the internet for `Crime activity in 23220`, `Houses price in 23220`, `Does 23220 have light rail or bike trails` is a lot of research and important information will get lost in between as there is a lot of processing before saving the important information which is usually in the head(never a good place for all the data just searched)
 
-**Problem Domain:**
+## Need Why this Project?
+* A User who wants to get information such as `Crime Activity`, `House Price`, `Is their light rail`, `Open Jobs`, or etc in a specific zip code is a lot of work to do as a single user googling and searching up on each individual site. So this application will have all important data such as Safety rating, Education, Diversity, Police Coverage, Transportation methods, housing market for zip codes in a county and a bigger state
 
-The problem domain of Virginia Better Place revolves around improving the living conditions in different zip codes across the state of Virginia. This encompasses a wide range of aspects including education, housing, employment, crime activity, transportation, and population demographics. To understand this domain, one must consider the unique characteristics, challenges, and opportunities present in each zip code. For instance, some zip codes may have thriving job markets but inadequate public transportation, while others may excel in education but struggle with high crime rates.
+## Context, scope and perspective
+### Context
+* With how the data mentioned above is scattered all over the internet the goal of this project to put everything in one database so that all teh data for a zip code can be accessed with a single api call or can also do specific queries for each entities attributes
 
-**Need:**
 
-The need for the Virginia Better Place database arises from the desire to comprehensively assess living conditions across Virginia. This database aims to provide valuable insights into each zip code, helping policymakers, local governments, researchers, and residents make informed decisions. By centralizing data on education, housing, employment, crime activity, transportation, and population, this database will help identify areas that require improvements, allocate resources more effectively, and create a better quality of life for Virginia residents.
-
-**Context, Scope, and Perspective:**
-
-The Virginia Better Place database is designed to serve multiple perspectives, including policymakers, local governments, researchers, residents, and community organizations. Each user role has a unique perspective:
-
-1. **Policymakers and Local Governments:** These users seek data to make informed policy decisions and allocate resources for community development.
-2. **Researchers:** Researchers can use the database to conduct studies and gain insights into socio-economic factors affecting different regions.
-3. **Residents:** Residents can access the database to understand the quality of life in their area, helping them make informed choices about where to live and work.
-4. **Community Organizations:** Non-profits and community organizations can use the data to identify areas in need of assistance and plan initiatives accordingly.
-
-**User Roles and Use Cases:**
-
-- **Policymakers:** These users may need access to various data points to inform policies related to education, public transportation, or crime reduction.
-- **Researchers:** Researchers might perform data analysis, studying correlations between different living conditions.
-- **Residents:** Residents could use the database to compare zip codes when considering a new home or assessing the safety of a neighborhood.
-- **Community Organizations:** Non-profit organizations could use the data to target their assistance and outreach programs effectively.
-
-**Security and Privacy:**
-
-Security and privacy are paramount in the Virginia Better Place database. As it contains sensitive data about living conditions, ensuring data security and privacy is crucial. The following measures will be implemented:
-
-- User Authentication: Users will require secure authentication to access specific data.
-- Data Encryption: Data transmission and storage will be encrypted to prevent unauthorized access.
-- Access Controls: Different user roles will have specific access rights to ensure that sensitive data is protected.
-
-Overall, the Virginia Better Place database will serve as a valuable tool for understanding and improving the living conditions in Virginia, benefiting a wide range of users and helping to address the unique challenges in different zip codes.
+### Scope
+* The scope of the project encompasses the development and maintenance of a comprehensive database aimed at aggregating and presenting data relevant to living conditions across various counties in Virginia. The database will cover a multitude of aspects including education, housing, employment, crime activity, transportation, and population metrics. It's designed to be a one-stop resource for individuals seeking to explore and analyze living conditions in Virginia, whether for short-term or permanent relocation. The scope extends to providing an accessible and user-friendly interface for querying this data, as well as ensuring the data is well-organized, up-to-date, and reliable.
 
 
 
+### Perspective
+* End User <br>
+  The database serves as an invaluable tool for making informed decisions regarding relocation. They can easily compare different zip codes based on their preferences such as rent prices, bike routes, and safety, among other criteria. The project simplifies the research process by aggregating all necessary data into one platform, saving time and ensuring they have all the information needed to make a well-informed decision.
+* Developer <br>
+  From a developer's standpoint, the project requires a robust backend database system to handle a variety of data types and queries efficiently. It also necessitates a front-end interface that is intuitive and user-friendly. There's a continuous need for data updates, monitoring, and possibly expanding the database to encompass more data or cover additional areas over time.
 
-## Database design
-**Entity-relationship diagram (ERD)**
+## Database Design
+### Entity Relationship Diagram
+![Chen Notation for Virginia Better Place Database](DiagramsImages/ChenDiagram.png)
 
-   ```{dot}
-//| echo: false
-graph ER {
-	fontname="Helvetica,Arial,sans-serif"
-	node [fontname="Helvetica,Arial,sans-serif"]
-	edge [fontname="Helvetica,Arial,sans-serif"]
-	layout=neato
-	node [shape=box]; county; education; transportation; population; houseMarket; jobSecurity; crimes;
-	node [shape=ellipse]; {node [label="diversity"] diversity0; diversity1;}
-    {node [label="zipCode"] zipCode0; zipCode1; zipCode2; zipCode3; zipCode4}
-		numGroceryStores; numAttractions; numOfPublic; qualOfSchools; bikeRoutes; typeOfTrans; number; avgRent; avgPrice; openHouses; layOffRate; numOfOpenJobs; policeCovg; safetyRating; highestCrimeActivTIme; crimeType; numOfCrimes;
-	node [shape=diamond,style=filled,color=lightgrey]; "has"; "to"; "with"; "num"; "priced"; "type";
+### Crow's Foot Diagram
+![Crows Foot Ful Diagram](DiagramsImages/CrowsFootDiagram.png)
 
-	numGroceryStores -- county;
-    numAttractions -- county;
-    county -- "has" [label="1",len=1.00];
-    "has" -- education [label="n",len=1.00];
-    diversity0 -- education;
-     numOfpublic -- education;
-    qualOfSchools -- education;
-    zipCode0 -- education;
-    
-    county -- "to" [label="1",len=1.00];
-    "to" -- transportation [label="n",len=1.00];
-    bikeRoutes -- transportation;
-    typeOfTrans -- transportation;
-
-    county -- "num" [label="1",len=1.00];
-    "num" -- population [label="n",len=1.00];
-    population -- number;
-    population -- diversity1;
-    population -- zipCode1;
-    
-    county -- "priced" [label="1",len=1.00];
-    "priced" -- houseMarket [label="n",len=1.00];
-    houseMarket -- avgRent;
-    houseMarket -- avgPrice;
-    houseMarket -- openHouses;
-    houseMarket -- zipCode2;
-    
-    county -- "type" [label="1",len=1.00];
-    "type" -- jobSecurity [label="n",len=1.00];
-    jobSecurity --layOffRate;
-    jobSecurity -- numOfOpenJobs;
-    jobSecurity -- zipCode3;
-
-    county -- "with" [label="1",len=1.00];
-    "with" -- crimes [label="n",len=1.00];
-    crimes -- policeCovg;
-    crimes -- safetyRating;
-    crimes -- zipCode4;
-    safetyRating -- crimeType -- highestCrimeActivTime; 
-    crimeType-- numOfCrimes;
-
-	fontsize=20;
-}
-```
-
-
-The decision to employ a Chen diagram in the database design is centered on the selection of ZIP codes as the primary key. This choice is particularly apt when working with geographic data, as ZIP codes serve as unique identifiers for different regions. Chen diagrams offer a visually appealing and intuitive representation of the database schema, making it easier to illustrate relationships among entities, attributes, and keys. This visual approach enhances comprehension and facilitates communication, especially with non-technical stakeholders.
-
-Despite the advantages of Chen diagrams, it's essential to acknowledge potential tradeoffs. These diagrams can become complex when dealing with intricate relationships or extensive datasets, necessitating careful organization to maintain clarity. Additionally, as the database evolves, updating and maintaining the diagram to reflect changes can be a manual and time-consuming process. While Chen diagrams effectively illustrate relationships, they do not provide insights into the database's normalization level. Therefore, it is crucial to supplement the diagram with processes such as functional dependencies and normalization to ensure data integrity and efficiency in the database structure.
+### Relationship Schemas
 
 
 
-**Relational schemas**
+ 
+## Specific queries
 
- Listing of relations, their attributes, types, domain, and constraints, identification of the primary key and foreign keys and other constraints.
+1. `SELECT ZipCode, PublicSchoolNumbers FROM EducationSystem WHERE QualityOfSchools IS NOT NULL;`<br>
+2. `SELECT ZipCode, SafetyRating FROM CriminalActivity WHERE PoliceCoverage = 'A';`<br>
+3. `SELECT ZipCode, CrimeType FROM SafetyRating WHERE NumberofCrimes > 10;`<br>
+4. `SELECT ZipCode, PopulationNumber FROM Population WHERE Diversity < 40%;`<br>
+5. `SELECT ZipCode FROM Transportation WHERE bikeRoutes > 10 AND hasLightTrains = TRUE;`<br>
+6. `SELECT ZipCode, AvgRent, AvgPrice FROM HouseMarket WHERE AvgRent < 1000;`<br>
+7. `SELECT ZipCode, numOpenJobs FROM JobSecurity WHERE layoffRate < 12%;`<br>
+8. `SELECT ZipCode FROM EducationSystem WHERE Diversity > 50%;`<br>
+9. `SELECT ZipCode FROM CriminalActivity WHERE SafetyRating = 'A' AND PoliceCoverage = 'B';`<br>
+10. `SELECT DISTINCT sr.ZipCode FROM SafetyRating sr JOIN Population p ON sr.ZipCode = p.ZipCode WHERE p.Diversity > 50% AND sr.CrimeType = 'Shoplifting';`<br>
+11. `SELECT ZipCode, housesForSale FROM HouseMarket WHERE AvgPrice > 500000;`<br>
+12. `SELECT ZipCode FROM Transportation WHERE bikeRoutes < 5 AND hasLightTrains = FALSE;`<br>
+13. `SELECT ZipCode FROM Population WHERE PopulationNumber > 50000 AND Diversity < 40%;`<br>
+14. `SELECT sr.ZipCode, sr.CrimeType, ca.SafetyRating FROM SafetyRating sr JOIN CriminalActivity ca ON sr.ZipCode = ca.ZipCode WHERE sr.NumberofCrimes > 50;`<br>
+15. `SELECT ZipCode FROM HouseMarket WHERE AvgRent BETWEEN 1000 AND 1300;`<br>
+16. `SELECT ZipCode, Diversity FROM EducationSystem WHERE PublicSchoolNumbers < 50;`<br>
+17. `SELECT ZipCode, hasLightTrains FROM Transportation WHERE bikeRoutes > 8;`<br>
+18. `SELECT ZipCode, layoffRate FROM JobSecurity WHERE numOpenJobs < 80;`<br>
+19. `SELECT h.ZipCode FROM HouseMarket h JOIN JobSecurity j ON h.ZipCode = j.ZipCode WHERE j.layoffRate > 10% AND h.AvgRent < 1000;`<br>
+20. `SELECT e.ZipCode FROM EducationSystem e JOIN Population p ON e.ZipCode = p.ZipCode WHERE e.Diversity < 40% AND p.Diversity > 60%;`<br>
 
-**Functional Dependencies and Normalization**
+## Sample Data
+ [Sample Data Table](reports/SampleDataTable.png)
+ <br> Click on the link
 
- A discussion of the functional dependencies in the proposed database schema, and a demonstration of the  normalization of the relations to BCNF/4NF. This might consist of a description, in a text format, of the process of decomposing the tables extracted from the ERD translation into relations satisfying BCNF/4NF. Note that your decomposition via BCNF/4NF must be lossless.
+## Functional Dependencies and Normalization
 
-**Specific queries**
+1. EducationSystem Table:
 
-20 distinct questions that the database can help answer. These can be general queries of use to all the users, or specific queries for different users or user roles. These questions should be written in precise words and using relational algebra
+        ZipCode -> PublicSchoolNumbers<br>
+        ZipCode -> QualityOfSchools<br>
+        ZipCode -> Diversity<br>
 
-**Sample Data**
+2. Criminal Activity Table:
 
-5-10 tuples in each relation, to clearly communicate the domains of each attribute.
+        ZipCode -> SafetyRating<br>
+        ZipCode -> NumberofCrimes<br>
+        ZipCode -> CrimeType<br>
 
+3. Population Table:
 
-## Project management
-**Draft Project schedule**
+        ZipCode -> PopulationNumber<br>
+        ZipCode -> Diversity<br>
 
-Given that you need to submit a final project by December 12, and that this report is due October 13
-GANNT chart with tasks and milestones.
+4. Transportation Table:
 
-**Video**
+        ZipCode -> bikeRoutes<br>
+        ZipCode -> hasLightTrains<br>
 
-4-5 minute video presentation summarizing the database design solution, discussion of any design tradeoffs, and reflections on the overall process. In your report please include links to both your original pitch video and the video for this deliverable.  Please note in your second video if you made any changes to the design as presented in your original video.
+5. HouseMarket Table:
+
+        ZipCode -> AvgRent<br>
+        ZipCode -> AvgPrice<br>
+        ZipCode -> housesForSale<br>
+
+6. JobSecurity Table:
+
+        ZipCode -> numOpenJobs<br>
+        ZipCode -> layoffRate<br>
+
+Forth Normal Form (4NF)
+
+* Decompose multi-valued attributes like safety Rating and decomposing the values needed to calculate for the table other than that the other tables are **4NF** form
+
+## Draft Project schedule
+![GAANT Graph](DiagramsImages/GAANT Graph.png)
 
 
 
