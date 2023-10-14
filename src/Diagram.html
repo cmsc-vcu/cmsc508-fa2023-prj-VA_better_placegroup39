@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>diagram</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="Diagram_files/libs/clipboard/clipboard.min.js"></script>
+<script src="Diagram_files/libs/quarto-html/quarto.js"></script>
+<script src="Diagram_files/libs/quarto-html/popper.min.js"></script>
+<script src="Diagram_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="Diagram_files/libs/quarto-html/anchor.min.js"></script>
+<link href="Diagram_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="Diagram_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="Diagram_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="Diagram_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="Diagram_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+
+
+<section id="chen-notation" class="level3">
+<h3 class="anchored" data-anchor-id="chen-notation">Chen Notation</h3>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<div>
+<svg width="672" height="480" viewbox="0.00 0.00 800.03 550.56" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" style="; max-width: none; max-height: none">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 546.56)">
+<title>
+ER
+</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-546.56 796.03,-546.56 796.03,4 -4,4"></polygon> <!-- county --> <g id="node1" class="node">
+<title>
+county
+</title>
+<polygon fill="none" stroke="black" points="331.96,-297.78 277.76,-297.78 277.76,-261.78 331.96,-261.78 331.96,-297.78"></polygon> <text text-anchor="middle" x="304.86" y="-275.58" font-family="Helvetica,Arial,sans-serif" font-size="14.00">county</text> </g> <!-- has --> <g id="node32" class="node">
+<title>
+has
+</title>
+<polygon fill="lightgrey" stroke="lightgrey" points="331.84,-208.97 298.21,-190.97 331.84,-172.97 365.47,-190.97 331.84,-208.97"></polygon> <text text-anchor="middle" x="331.84" y="-186.77" font-family="Helvetica,Arial,sans-serif" font-size="14.00">has</text> </g> <!-- county&#45;&#45;has --> <g id="edge3" class="edge">
+<title>
+county–has
+</title>
+<path fill="none" stroke="black" d="M310.45,-261.38C315.36,-245.22 322.42,-221.98 327.07,-206.68"></path> <text text-anchor="middle" x="315.26" y="-221.43" font-family="Helvetica,Arial,sans-serif" font-size="14.00">1</text> </g> <!-- to --> <g id="node33" class="node">
+<title>
+to
+</title>
+<polygon fill="lightgrey" stroke="lightgrey" points="256.55,-234.86 229.55,-216.86 256.55,-198.86 283.55,-216.86 256.55,-234.86"></polygon> <text text-anchor="middle" x="256.55" y="-212.66" font-family="Helvetica,Arial,sans-serif" font-size="14.00">to</text> </g> <!-- county&#45;&#45;to --> <g id="edge9" class="edge">
+<title>
+county–to
+</title>
+<path fill="none" stroke="black" d="M290.89,-261.58C282.86,-251.13 273,-238.29 265.91,-229.05"></path> <text text-anchor="middle" x="274.9" y="-249.52" font-family="Helvetica,Arial,sans-serif" font-size="14.00">1</text> </g> <!-- with --> <g id="node34" class="node">
+<title>
+with
+</title>
+<polygon fill="lightgrey" stroke="lightgrey" points="403.34,-294.66 363.56,-276.66 403.34,-258.66 443.11,-276.66 403.34,-294.66"></polygon> <text text-anchor="middle" x="403.34" y="-272.46" font-family="Helvetica,Arial,sans-serif" font-size="14.00">with</text> </g> <!-- county&#45;&#45;with --> <g id="edge29" class="edge">
+<title>
+county–with
+</title>
+<path fill="none" stroke="black" d="M332.03,-278.92C342.51,-278.59 354.66,-278.2 365.94,-277.84"></path> <text text-anchor="middle" x="345.48" y="-282.58" font-family="Helvetica,Arial,sans-serif" font-size="14.00">1</text> </g> <!-- num --> <g id="node35" class="node">
+<title>
+num
+</title>
+<polygon fill="lightgrey" stroke="lightgrey" points="219.13,-295.35 179.36,-277.35 219.13,-259.35 258.91,-277.35 219.13,-295.35"></polygon> <text text-anchor="middle" x="219.13" y="-273.15" font-family="Helvetica,Arial,sans-serif" font-size="14.00">num</text> </g> <!-- county&#45;&#45;num --> <g id="edge13" class="edge">
+<title>
+county–num
+</title>
+<path fill="none" stroke="black" d="M277.74,-279.01C271.06,-278.83 263.8,-278.62 256.73,-278.42"></path> <text text-anchor="middle" x="263.74" y="-282.92" font-family="Helvetica,Arial,sans-serif" font-size="14.00">1</text> </g> <!-- priced --> <g id="node36" class="node">
+<title>
+priced
+</title>
+<polygon fill="lightgrey" stroke="lightgrey" points="255.12,-377.13 205.16,-359.13 255.12,-341.13 305.08,-359.13 255.12,-377.13"></polygon> <text text-anchor="middle" x="255.12" y="-354.93" font-family="Helvetica,Arial,sans-serif" font-size="14.00">priced</text> </g> <!-- county&#45;&#45;priced --> <g id="edge18" class="edge">
+<title>
+county–priced
+</title>
+<path fill="none" stroke="black" d="M293.57,-297.79C284.74,-311.87 272.62,-331.21 264.36,-344.38"></path> <text text-anchor="middle" x="275.47" y="-308.48" font-family="Helvetica,Arial,sans-serif" font-size="14.00">1</text> </g> <!-- type --> <g id="node37" class="node">
+<title>
+type
+</title>
+<polygon fill="lightgrey" stroke="lightgrey" points="353.24,-378.65 314,-360.65 353.24,-342.65 392.48,-360.65 353.24,-378.65"></polygon> <text text-anchor="middle" x="353.24" y="-356.45" font-family="Helvetica,Arial,sans-serif" font-size="14.00">type</text> </g> <!-- county&#45;&#45;type --> <g id="edge24" class="edge">
+<title>
+county–type
+</title>
+<path fill="none" stroke="black" d="M315.84,-298.13C324.59,-312.76 336.68,-332.96 344.71,-346.39"></path> <text text-anchor="middle" x="326.78" y="-309.66" font-family="Helvetica,Arial,sans-serif" font-size="14.00">1</text> </g> <!-- education --> <g id="node2" class="node">
+<title>
+education
+</title>
+<polygon fill="none" stroke="black" points="385.81,-119.65 314.96,-119.65 314.96,-83.65 385.81,-83.65 385.81,-119.65"></polygon> <text text-anchor="middle" x="350.39" y="-97.45" font-family="Helvetica,Arial,sans-serif" font-size="14.00">education</text> </g> <!-- transportation --> <g id="node3" class="node">
+<title>
+transportation
+</title>
+<polygon fill="none" stroke="black" points="245.66,-164.96 152.14,-164.96 152.14,-128.96 245.66,-128.96 245.66,-164.96"></polygon> <text text-anchor="middle" x="198.9" y="-142.76" font-family="Helvetica,Arial,sans-serif" font-size="14.00">transportation</text> </g> <!-- population --> <g id="node4" class="node">
+<title>
+population
+</title>
+<polygon fill="none" stroke="black" points="165.63,-286.69 89.86,-286.69 89.86,-250.69 165.63,-250.69 165.63,-286.69"></polygon> <text text-anchor="middle" x="127.74" y="-264.49" font-family="Helvetica,Arial,sans-serif" font-size="14.00">population</text> </g> <!-- diversity1 --> <g id="node9" class="node">
+<title>
+diversity1
+</title>
+<ellipse fill="none" stroke="black" cx="44.83" cy="-258.59" rx="44.66" ry="18"></ellipse> <text text-anchor="middle" x="44.83" y="-254.39" font-family="Helvetica,Arial,sans-serif" font-size="14.00">diversity</text> </g> <!-- population&#45;&#45;diversity1 --> <g id="edge16" class="edge">
+<title>
+population–diversity1
+</title>
+<path fill="none" stroke="black" d="M89.68,-264.06C89.09,-263.99 88.49,-263.91 87.89,-263.84"></path> </g> <!-- zipCode1 --> <g id="node11" class="node">
+<title>
+zipCode1
+</title>
+<ellipse fill="none" stroke="black" cx="73.16" cy="-201.87" rx="43.44" ry="18"></ellipse> <text text-anchor="middle" x="73.16" y="-197.67" font-family="Helvetica,Arial,sans-serif" font-size="14.00">zipCode</text> </g> <!-- population&#45;&#45;zipCode1 --> <g id="edge17" class="edge">
+<title>
+population–zipCode1
+</title>
+<path fill="none" stroke="black" d="M112.83,-250.43C104.87,-240.7 95.14,-228.78 87.31,-219.19"></path> </g> <!-- number --> <g id="node21" class="node">
+<title>
+number
+</title>
+<ellipse fill="none" stroke="black" cx="61.17" cy="-321.89" rx="40.57" ry="18"></ellipse> <text text-anchor="middle" x="61.17" y="-317.69" font-family="Helvetica,Arial,sans-serif" font-size="14.00">number</text> </g> <!-- population&#45;&#45;number --> <g id="edge15" class="edge">
+<title>
+population–number
+</title>
+<path fill="none" stroke="black" d="M105.2,-286.7C97.36,-292.97 88.62,-299.95 81.01,-306.03"></path> </g> <!-- houseMarket --> <g id="node5" class="node">
+<title>
+houseMarket
+</title>
+<polygon fill="none" stroke="black" points="251.11,-455.01 161.93,-455.01 161.93,-419.01 251.11,-419.01 251.11,-455.01"></polygon> <text text-anchor="middle" x="206.52" y="-432.81" font-family="Helvetica,Arial,sans-serif" font-size="14.00">houseMarket</text> </g> <!-- zipCode2 --> <g id="node12" class="node">
+<title>
+zipCode2
+</title>
+<ellipse fill="none" stroke="black" cx="138.87" cy="-486.34" rx="43.44" ry="18"></ellipse> <text text-anchor="middle" x="138.87" y="-482.14" font-family="Helvetica,Arial,sans-serif" font-size="14.00">zipCode</text> </g> <!-- houseMarket&#45;&#45;zipCode2 --> <g id="edge23" class="edge">
+<title>
+houseMarket–zipCode2
+</title>
+<path fill="none" stroke="black" d="M181.72,-455.1C174.78,-460.16 167.29,-465.62 160.55,-470.53"></path> </g> <!-- avgRent --> <g id="node22" class="node">
+<title>
+avgRent
+</title>
+<ellipse fill="none" stroke="black" cx="121.45" cy="-434.78" rx="43.44" ry="18"></ellipse> <text text-anchor="middle" x="121.45" y="-430.58" font-family="Helvetica,Arial,sans-serif" font-size="14.00">avgRent</text> </g> <!-- houseMarket&#45;&#45;avgRent --> <g id="edge20" class="edge">
+<title>
+houseMarket–avgRent
+</title>
+<path fill="none" stroke="black" d="M161.49,-435.83C161.34,-435.83 161.18,-435.82 161.02,-435.82"></path> </g> <!-- avgPrice --> <g id="node23" class="node">
+<title>
+avgPrice
+</title>
+<ellipse fill="none" stroke="black" cx="188.43" cy="-519" rx="44.64" ry="18"></ellipse> <text text-anchor="middle" x="188.43" y="-514.8" font-family="Helvetica,Arial,sans-serif" font-size="14.00">avgPrice</text> </g> <!-- houseMarket&#45;&#45;avgPrice --> <g id="edge21" class="edge">
+<title>
+houseMarket–avgPrice
+</title>
+<path fill="none" stroke="black" d="M202.51,-455.21C199.51,-468.8 195.43,-487.28 192.44,-500.85"></path> </g> <!-- openHouses --> <g id="node24" class="node">
+<title>
+openHouses
+</title>
+<ellipse fill="none" stroke="black" cx="242.44" cy="-514.36" rx="58.48" ry="18"></ellipse> <text text-anchor="middle" x="242.44" y="-510.16" font-family="Helvetica,Arial,sans-serif" font-size="14.00">openHouses</text> </g> <!-- houseMarket&#45;&#45;openHouses --> <g id="edge22" class="edge">
+<title>
+houseMarket–openHouses
+</title>
+<path fill="none" stroke="black" d="M215.04,-455.34C220.8,-467.76 228.39,-484.09 234.12,-496.43"></path> </g> <!-- jobSecurity --> <g id="node6" class="node">
+<title>
+jobSecurity
+</title>
+<polygon fill="none" stroke="black" points="431.68,-460.95 351.59,-460.95 351.59,-424.95 431.68,-424.95 431.68,-460.95"></polygon> <text text-anchor="middle" x="391.63" y="-438.75" font-family="Helvetica,Arial,sans-serif" font-size="14.00">jobSecurity</text> </g> <!-- zipCode3 --> <g id="node13" class="node">
+<title>
+zipCode3
+</title>
+<ellipse fill="none" stroke="black" cx="428.13" cy="-518.07" rx="43.44" ry="18"></ellipse> <text text-anchor="middle" x="428.13" y="-513.87" font-family="Helvetica,Arial,sans-serif" font-size="14.00">zipCode</text> </g> <!-- jobSecurity&#45;&#45;zipCode3 --> <g id="edge28" class="edge">
+<title>
+jobSecurity–zipCode3
+</title>
+<path fill="none" stroke="black" d="M400.47,-461.14C406.25,-473.03 413.76,-488.5 419.5,-500.31"></path> </g> <!-- layOffRate --> <g id="node25" class="node">
+<title>
+layOffRate
+</title>
+<ellipse fill="none" stroke="black" cx="365.31" cy="-524.56" rx="53.87" ry="18"></ellipse> <text text-anchor="middle" x="365.31" y="-520.36" font-family="Helvetica,Arial,sans-serif" font-size="14.00">layOffRate</text> </g> <!-- jobSecurity&#45;&#45;layOffRate --> <g id="edge26" class="edge">
+<title>
+jobSecurity–layOffRate
+</title>
+<path fill="none" stroke="black" d="M385.79,-461.06C381.43,-474.59 375.5,-492.99 371.14,-506.5"></path> </g> <!-- numOfOpenJobs --> <g id="node26" class="node">
+<title>
+numOfOpenJobs
+</title>
+<ellipse fill="none" stroke="black" cx="471.14" cy="-470.6" rx="76.47" ry="18"></ellipse> <text text-anchor="middle" x="471.14" y="-466.4" font-family="Helvetica,Arial,sans-serif" font-size="14.00">numOfOpenJobs</text> </g> <!-- jobSecurity&#45;&#45;numOfOpenJobs --> <g id="edge27" class="edge">
+<title>
+jobSecurity–numOfOpenJobs
+</title>
+<path fill="none" stroke="black" d="M431.85,-456.94C432.01,-456.99 432.16,-457.04 432.31,-457.1"></path> </g> <!-- crimes --> <g id="node7" class="node">
+<title>
+crimes
+</title>
+<polygon fill="none" stroke="black" points="520.03,-290.51 466.03,-290.51 466.03,-254.51 520.03,-254.51 520.03,-290.51"></polygon> <text text-anchor="middle" x="493.03" y="-268.31" font-family="Helvetica,Arial,sans-serif" font-size="14.00">crimes</text> </g> <!-- zipCode4 --> <g id="node14" class="node">
+<title>
+zipCode4
+</title>
+<ellipse fill="none" stroke="black" cx="558.66" cy="-300.82" rx="43.44" ry="18"></ellipse> <text text-anchor="middle" x="558.66" y="-296.62" font-family="Helvetica,Arial,sans-serif" font-size="14.00">zipCode</text> </g> <!-- crimes&#45;&#45;zipCode4 --> <g id="edge33" class="edge">
+<title>
+crimes–zipCode4
+</title>
+<path fill="none" stroke="black" d="M520.1,-284.19C522.79,-285.34 525.52,-286.52 528.24,-287.69"></path> </g> <!-- policeCovg --> <g id="node27" class="node">
+<title>
+policeCovg
+</title>
+<ellipse fill="none" stroke="black" cx="536.73" cy="-349.11" rx="55.62" ry="18"></ellipse> <text text-anchor="middle" x="536.73" y="-344.91" font-family="Helvetica,Arial,sans-serif" font-size="14.00">policeCovg</text> </g> <!-- crimes&#45;&#45;policeCovg --> <g id="edge31" class="edge">
+<title>
+crimes–policeCovg
+</title>
+<path fill="none" stroke="black" d="M503.38,-290.66C510.4,-302.96 519.63,-319.14 526.6,-331.36"></path> </g> <!-- safetyRating --> <g id="node28" class="node">
+<title>
+safetyRating
+</title>
+<ellipse fill="none" stroke="black" cx="567.33" cy="-221.72" rx="59.69" ry="18"></ellipse> <text text-anchor="middle" x="567.33" y="-217.52" font-family="Helvetica,Arial,sans-serif" font-size="14.00">safetyRating</text> </g> <!-- crimes&#45;&#45;safetyRating --> <g id="edge32" class="edge">
+<title>
+crimes–safetyRating
+</title>
+<path fill="none" stroke="black" d="M519.43,-254.46C527.11,-249.21 535.45,-243.51 543,-238.35"></path> </g> <!-- diversity0 --> <g id="node8" class="node">
+<title>
+diversity0
+</title>
+<ellipse fill="none" stroke="black" cx="395.54" cy="-31.93" rx="44.66" ry="18"></ellipse> <text text-anchor="middle" x="395.54" y="-27.73" font-family="Helvetica,Arial,sans-serif" font-size="14.00">diversity</text> </g> <!-- diversity0&#45;&#45;education --> <g id="edge5" class="edge">
+<title>
+diversity0–education
+</title>
+<path fill="none" stroke="black" d="M384.14,-49.52C377.45,-59.85 369.02,-72.88 362.25,-83.33"></path> </g> <!-- zipCode0 --> <g id="node10" class="node">
+<title>
+zipCode0
+</title>
+<ellipse fill="none" stroke="black" cx="289.72" cy="-40.79" rx="43.44" ry="18"></ellipse> <text text-anchor="middle" x="289.72" y="-36.59" font-family="Helvetica,Arial,sans-serif" font-size="14.00">zipCode</text> </g> <!-- zipCode0&#45;&#45;education --> <g id="edge8" class="edge">
+<title>
+zipCode0–education
+</title>
+<path fill="none" stroke="black" d="M306.29,-57.42C314.29,-65.44 323.91,-75.09 332.12,-83.33"></path> </g> <!-- numGroceryStores --> <g id="node15" class="node">
+<title>
+numGroceryStores
+</title>
+<ellipse fill="none" stroke="black" cx="308.48" cy="-324.15" rx="83.96" ry="18"></ellipse> <text text-anchor="middle" x="308.48" y="-319.95" font-family="Helvetica,Arial,sans-serif" font-size="14.00">numGroceryStores</text> </g> <!-- numGroceryStores&#45;&#45;county --> <g id="edge1" class="edge">
+<title>
+numGroceryStores–county
+</title>
+<path fill="none" stroke="black" d="M307.01,-306.11C306.79,-303.42 306.56,-300.65 306.34,-297.96"></path> </g> <!-- numAttractions --> <g id="node16" class="node">
+<title>
+numAttractions
+</title>
+<ellipse fill="none" stroke="black" cx="346.85" cy="-255.25" rx="71.23" ry="18"></ellipse> <text text-anchor="middle" x="346.85" y="-251.05" font-family="Helvetica,Arial,sans-serif" font-size="14.00">numAttractions</text> </g> <!-- numAttractions&#45;&#45;county --> <g id="edge2" class="edge">
+<title>
+numAttractions–county
+</title>
+<path fill="none" stroke="black" d="M318.15,-272.02C318.03,-272.09 317.92,-272.15 317.8,-272.22"></path> </g> <!-- privOrPub --> <g id="node17" class="node">
+<title>
+privOrPub
+</title>
+<ellipse fill="none" stroke="black" cx="338.24" cy="-18" rx="51.62" ry="18"></ellipse> <text text-anchor="middle" x="338.24" y="-13.8" font-family="Helvetica,Arial,sans-serif" font-size="14.00">privOrPub</text> </g> <!-- privOrPub&#45;&#45;education --> <g id="edge6" class="edge">
+<title>
+privOrPub–education
+</title>
+<path fill="none" stroke="black" d="M340.87,-36.15C342.91,-50.18 345.72,-69.51 347.75,-83.53"></path> </g> <!-- qualOfSchools --> <g id="node18" class="node">
+<title>
+qualOfSchools
+</title>
+<ellipse fill="none" stroke="black" cx="429.34" cy="-76.22" rx="68.37" ry="18"></ellipse> <text text-anchor="middle" x="429.34" y="-72.02" font-family="Helvetica,Arial,sans-serif" font-size="14.00">qualOfSchools</text> </g> <!-- qualOfSchools&#45;&#45;education --> <g id="edge7" class="edge">
+<title>
+qualOfSchools–education
+</title>
+<path fill="none" stroke="black" d="M385.7,-90.27C385.56,-90.32 385.42,-90.37 385.28,-90.41"></path> </g> <!-- bikeRoutes --> <g id="node19" class="node">
+<title>
+bikeRoutes
+</title>
+<ellipse fill="none" stroke="black" cx="119.22" cy="-114.55" rx="54.48" ry="18"></ellipse> <text text-anchor="middle" x="119.22" y="-110.35" font-family="Helvetica,Arial,sans-serif" font-size="14.00">bikeRoutes</text> </g> <!-- bikeRoutes&#45;&#45;transportation --> <g id="edge11" class="edge">
+<title>
+bikeRoutes–transportation
+</title>
+<path fill="none" stroke="black" d="M153.94,-128.67C154.1,-128.74 154.27,-128.81 154.44,-128.88"></path> </g> <!-- typeOfTrans --> <g id="node20" class="node">
+<title>
+typeOfTrans
+</title>
+<ellipse fill="none" stroke="black" cx="175.64" cy="-64.32" rx="59.68" ry="18"></ellipse> <text text-anchor="middle" x="175.64" y="-60.12" font-family="Helvetica,Arial,sans-serif" font-size="14.00">typeOfTrans</text> </g> <!-- typeOfTrans&#45;&#45;transportation --> <g id="edge12" class="edge">
+<title>
+typeOfTrans–transportation
+</title>
+<path fill="none" stroke="black" d="M180.8,-82.66C184.68,-96.45 189.97,-115.25 193.83,-128.95"></path> </g> <!-- crimeType --> <g id="node30" class="node">
+<title>
+crimeType
+</title>
+<ellipse fill="none" stroke="black" cx="651.33" cy="-207.31" rx="52.72" ry="18"></ellipse> <text text-anchor="middle" x="651.33" y="-203.11" font-family="Helvetica,Arial,sans-serif" font-size="14.00">crimeType</text> </g> <!-- safetyRating&#45;&#45;crimeType --> <g id="edge34" class="edge">
+<title>
+safetyRating–crimeType
+</title>
+<path fill="none" stroke="black" d="M619.58,-212.76C619.71,-212.73 619.84,-212.71 619.98,-212.69"></path> </g> <!-- timeOfCrime --> <g id="node29" class="node">
+<title>
+timeOfCrime
+</title>
+<ellipse fill="none" stroke="black" cx="699.12" cy="-142.41" rx="62.56" ry="18"></ellipse> <text text-anchor="middle" x="699.12" y="-138.21" font-family="Helvetica,Arial,sans-serif" font-size="14.00">timeOfCrime</text> </g> <!-- crimeType&#45;&#45;timeOfCrime --> <g id="edge35" class="edge">
+<title>
+crimeType–timeOfCrime
+</title>
+<path fill="none" stroke="black" d="M664.39,-189.57C671.13,-180.42 679.34,-169.28 686.08,-160.12"></path> </g> <!-- numOfCrimes --> <g id="node31" class="node">
+<title>
+numOfCrimes
+</title>
+<ellipse fill="none" stroke="black" cx="725.73" cy="-244.42" rx="66.08" ry="18"></ellipse> <text text-anchor="middle" x="725.73" y="-240.22" font-family="Helvetica,Arial,sans-serif" font-size="14.00">numOfCrimes</text> </g> <!-- crimeType&#45;&#45;numOfCrimes --> <g id="edge36" class="edge">
+<title>
+crimeType–numOfCrimes
+</title>
+<path fill="none" stroke="black" d="M681.17,-222.19C685.37,-224.29 689.71,-226.45 693.94,-228.57"></path> </g> <!-- has&#45;&#45;education --> <g id="edge4" class="edge">
+<title>
+has–education
+</title>
+<path fill="none" stroke="black" d="M335.24,-174.59C338.46,-159.08 343.29,-135.83 346.62,-119.77"></path> <text text-anchor="middle" x="337.43" y="-151.38" font-family="Helvetica,Arial,sans-serif" font-size="14.00">n</text> </g> <!-- to&#45;&#45;transportation --> <g id="edge10" class="edge">
+<title>
+to–transportation
+</title>
+<path fill="none" stroke="black" d="M246.77,-205C237.77,-194.1 224.3,-177.76 213.94,-165.19"></path> <text text-anchor="middle" x="226.85" y="-172.5" font-family="Helvetica,Arial,sans-serif" font-size="14.00">n</text> </g> <!-- with&#45;&#45;crimes --> <g id="edge30" class="edge">
+<title>
+with–crimes
+</title>
+<path fill="none" stroke="black" d="M439.56,-274.98C448.31,-274.58 457.52,-274.15 465.78,-273.77"></path> <text text-anchor="middle" x="449.17" y="-278.58" font-family="Helvetica,Arial,sans-serif" font-size="14.00">n</text> </g> <!-- num&#45;&#45;population --> <g id="edge14" class="edge">
+<title>
+num–population
+</title>
+<path fill="none" stroke="black" d="M186.14,-274.23C179.49,-273.6 172.46,-272.93 165.66,-272.29"></path> <text text-anchor="middle" x="172.4" y="-277.46" font-family="Helvetica,Arial,sans-serif" font-size="14.00">n</text> </g> <!-- priced&#45;&#45;houseMarket --> <g id="edge19" class="edge">
+<title>
+priced–houseMarket
+</title>
+<path fill="none" stroke="black" d="M245.75,-374.14C237.8,-386.88 226.39,-405.18 217.92,-418.75"></path> <text text-anchor="middle" x="228.33" y="-400.65" font-family="Helvetica,Arial,sans-serif" font-size="14.00">n</text> </g> <!-- type&#45;&#45;jobSecurity --> <g id="edge25" class="edge">
+<title>
+type–jobSecurity
+</title>
+<path fill="none" stroke="black" d="M360.28,-375.74C366.73,-389.57 376.3,-410.07 383.16,-424.79"></path> <text text-anchor="middle" x="368.22" y="-404.47" font-family="Helvetica,Arial,sans-serif" font-size="14.00">n</text> </g> </g>
+</svg>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
