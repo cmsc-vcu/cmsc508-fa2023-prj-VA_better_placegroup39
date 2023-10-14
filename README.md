@@ -10,6 +10,42 @@ The Virginia Better Place Database is a comprehensive resource for assessing and
 - [How to Use the Project](#how-to-use-the-project)
 - [Credits](#credits)
 
+## Important Links
+* [Pitch Video](https://drive.google.com/file/d/1Sikim-ladH6ERmn24CFSi-oMzZA6jGdi/view?usp=sharing)
+* [Phase 1](https://google.com)
+* [Github Project](https://github.com/cmsc-vcu/cmsc508-fa2023-prj-VA_better_placegroup39)
+
+
+## Problem domain
+`
+
+`
+## Need Why this Project?
+`
+
+`
+
+## Database Design
+### Entity Relationship Diagram
+# Insert Image
+
+### Relationship Schemas
+ # Insery Magic
+ 
+## Specific queries
+
+## Sample Data
+ * Link
+## Functional Dependencies and Normalization
+`
+
+`
+
+## Draft Project schedule
+GAANT Graph
+
+
+
 
 ## How to Install and Run the Project
 
