@@ -17,13 +17,13 @@ The Virginia Better Place Database is a comprehensive resource for assessing and
 
 
 ## Problem domain
-`
+* There are a lot of factors that come into consideration when moving from one place to another and a new place can be overwhelming when looking at all the data needed to ingest to make a decision where it is for a 3 month move or permanent relocation this application provides important data to help a user rank where the best zipcode is to move. Scouring all the internet for `Crime activity in 23220`, `Houses price in 23220`, `Does 23220 have light rail or bike trails` is a lot of research and important information will get lost in between as there is a lot of processing before saving the important information which is usually in the head(never a good place for all the data just searched)
 
-`
 ## Need Why this Project?
-`
+* A User who wants to get information such as `Crime Activity`, `House Price`, `Is their light rail`, `Open Jobs`, or etc in a specific zip code is a lot of work to do as a single user googling and searching up on each individual site. So this application will have all important data such as Safety rating, Education, Diversity, Police Coverage, Transporation methods, housing market for zip codes in a county and a bigger state
 
-`
+## Context, scope and perspective
+
 
 ## Database Design
 ### Entity Relationship Diagram
