@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Aislin John, Donna Guzman, Dawit Tekeste">
-<meta name="dcterms.date" content="2023-10-14">
+<meta name="dcterms.date" content="2023-10-15">
 
 <title>VA Better Place</title>
 <style>
@@ -3008,7 +3008,6 @@ vertical-align: -.125em;
   <ul class="collapse">
   <li><a href="#entity-relationship-diagram" id="toc-entity-relationship-diagram" class="nav-link" data-scroll-target="#entity-relationship-diagram">Entity Relationship Diagram</a></li>
   <li><a href="#crows-foot-diagram" id="toc-crows-foot-diagram" class="nav-link" data-scroll-target="#crows-foot-diagram">Crow’s Foot Diagram</a></li>
-  <li><a href="#relationship-schemas" id="toc-relationship-schemas" class="nav-link" data-scroll-target="#relationship-schemas">Relationship Schemas</a></li>
   </ul></li>
   <li><a href="#specific-queries" id="toc-specific-queries" class="nav-link" data-scroll-target="#specific-queries">Specific queries</a></li>
   <li><a href="#sample-data" id="toc-sample-data" class="nav-link" data-scroll-target="#sample-data">Sample Data</a></li>
@@ -3039,7 +3038,7 @@ vertical-align: -.125em;
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">October 14, 2023</p>
+      <p class="date">October 15, 2023</p>
     </div>
   </div>
   
@@ -3067,7 +3066,7 @@ vertical-align: -.125em;
 <h2 class="anchored" data-anchor-id="important-links">Important Links</h2>
 <ul>
 <li><a href="https://drive.google.com/file/d/1Sikim-ladH6ERmn24CFSi-oMzZA6jGdi/view?usp=sharing">Pitch Video</a></li>
-<li><a href="https://google.com">Phase 1</a></li>
+<li><a href="https://drive.google.com/file/d/1Igr7PYTEao3p3qTgvx8k_nXHOFsSnmG5/view?usp=sharing">Phase 1</a></li>
 <li><a href="https://github.com/cmsc-vcu/cmsc508-fa2023-prj-VA_better_placegroup39">Github Project</a></li>
 </ul>
 </section>
@@ -3125,9 +3124,6 @@ vertical-align: -.125em;
 </figure>
 </div>
 </section>
-<section id="relationship-schemas" class="level3">
-<h3 class="anchored" data-anchor-id="relationship-schemas">Relationship Schemas</h3>
-</section>
 </section>
 <section id="specific-queries" class="level2">
 <h2 class="anchored" data-anchor-id="specific-queries">Specific queries</h2>
@@ -3156,7 +3152,7 @@ vertical-align: -.125em;
 </section>
 <section id="sample-data" class="level2">
 <h2 class="anchored" data-anchor-id="sample-data">Sample Data</h2>
-<p><a href="reports/SampleDataTable.png">Sample Data Table</a> <br> Click on the link</p>
+<p><a href="SampleDataTable.png">Sample Data Table</a> <br> Click on the link</p>
 </section>
 <section id="functional-dependencies-and-normalization" class="level2">
 <h2 class="anchored" data-anchor-id="functional-dependencies-and-normalization">Functional Dependencies and Normalization</h2>
@@ -3166,9 +3162,9 @@ vertical-align: -.125em;
  ZipCode -&gt; QualityOfSchools&lt;br&gt;
  ZipCode -&gt; Diversity&lt;br&gt;</code></pre></li>
 <li><p>Criminal Activity Table:</p>
-<pre><code> ZipCode -&gt; SafetyRating&lt;br&gt;
- ZipCode -&gt; NumberofCrimes&lt;br&gt;
- ZipCode -&gt; CrimeType&lt;br&gt;</code></pre></li>
+<pre><code> RecordID -&gt; SafetyRating&lt;br&gt;
+ RecordID -&gt; NumberofCrimes&lt;br&gt;
+ RecordID -&gt; CrimeType&lt;br&gt;</code></pre></li>
 <li><p>Population Table:</p>
 <pre><code> ZipCode -&gt; PopulationNumber&lt;br&gt;
  ZipCode -&gt; Diversity&lt;br&gt;</code></pre></li>

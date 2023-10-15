@@ -22,7 +22,7 @@ The Virginia Better Place Database is a comprehensive resource for assessing and
 
 ## Important Links
 * [Pitch Video](https://drive.google.com/file/d/1Sikim-ladH6ERmn24CFSi-oMzZA6jGdi/view?usp=sharing)
-* [Phase 1](https://google.com)
+* [Phase 1](https://drive.google.com/file/d/1Igr7PYTEao3p3qTgvx8k_nXHOFsSnmG5/view?usp=sharing)
 * [Github Project](https://github.com/cmsc-vcu/cmsc508-fa2023-prj-VA_better_placegroup39)
 
 
@@ -40,8 +40,6 @@ The Virginia Better Place Database is a comprehensive resource for assessing and
 ### Scope
 * The scope of the project encompasses the development and maintenance of a comprehensive database aimed at aggregating and presenting data relevant to living conditions across various counties in Virginia. The database will cover a multitude of aspects including education, housing, employment, crime activity, transportation, and population metrics. It's designed to be a one-stop resource for individuals seeking to explore and analyze living conditions in Virginia, whether for short-term or permanent relocation. The scope extends to providing an accessible and user-friendly interface for querying this data, as well as ensuring the data is well-organized, up-to-date, and reliable.
 
-
-
 ### Perspective
 * End User <br>
   The database serves as an invaluable tool for making informed decisions regarding relocation. They can easily compare different zip codes based on their preferences such as rent prices, bike routes, and safety, among other criteria. The project simplifies the research process by aggregating all necessary data into one platform, saving time and ensuring they have all the information needed to make a well-informed decision.
@@ -54,11 +52,6 @@ The Virginia Better Place Database is a comprehensive resource for assessing and
 
 ### Crow's Foot Diagram
 ![Crows Foot Ful Diagram](DiagramsImages/CrowsFootDiagram.png)
-
-### Relationship Schemas
-
-
-
  
 ## Specific queries
 
@@ -84,7 +77,7 @@ The Virginia Better Place Database is a comprehensive resource for assessing and
 20. `SELECT e.ZipCode FROM EducationSystem e JOIN Population p ON e.ZipCode = p.ZipCode WHERE e.Diversity < 40% AND p.Diversity > 60%;`<br>
 
 ## Sample Data
- [Sample Data Table](reports/SampleDataTable.png)
+ [Sample Data Table](SampleDataTable.png)
  <br> Click on the link
 
 ## Functional Dependencies and Normalization
@@ -97,9 +90,9 @@ The Virginia Better Place Database is a comprehensive resource for assessing and
 
 2. Criminal Activity Table:
 
-        ZipCode -> SafetyRating<br>
-        ZipCode -> NumberofCrimes<br>
-        ZipCode -> CrimeType<br>
+        RecordID -> SafetyRating<br>
+        RecordID -> NumberofCrimes<br>
+        RecordID -> CrimeType<br>
 
 3. Population Table:
 
