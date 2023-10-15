@@ -1,6 +1,6 @@
 ---
 title: VA Better Place #1
-author: Aislin John, Donna Guzman, Dawit Tekeste 
+author: Aislin John, Donna Guzman, Dawit Tekeste
 date: last-modified
 format:
     html:
@@ -8,31 +8,36 @@ format:
         embed-resources: true
 ---
 
-# Virginia Better Place
 
-## Project Description
+## Project overview 
+"VA Better Place" focuses on creating a comprehensive database that assesses the quality of living conditions in different ZIP codes within Virginia. This project aims to provide valuable insights into education, employment, housing, crime activity, transportation, and population data, ultimately aiding residents, policymakers, and researchers in making informed decisions to enhance the overall quality of life in the state.
 
-The Virginia Better Place Database is a comprehensive resource for assessing and comparing living conditions across different counties in Virginia. It provides data on various aspects, including education, housing, employment, crime activity, transportation, and population. With this database, you can explore and analyze living conditions to make informed decisions.
 
-## Table of Contents
-
-- [How to Install and Run the Project](#how-to-install-and-run-the-project)
-- [How to Use the Project](#how-to-use-the-project)
-- [Credits](#credits)
-
-## Important Links
+## Key deliverables:**
 * [Pitch Video](https://drive.google.com/file/d/1Sikim-ladH6ERmn24CFSi-oMzZA6jGdi/view?usp=sharing)
-* [Phase 1](https://drive.google.com/file/d/1Igr7PYTEao3p3qTgvx8k_nXHOFsSnmG5/view?usp=sharing)
+* [Design Video](https://drive.google.com/file/d/1Igr7PYTEao3p3qTgvx8k_nXHOFsSnmG5/view?usp=sharing)
 * [Github Project](https://github.com/cmsc-vcu/cmsc508-fa2023-prj-VA_better_placegroup39)
 
 
-## Problem domain
-* There are a lot of factors that come into consideration when moving from one place to another and a new place can be overwhelming when looking at all the data needed to ingest to make a decision where it is for a 3 month move or permanent relocation this application provides important data to help a user rank where the best zip code is to move. Scouring all the internet for `Crime activity in 23220`, `Houses price in 23220`, `Does 23220 have light rail or bike trails` is a lot of research and important information will get lost in between as there is a lot of processing before saving the important information which is usually in the head(never a good place for all the data just searched)
 
-## Need Why this Project?
-* A User who wants to get information such as `Crime Activity`, `House Price`, `Is their light rail`, `Open Jobs`, or etc in a specific zip code is a lot of work to do as a single user googling and searching up on each individual site. So this application will have all important data such as Safety rating, Education, Diversity, Police Coverage, Transportation methods, housing market for zip codes in a county and a bigger state
+## Problem Description
 
-## Context, scope and perspective
+
+**Problem Domain:**
+
+
+The problem domain of Virginia Better Place revolves around improving the living conditions in different zip codes across the state of Virginia. This encompasses a wide range of aspects including education, housing, employment, crime activity, transportation, and population demographics. To understand this domain, one must consider the unique characteristics, challenges, and opportunities present in each zip code. For instance, some zip codes may have thriving job markets but inadequate public transportation, while others may excel in education but struggle with high crime rates.
+
+
+**Need:**
+
+
+The need for the Virginia Better Place database arises from the desire to comprehensively assess living conditions across Virginia. This database aims to provide valuable insights into each zip code, helping policymakers, local governments, researchers, and residents make informed decisions. By centralizing data on education, housing, employment, crime activity, transportation, and population, this database will help identify areas that require improvements, allocate resources more effectively, and create a better quality of life for Virginia residents.
+
+
+**Context, Scope, and Perspective:**
+
+
 ### Context
 * With how the data mentioned above is scattered all over the internet the goal of this project to put everything in one database so that all teh data for a zip code can be accessed with a single api call or can also do specific queries for each entities attributes
 
@@ -46,14 +51,41 @@ The Virginia Better Place Database is a comprehensive resource for assessing and
 * Developer <br>
   From a developer's standpoint, the project requires a robust backend database system to handle a variety of data types and queries efficiently. It also necessitates a front-end interface that is intuitive and user-friendly. There's a continuous need for data updates, monitoring, and possibly expanding the database to encompass more data or cover additional areas over time.
 
-## Database Design
-### Entity Relationship Diagram
+
+**User Roles and Use Cases:**
+
+
+- **Policymakers:** These users may need access to various data points to inform policies related to education, public transportation, or crime reduction.
+- **Researchers:** Researchers might perform data analysis, studying correlations between different living conditions.
+- **Residents:** Residents could use the database to compare zip codes when considering a new home or assessing the safety of a neighborhood.
+- **Community Organizations:** Non-profit organizations could use the data to target their assistance and outreach programs effectively.
+
+
+**Security and Privacy:**
+
+
+Security and privacy are paramount in the Virginia Better Place database. As it contains sensitive data about living conditions, ensuring data security and privacy is crucial. The following measures will be implemented:
+
+
+- User Authentication: Users will require secure authentication to access specific data.
+- Data Encryption: Data transmission and storage will be encrypted to prevent unauthorized access.
+- Access Controls: Different user roles will have specific access rights to ensure that sensitive data is protected.
+
+
+Overall, the Virginia Better Place database will serve as a valuable tool for understanding and improving the living conditions in Virginia, benefiting a wide range of users and helping to address the unique challenges in different zip codes.
+
+
+## Database design
+**Entity-relationship diagram (ERD)**
+
 ![Chen Notation for Virginia Better Place Database](DiagramsImages/ChenDiagram.png)
 
 ### Crow's Foot Diagram
 ![Crows Foot Ful Diagram](DiagramsImages/CrowsFootDiagram.png)
- 
-## Specific queries
+
+
+
+**Specific queries**
 
 1. `SELECT ZipCode, PublicSchoolNumbers FROM EducationSystem WHERE QualityOfSchools IS NOT NULL;`<br>
 2. `SELECT ZipCode, SafetyRating FROM CriminalActivity WHERE PoliceCoverage = 'A';`<br>
@@ -76,7 +108,8 @@ The Virginia Better Place Database is a comprehensive resource for assessing and
 19. `SELECT h.ZipCode FROM HouseMarket h JOIN JobSecurity j ON h.ZipCode = j.ZipCode WHERE j.layoffRate > 10% AND h.AvgRent < 1000;`<br>
 20. `SELECT e.ZipCode FROM EducationSystem e JOIN Population p ON e.ZipCode = p.ZipCode WHERE e.Diversity < 40% AND p.Diversity > 60%;`<br>
 
-## Sample Data
+
+**Sample Data**
  [Sample Data Table](SampleDataTable.png)
  <br> Click on the link
 
@@ -119,8 +152,19 @@ Forth Normal Form (4NF)
 
 * Decompose multi-valued attributes like safety Rating and decomposing the values needed to calculate for the table other than that the other tables are **4NF** form
 
-## Draft Project schedule
+
+
+## Project management
+**Draft Project schedule**
+
 ![GAANT Graph](DiagramsImages/GAANT Graph.png)
+
+
+
+
+
+
+
 
 
 
