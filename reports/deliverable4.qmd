@@ -13,7 +13,7 @@ format:
 "VA Better Place" focuses on creating a comprehensive database that assesses the quality of living conditions in different ZIP codes within Virginia. This project aims to provide valuable insights into education, employment, housing, crime activity, transportation, and population data, ultimately aiding residents, policymakers, and researchers in making informed decisions to enhance the overall quality of life in the state.
 
 
-## Key deliverables:**
+## Key deliverables:
 * [Pitch Video](https://drive.google.com/file/d/1Sikim-ladH6ERmn24CFSi-oMzZA6jGdi/view?usp=sharing)
 * [Design Video](https://drive.google.com/file/d/1Igr7PYTEao3p3qTgvx8k_nXHOFsSnmG5/view?usp=sharing)
 * [Github Project](https://github.com/cmsc-vcu/cmsc508-fa2023-prj-VA_better_placegroup39)
@@ -35,20 +35,22 @@ The problem domain of Virginia Better Place revolves around improving the living
 The need for the Virginia Better Place database arises from the desire to comprehensively assess living conditions across Virginia. This database aims to provide valuable insights into each zip code, helping policymakers, local governments, researchers, and residents make informed decisions. By centralizing data on education, housing, employment, crime activity, transportation, and population, this database will help identify areas that require improvements, allocate resources more effectively, and create a better quality of life for Virginia residents.
 
 
-**Context, Scope, and Perspective:**
+**Context:**
 
-
-### Context
 * With how the data mentioned above is scattered all over the internet the goal of this project to put everything in one database so that all teh data for a zip code can be accessed with a single api call or can also do specific queries for each entities attributes
 
 
-### Scope
+**Scope:**
+
 * The scope of the project encompasses the development and maintenance of a comprehensive database aimed at aggregating and presenting data relevant to living conditions across various counties in Virginia. The database will cover a multitude of aspects including education, housing, employment, crime activity, transportation, and population metrics. It's designed to be a one-stop resource for individuals seeking to explore and analyze living conditions in Virginia, whether for short-term or permanent relocation. The scope extends to providing an accessible and user-friendly interface for querying this data, as well as ensuring the data is well-organized, up-to-date, and reliable.
 
-### Perspective
-* End User <br>
+**Perspective:**
+
+- **End User:**
   The database serves as an invaluable tool for making informed decisions regarding relocation. They can easily compare different zip codes based on their preferences such as rent prices, bike routes, and safety, among other criteria. The project simplifies the research process by aggregating all necessary data into one platform, saving time and ensuring they have all the information needed to make a well-informed decision.
-* Developer <br>
+
+
+- **Developer:**
   From a developer's standpoint, the project requires a robust backend database system to handle a variety of data types and queries efficiently. It also necessitates a front-end interface that is intuitive and user-friendly. There's a continuous need for data updates, monitoring, and possibly expanding the database to encompass more data or cover additional areas over time.
 
 
@@ -60,16 +62,6 @@ The need for the Virginia Better Place database arises from the desire to compre
 - **Residents:** Residents could use the database to compare zip codes when considering a new home or assessing the safety of a neighborhood.
 - **Community Organizations:** Non-profit organizations could use the data to target their assistance and outreach programs effectively.
 
-
-**Security and Privacy:**
-
-
-Security and privacy are paramount in the Virginia Better Place database. As it contains sensitive data about living conditions, ensuring data security and privacy is crucial. The following measures will be implemented:
-
-
-- User Authentication: Users will require secure authentication to access specific data.
-- Data Encryption: Data transmission and storage will be encrypted to prevent unauthorized access.
-- Access Controls: Different user roles will have specific access rights to ensure that sensitive data is protected.
 
 
 Overall, the Virginia Better Place database will serve as a valuable tool for understanding and improving the living conditions in Virginia, benefiting a wide range of users and helping to address the unique challenges in different zip codes.
