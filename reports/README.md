@@ -30,8 +30,8 @@ To access a specific report, simply navigate to the appropriate file within this
 
 ## Examples
 
-- [**Deliverable 4 Report**](deliver4.qmd)
-- [**Deliverable 5 Report**](deliver5.qmd)
+- [**Deliverable 4 Report**](deliverable4.qmd)
+- [**Deliverable 5 Report**](deliverable5.qmd)
 
 ## Additional Information
 
