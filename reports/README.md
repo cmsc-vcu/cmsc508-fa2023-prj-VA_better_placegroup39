@@ -1,6 +1,6 @@
 # Reports Folder
 
-The "Reports" folder in this project serves as a repository for deliverable reports associated with various project milestones. To maintain organization and clarity, a consistent naming convention for these report files, such as "deliverX.qmd," where "X" represents the corresponding milestone number is used.
+The "Reports" folder in this project serves as a repository for deliverable reports associated with various project milestones. To maintain organization and clarity, a consistent naming convention for these report files, such as "deliverableX.qmd," where "X" represents the corresponding milestone number is used.
 
 ## Naming Convention
 
