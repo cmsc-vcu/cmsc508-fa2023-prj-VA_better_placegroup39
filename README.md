@@ -17,7 +17,7 @@ The Virginia Better Place Database is a comprehensive resource for assessing and
 
 
 ## Problem domain
-* There are a lot of factors that come into consideration when moving from one place to another and a new place can be overwhelming when looking at all the data needed to ingest to make a decision where it is for a 3 month move or permanent relocation this application provides important data to help a user rank where the best zipcode is to move. Scouring all the internet for `Crime activity in 23220`, `Houses price in 23220`, `Does 23220 have light rail or bike trails` is a lot of research and important information will get lost in between as there is a lot of processing before saving the important information which is usually in the head(never a good place for all the data just searched)
+* There are a lot of factors that come into consideration when moving from one place to another and a new place can be overwhelming when looking at all the data needed to make a decision whether it is for a 3 month move or permanent relocation. This application provides important data to help a user rank where the best zipcode is to move. Scouring all the internet for `Crime activity in 23220`, `Houses price in 23220`, `Does 23220 have light rail or bike trails` is a lot of research and important information will get lost in between as there is a lot of processing before saving the important information which is usually in the head(never a good place for all the data just searched)
 
 
 ## How to Install and Run the Project
