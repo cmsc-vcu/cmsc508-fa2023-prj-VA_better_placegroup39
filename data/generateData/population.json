@@ -1,0 +1,7002 @@
+{
+      "0": [
+            "Victoria Smith",
+            41406,
+            38,
+            "Afican-American",
+            24164
+      ],
+      "1": [
+            "Betty Humphrey",
+            0,
+            16,
+            "Asian",
+            24519
+      ],
+      "2": [
+            "Harold Weber",
+            218716,
+            76,
+            "Asian",
+            22493
+      ],
+      "3": [
+            "Elizabeth Oliphant",
+            0,
+            13,
+            "Afican-American",
+            23647
+      ],
+      "4": [
+            "Harry Thomas",
+            261454,
+            69,
+            "Caucasian",
+            22521
+      ],
+      "5": [
+            "Ida Leary",
+            0,
+            6,
+            "Afican-American",
+            24153
+      ],
+      "6": [
+            "Thomas Guice",
+            0,
+            1,
+            "Asian",
+            21106
+      ],
+      "7": [
+            "Charlene Fields",
+            0,
+            17,
+            "Caucasian",
+            20569
+      ],
+      "8": [
+            "Daniel Reckart",
+            236321,
+            36,
+            "Latino",
+            21945
+      ],
+      "9": [
+            "George Fuller",
+            382443,
+            75,
+            "Asian",
+            23992
+      ],
+      "10": [
+            "Teresa Hudson",
+            107797,
+            66,
+            "Latino",
+            22941
+      ],
+      "11": [
+            "Christopher Hernandez",
+            500853,
+            79,
+            "Caucasian",
+            20355
+      ],
+      "12": [
+            "Jose Pettis",
+            3755,
+            35,
+            "Asian",
+            23290
+      ],
+      "13": [
+            "Mark Stauffer",
+            53469,
+            29,
+            "Latino",
+            20479
+      ],
+      "14": [
+            "Mark Light",
+            328195,
+            74,
+            "Afican-American",
+            21323
+      ],
+      "15": [
+            "Stephanie Anthony",
+            573065,
+            46,
+            "Latino",
+            21023
+      ],
+      "16": [
+            "James Clendenen",
+            368848,
+            80,
+            "Afican-American",
+            20743
+      ],
+      "17": [
+            "Stacie Long",
+            0,
+            3,
+            "Afican-American",
+            24341
+      ],
+      "18": [
+            "Laura Reeves",
+            634837,
+            45,
+            "Caucasian",
+            23767
+      ],
+      "19": [
+            "Fredrick Payne",
+            0,
+            12,
+            "Caucasian",
+            23568
+      ],
+      "20": [
+            "Diana Hoover",
+            0,
+            13,
+            "Afican-American",
+            23717
+      ],
+      "21": [
+            "Katherine Lafountain",
+            242638,
+            45,
+            "Afican-American",
+            22637
+      ],
+      "22": [
+            "Clinton Larson",
+            348418,
+            55,
+            "Asian",
+            21120
+      ],
+      "23": [
+            "James Greene",
+            234491,
+            65,
+            "Caucasian",
+            20271
+      ],
+      "24": [
+            "Samuel Grace",
+            188830,
+            18,
+            "Caucasian",
+            23888
+      ],
+      "25": [
+            "Debra Grey",
+            489685,
+            43,
+            "Latino",
+            24448
+      ],
+      "26": [
+            "Scott Davis",
+            71018,
+            65,
+            "Latino",
+            20108
+      ],
+      "27": [
+            "Rick Coleman",
+            0,
+            1,
+            "Latino",
+            21630
+      ],
+      "28": [
+            "David Bahena",
+            667448,
+            37,
+            "Caucasian",
+            24137
+      ],
+      "29": [
+            "Travis Roland",
+            363412,
+            47,
+            "Asian",
+            23879
+      ],
+      "30": [
+            "Shawn Mattison",
+            423015,
+            55,
+            "Afican-American",
+            24583
+      ],
+      "31": [
+            "Israel Auclair",
+            163525,
+            42,
+            "Caucasian",
+            21583
+      ],
+      "32": [
+            "Ralph Taylor",
+            162091,
+            50,
+            "Asian",
+            22163
+      ],
+      "33": [
+            "Maggie Hurtado",
+            365363,
+            33,
+            "Latino",
+            20191
+      ],
+      "34": [
+            "Andrea Perdue",
+            109235,
+            74,
+            "Afican-American",
+            22713
+      ],
+      "35": [
+            "Juan Pettrey",
+            0,
+            6,
+            "Afican-American",
+            23600
+      ],
+      "36": [
+            "Kirk Ivie",
+            0,
+            12,
+            "Asian",
+            23204
+      ],
+      "37": [
+            "Mark Lira",
+            319881,
+            46,
+            "Asian",
+            21993
+      ],
+      "38": [
+            "Marjorie Vargo",
+            0,
+            7,
+            "Afican-American",
+            23688
+      ],
+      "39": [
+            "Joseph Tyler",
+            102557,
+            58,
+            "Caucasian",
+            23018
+      ],
+      "40": [
+            "Miranda Mccallum",
+            652238,
+            44,
+            "Afican-American",
+            20595
+      ],
+      "41": [
+            "Frieda Andres",
+            266447,
+            29,
+            "Caucasian",
+            24470
+      ],
+      "42": [
+            "Penny Campion",
+            277926,
+            46,
+            "Caucasian",
+            21754
+      ],
+      "43": [
+            "Sheila Reeks",
+            25793,
+            47,
+            "Latino",
+            20938
+      ],
+      "44": [
+            "Jonathan Ramirez",
+            235298,
+            20,
+            "Afican-American",
+            22010
+      ],
+      "45": [
+            "Caroline Brown",
+            699676,
+            61,
+            "Caucasian",
+            20226
+      ],
+      "46": [
+            "Ralph Midgette",
+            658905,
+            84,
+            "Caucasian",
+            23520
+      ],
+      "47": [
+            "Charlie Applewhite",
+            577415,
+            44,
+            "Caucasian",
+            20180
+      ],
+      "48": [
+            "Charles Borovec",
+            203226,
+            66,
+            "Afican-American",
+            21032
+      ],
+      "49": [
+            "Herminia Davis",
+            136162,
+            78,
+            "Afican-American",
+            20193
+      ],
+      "50": [
+            "James Hartrick",
+            283880,
+            34,
+            "Caucasian",
+            21348
+      ],
+      "51": [
+            "Marnie Mccaslin",
+            512064,
+            84,
+            "Caucasian",
+            22558
+      ],
+      "52": [
+            "Deborah Bates",
+            0,
+            3,
+            "Caucasian",
+            24404
+      ],
+      "53": [
+            "Kimberly Martin",
+            0,
+            12,
+            "Caucasian",
+            20671
+      ],
+      "54": [
+            "Joanna Lloyd",
+            469897,
+            59,
+            "Asian",
+            23587
+      ],
+      "55": [
+            "Julia Olson",
+            521295,
+            35,
+            "Asian",
+            21749
+      ],
+      "56": [
+            "Michael Lee",
+            688627,
+            44,
+            "Afican-American",
+            24135
+      ],
+      "57": [
+            "James Reed",
+            0,
+            8,
+            "Asian",
+            22355
+      ],
+      "58": [
+            "Harold Allamong",
+            548241,
+            70,
+            "Latino",
+            23780
+      ],
+      "59": [
+            "Jeanette Bernard",
+            690104,
+            74,
+            "Caucasian",
+            20258
+      ],
+      "60": [
+            "Jennifer Watkins",
+            58091,
+            56,
+            "Afican-American",
+            20264
+      ],
+      "61": [
+            "Misha Burkholder",
+            309412,
+            75,
+            "Latino",
+            20181
+      ],
+      "62": [
+            "George Turner",
+            387423,
+            19,
+            "Asian",
+            21205
+      ],
+      "63": [
+            "Pearl Jahns",
+            555532,
+            51,
+            "Caucasian",
+            23996
+      ],
+      "64": [
+            "Heidi Gay",
+            409285,
+            74,
+            "Latino",
+            23995
+      ],
+      "65": [
+            "Laverne Lettinga",
+            22729,
+            81,
+            "Latino",
+            23690
+      ],
+      "66": [
+            "Anthony Johnson",
+            0,
+            16,
+            "Asian",
+            24380
+      ],
+      "67": [
+            "Gilbert Gonzalez",
+            0,
+            17,
+            "Latino",
+            24495
+      ],
+      "68": [
+            "Lacy Lindgren",
+            295703,
+            68,
+            "Latino",
+            23235
+      ],
+      "69": [
+            "Jody Trujillo",
+            644276,
+            19,
+            "Caucasian",
+            21942
+      ],
+      "70": [
+            "Joyce Hampton",
+            0,
+            4,
+            "Latino",
+            22647
+      ],
+      "71": [
+            "Helen Wright",
+            464583,
+            27,
+            "Asian",
+            20449
+      ],
+      "72": [
+            "Joseph King",
+            644626,
+            24,
+            "Latino",
+            22282
+      ],
+      "73": [
+            "Dorothy Bryant",
+            0,
+            11,
+            "Afican-American",
+            21988
+      ],
+      "74": [
+            "Susan Petitt",
+            257116,
+            33,
+            "Caucasian",
+            22763
+      ],
+      "75": [
+            "Dawn Harger",
+            66492,
+            38,
+            "Latino",
+            21762
+      ],
+      "76": [
+            "Carolyn Scott",
+            182614,
+            26,
+            "Asian",
+            21568
+      ],
+      "77": [
+            "Joshua Downard",
+            77897,
+            78,
+            "Asian",
+            21463
+      ],
+      "78": [
+            "Janelle Abraham",
+            0,
+            12,
+            "Afican-American",
+            24150
+      ],
+      "79": [
+            "Susan Sheppard",
+            30086,
+            54,
+            "Caucasian",
+            24103
+      ],
+      "80": [
+            "Benedict Abrams",
+            565361,
+            57,
+            "Afican-American",
+            22268
+      ],
+      "81": [
+            "May Miller",
+            154068,
+            53,
+            "Asian",
+            23272
+      ],
+      "82": [
+            "Donald Rodriquez",
+            442832,
+            77,
+            "Caucasian",
+            23017
+      ],
+      "83": [
+            "Martha Trujillo",
+            601793,
+            57,
+            "Caucasian",
+            23645
+      ],
+      "84": [
+            "Cyndy Strauser",
+            56154,
+            49,
+            "Afican-American",
+            22741
+      ],
+      "85": [
+            "Mary Waldron",
+            0,
+            1,
+            "Afican-American",
+            22800
+      ],
+      "86": [
+            "Edgar Wade",
+            152464,
+            80,
+            "Caucasian",
+            23662
+      ],
+      "87": [
+            "Arthur Wald",
+            522909,
+            18,
+            "Afican-American",
+            22817
+      ],
+      "88": [
+            "Clifford Bermeo",
+            271833,
+            42,
+            "Latino",
+            22813
+      ],
+      "89": [
+            "Eleanor Garcia",
+            42451,
+            28,
+            "Afican-American",
+            23408
+      ],
+      "90": [
+            "Jeanne Vanderloo",
+            689424,
+            73,
+            "Caucasian",
+            23951
+      ],
+      "91": [
+            "Lamont Rubins",
+            528917,
+            31,
+            "Afican-American",
+            24383
+      ],
+      "92": [
+            "Florentino Willmon",
+            612423,
+            52,
+            "Latino",
+            24157
+      ],
+      "93": [
+            "Patty Anderson",
+            681692,
+            39,
+            "Asian",
+            21125
+      ],
+      "94": [
+            "Mark Hart",
+            0,
+            2,
+            "Latino",
+            23288
+      ],
+      "95": [
+            "Deanna Zepeda",
+            479863,
+            55,
+            "Latino",
+            23031
+      ],
+      "96": [
+            "Charles Evenson",
+            198371,
+            22,
+            "Asian",
+            20207
+      ],
+      "97": [
+            "Lawrence Bounds",
+            301213,
+            20,
+            "Afican-American",
+            22040
+      ],
+      "98": [
+            "Terrence Battle",
+            0,
+            9,
+            "Afican-American",
+            20557
+      ],
+      "99": [
+            "Christina Adam",
+            71024,
+            31,
+            "Asian",
+            20396
+      ],
+      "100": [
+            "Jerry Watson",
+            216498,
+            33,
+            "Asian",
+            22268
+      ],
+      "101": [
+            "William Davidson",
+            360144,
+            51,
+            "Asian",
+            23119
+      ],
+      "102": [
+            "Donald Beasley",
+            0,
+            4,
+            "Asian",
+            23768
+      ],
+      "103": [
+            "Angel Barnett",
+            437132,
+            38,
+            "Asian",
+            24071
+      ],
+      "104": [
+            "Margaret Bender",
+            0,
+            15,
+            "Caucasian",
+            21096
+      ],
+      "105": [
+            "Ginger Miller",
+            677228,
+            62,
+            "Asian",
+            21824
+      ],
+      "106": [
+            "John Davis",
+            0,
+            10,
+            "Afican-American",
+            21394
+      ],
+      "107": [
+            "Walter Curry",
+            683590,
+            65,
+            "Asian",
+            22751
+      ],
+      "108": [
+            "Monica Sant",
+            120005,
+            70,
+            "Asian",
+            23516
+      ],
+      "109": [
+            "Olympia Garcia",
+            435176,
+            27,
+            "Asian",
+            22739
+      ],
+      "110": [
+            "Barbara Kurkowski",
+            0,
+            7,
+            "Caucasian",
+            20523
+      ],
+      "111": [
+            "Samuel Pendleton",
+            540126,
+            19,
+            "Caucasian",
+            21160
+      ],
+      "112": [
+            "John Wilson",
+            0,
+            14,
+            "Latino",
+            20371
+      ],
+      "113": [
+            "Lesley Triffo",
+            0,
+            17,
+            "Afican-American",
+            23300
+      ],
+      "114": [
+            "Brenda Wernimont",
+            427200,
+            46,
+            "Caucasian",
+            24301
+      ],
+      "115": [
+            "Carol Olivas",
+            51467,
+            23,
+            "Afican-American",
+            23443
+      ],
+      "116": [
+            "Ronald Martin",
+            0,
+            3,
+            "Asian",
+            21956
+      ],
+      "117": [
+            "Edward Tennant",
+            0,
+            1,
+            "Asian",
+            20124
+      ],
+      "118": [
+            "Stephen Spence",
+            384468,
+            67,
+            "Caucasian",
+            20158
+      ],
+      "119": [
+            "Nicholas Bright",
+            607633,
+            78,
+            "Caucasian",
+            22358
+      ],
+      "120": [
+            "Cynthia Musso",
+            0,
+            4,
+            "Latino",
+            21433
+      ],
+      "121": [
+            "Michael Feasel",
+            70619,
+            25,
+            "Caucasian",
+            22589
+      ],
+      "122": [
+            "David Romero",
+            466368,
+            70,
+            "Latino",
+            23247
+      ],
+      "123": [
+            "Joseph Pitpitan",
+            174991,
+            53,
+            "Caucasian",
+            24427
+      ],
+      "124": [
+            "Barbara Fujimoto",
+            574571,
+            25,
+            "Asian",
+            21390
+      ],
+      "125": [
+            "Alice Metcalfe",
+            58923,
+            19,
+            "Latino",
+            21788
+      ],
+      "126": [
+            "Joseph Smith",
+            457145,
+            75,
+            "Afican-American",
+            21801
+      ],
+      "127": [
+            "Frank Brown",
+            474519,
+            68,
+            "Latino",
+            20302
+      ],
+      "128": [
+            "Russell Wood",
+            589812,
+            40,
+            "Afican-American",
+            20154
+      ],
+      "129": [
+            "Julie Hurley",
+            0,
+            4,
+            "Caucasian",
+            21517
+      ],
+      "130": [
+            "Nolan Smathers",
+            0,
+            9,
+            "Asian",
+            24429
+      ],
+      "131": [
+            "Susan Murphree",
+            541050,
+            24,
+            "Caucasian",
+            21242
+      ],
+      "132": [
+            "Katherine Brooks",
+            457477,
+            73,
+            "Latino",
+            21509
+      ],
+      "133": [
+            "Yong Pratt",
+            657739,
+            72,
+            "Latino",
+            20303
+      ],
+      "134": [
+            "Jerry Smith",
+            508852,
+            53,
+            "Asian",
+            23399
+      ],
+      "135": [
+            "Emily Butler",
+            477061,
+            61,
+            "Latino",
+            23667
+      ],
+      "136": [
+            "Herbert Clark",
+            0,
+            4,
+            "Afican-American",
+            23700
+      ],
+      "137": [
+            "Daniel Williams",
+            158300,
+            51,
+            "Caucasian",
+            22505
+      ],
+      "138": [
+            "Robert Birnbaum",
+            494992,
+            53,
+            "Asian",
+            21724
+      ],
+      "139": [
+            "Madaline Manley",
+            0,
+            13,
+            "Caucasian",
+            22648
+      ],
+      "140": [
+            "Keith Sanderson",
+            141335,
+            35,
+            "Asian",
+            22425
+      ],
+      "141": [
+            "Pauline Gately",
+            300142,
+            33,
+            "Asian",
+            24448
+      ],
+      "142": [
+            "Deborah Anthony",
+            177318,
+            36,
+            "Afican-American",
+            20593
+      ],
+      "143": [
+            "Todd Smith",
+            475633,
+            19,
+            "Latino",
+            20843
+      ],
+      "144": [
+            "Matthew Nestle",
+            567330,
+            60,
+            "Afican-American",
+            23587
+      ],
+      "145": [
+            "Peggy Young",
+            135889,
+            20,
+            "Latino",
+            22861
+      ],
+      "146": [
+            "Madeleine Foley",
+            366376,
+            31,
+            "Asian",
+            22097
+      ],
+      "147": [
+            "Nancy Noggler",
+            655794,
+            49,
+            "Caucasian",
+            20623
+      ],
+      "148": [
+            "Lori Ellis",
+            118091,
+            26,
+            "Latino",
+            22301
+      ],
+      "149": [
+            "Jessie Koch",
+            424319,
+            20,
+            "Afican-American",
+            22486
+      ],
+      "150": [
+            "Lawrence Carl",
+            159836,
+            58,
+            "Latino",
+            21909
+      ],
+      "151": [
+            "Claire Patel",
+            0,
+            15,
+            "Caucasian",
+            22658
+      ],
+      "152": [
+            "Kary Chan",
+            404655,
+            59,
+            "Caucasian",
+            22208
+      ],
+      "153": [
+            "Sally Wood",
+            107468,
+            60,
+            "Latino",
+            23315
+      ],
+      "154": [
+            "Alice Whitaker",
+            389502,
+            52,
+            "Latino",
+            24366
+      ],
+      "155": [
+            "Robert Hunt",
+            649659,
+            77,
+            "Asian",
+            23933
+      ],
+      "156": [
+            "Ruth Williams",
+            0,
+            13,
+            "Asian",
+            20811
+      ],
+      "157": [
+            "Michale Morris",
+            542062,
+            63,
+            "Caucasian",
+            21888
+      ],
+      "158": [
+            "Michael Morton",
+            160772,
+            78,
+            "Latino",
+            22441
+      ],
+      "159": [
+            "Ivory Baney",
+            561924,
+            26,
+            "Asian",
+            22541
+      ],
+      "160": [
+            "Dorothy Patterson",
+            0,
+            15,
+            "Asian",
+            21499
+      ],
+      "161": [
+            "Judith Ack",
+            83194,
+            78,
+            "Latino",
+            20200
+      ],
+      "162": [
+            "Victoria Escalera",
+            110176,
+            73,
+            "Latino",
+            24292
+      ],
+      "163": [
+            "Amy Kremer",
+            99212,
+            83,
+            "Afican-American",
+            24658
+      ],
+      "164": [
+            "Gregory Cole",
+            0,
+            6,
+            "Latino",
+            21095
+      ],
+      "165": [
+            "John Cocke",
+            116514,
+            37,
+            "Caucasian",
+            23879
+      ],
+      "166": [
+            "Paul Montgomery",
+            532306,
+            25,
+            "Caucasian",
+            23162
+      ],
+      "167": [
+            "Pauline Cuzco",
+            234358,
+            39,
+            "Latino",
+            24288
+      ],
+      "168": [
+            "Harold Simmons",
+            64504,
+            57,
+            "Afican-American",
+            23079
+      ],
+      "169": [
+            "Alma Lavigne",
+            0,
+            1,
+            "Asian",
+            21239
+      ],
+      "170": [
+            "Peter Merten",
+            416165,
+            22,
+            "Afican-American",
+            24575
+      ],
+      "171": [
+            "Vito Thomas",
+            336287,
+            37,
+            "Latino",
+            23058
+      ],
+      "172": [
+            "Ronald Ayers",
+            40920,
+            32,
+            "Latino",
+            24375
+      ],
+      "173": [
+            "Hiroko Burtner",
+            86226,
+            20,
+            "Caucasian",
+            21510
+      ],
+      "174": [
+            "Robert Ayala",
+            489519,
+            56,
+            "Afican-American",
+            20723
+      ],
+      "175": [
+            "Gayle Sullins",
+            117752,
+            59,
+            "Latino",
+            21677
+      ],
+      "176": [
+            "Scott Garcia",
+            53299,
+            71,
+            "Caucasian",
+            23826
+      ],
+      "177": [
+            "Mary Dyson",
+            0,
+            3,
+            "Afican-American",
+            21279
+      ],
+      "178": [
+            "William Winn",
+            46777,
+            21,
+            "Latino",
+            21079
+      ],
+      "179": [
+            "Marguerite Lee",
+            253960,
+            73,
+            "Afican-American",
+            22024
+      ],
+      "180": [
+            "Scott Smith",
+            251499,
+            76,
+            "Afican-American",
+            22572
+      ],
+      "181": [
+            "Kenneth Massey",
+            424032,
+            67,
+            "Latino",
+            21437
+      ],
+      "182": [
+            "Jeanine Cox",
+            328628,
+            48,
+            "Latino",
+            22424
+      ],
+      "183": [
+            "Nancy Young",
+            202748,
+            62,
+            "Afican-American",
+            21841
+      ],
+      "184": [
+            "Billy Richardson",
+            233298,
+            57,
+            "Latino",
+            21636
+      ],
+      "185": [
+            "Amelia Tapia",
+            491960,
+            31,
+            "Asian",
+            20292
+      ],
+      "186": [
+            "Vanessa Johnson",
+            207575,
+            73,
+            "Caucasian",
+            23179
+      ],
+      "187": [
+            "Kay Crawford",
+            83065,
+            66,
+            "Latino",
+            21470
+      ],
+      "188": [
+            "Paul Higginbotham",
+            212941,
+            67,
+            "Afican-American",
+            20757
+      ],
+      "189": [
+            "Stella Brownlee",
+            695064,
+            74,
+            "Afican-American",
+            20967
+      ],
+      "190": [
+            "William Santana",
+            658311,
+            64,
+            "Afican-American",
+            21196
+      ],
+      "191": [
+            "Jordan Dawkins",
+            664008,
+            25,
+            "Caucasian",
+            21343
+      ],
+      "192": [
+            "Edith Chico",
+            289527,
+            48,
+            "Afican-American",
+            20942
+      ],
+      "193": [
+            "Betty Wright",
+            667285,
+            83,
+            "Asian",
+            22799
+      ],
+      "194": [
+            "Barbara Reihl",
+            441750,
+            80,
+            "Afican-American",
+            22131
+      ],
+      "195": [
+            "Jennie Zamora",
+            0,
+            11,
+            "Afican-American",
+            20851
+      ],
+      "196": [
+            "Beth Quinonez",
+            0,
+            4,
+            "Caucasian",
+            23380
+      ],
+      "197": [
+            "Christina Patterson",
+            0,
+            5,
+            "Asian",
+            22758
+      ],
+      "198": [
+            "Jacqueline Lumpkins",
+            384871,
+            49,
+            "Asian",
+            23251
+      ],
+      "199": [
+            "Jay Edwards",
+            618092,
+            46,
+            "Afican-American",
+            20707
+      ],
+      "200": [
+            "Esperanza Stocks",
+            353811,
+            59,
+            "Caucasian",
+            24344
+      ],
+      "201": [
+            "David Buchanan",
+            269518,
+            77,
+            "Caucasian",
+            20170
+      ],
+      "202": [
+            "Kelly Wright",
+            160611,
+            61,
+            "Afican-American",
+            20565
+      ],
+      "203": [
+            "Jerry Maes",
+            0,
+            4,
+            "Afican-American",
+            20988
+      ],
+      "204": [
+            "Ruth Setters",
+            109060,
+            21,
+            "Latino",
+            24622
+      ],
+      "205": [
+            "Tiffany Zediker",
+            0,
+            13,
+            "Asian",
+            21794
+      ],
+      "206": [
+            "Lori Oliver",
+            0,
+            12,
+            "Asian",
+            20117
+      ],
+      "207": [
+            "Sonja Burns",
+            394677,
+            53,
+            "Asian",
+            20372
+      ],
+      "208": [
+            "Donald Klein",
+            653452,
+            37,
+            "Afican-American",
+            24243
+      ],
+      "209": [
+            "Ryan Reynolds",
+            653303,
+            28,
+            "Caucasian",
+            22600
+      ],
+      "210": [
+            "Irene Ogren",
+            297086,
+            43,
+            "Asian",
+            20856
+      ],
+      "211": [
+            "Anthony Mcgehee",
+            27194,
+            76,
+            "Caucasian",
+            24559
+      ],
+      "212": [
+            "Daniel Sheridan",
+            579126,
+            27,
+            "Caucasian",
+            23118
+      ],
+      "213": [
+            "Winona Driskell",
+            0,
+            12,
+            "Asian",
+            20556
+      ],
+      "214": [
+            "Rick Nguyen",
+            0,
+            9,
+            "Latino",
+            24074
+      ],
+      "215": [
+            "Nora Harris",
+            208856,
+            32,
+            "Asian",
+            23140
+      ],
+      "216": [
+            "John Peele",
+            557553,
+            53,
+            "Afican-American",
+            24628
+      ],
+      "217": [
+            "Adam Wrenn",
+            0,
+            6,
+            "Caucasian",
+            22839
+      ],
+      "218": [
+            "Bonnie Berry",
+            557659,
+            67,
+            "Latino",
+            22659
+      ],
+      "219": [
+            "Sibyl Keating",
+            21551,
+            67,
+            "Asian",
+            20812
+      ],
+      "220": [
+            "Robert Rine",
+            271607,
+            41,
+            "Asian",
+            20376
+      ],
+      "221": [
+            "Samuel Mead",
+            114344,
+            79,
+            "Asian",
+            20486
+      ],
+      "222": [
+            "Cole Oquendo",
+            581773,
+            32,
+            "Caucasian",
+            20246
+      ],
+      "223": [
+            "Rebecca Stanesic",
+            328473,
+            66,
+            "Asian",
+            22055
+      ],
+      "224": [
+            "Carl Armstrong",
+            533497,
+            79,
+            "Afican-American",
+            24304
+      ],
+      "225": [
+            "Nancy Hawkins",
+            242601,
+            59,
+            "Asian",
+            20799
+      ],
+      "226": [
+            "Benjamin Beaudette",
+            339045,
+            68,
+            "Latino",
+            21440
+      ],
+      "227": [
+            "Richard Villanueva",
+            462337,
+            30,
+            "Latino",
+            20132
+      ],
+      "228": [
+            "Michael Jones",
+            38635,
+            63,
+            "Caucasian",
+            22471
+      ],
+      "229": [
+            "Roy Miller",
+            0,
+            8,
+            "Latino",
+            23069
+      ],
+      "230": [
+            "Pauline Burnett",
+            0,
+            13,
+            "Afican-American",
+            21184
+      ],
+      "231": [
+            "Yolanda Ayala",
+            633175,
+            57,
+            "Latino",
+            22308
+      ],
+      "232": [
+            "Nelson Gonzales",
+            683108,
+            36,
+            "Caucasian",
+            24378
+      ],
+      "233": [
+            "Era Fehr",
+            203464,
+            37,
+            "Caucasian",
+            23223
+      ],
+      "234": [
+            "Erin Burton",
+            268631,
+            63,
+            "Afican-American",
+            20662
+      ],
+      "235": [
+            "Karen Dancy",
+            0,
+            16,
+            "Asian",
+            20384
+      ],
+      "236": [
+            "William Nielsen",
+            346777,
+            61,
+            "Latino",
+            21725
+      ],
+      "237": [
+            "Jacqueline Smoot",
+            503274,
+            29,
+            "Asian",
+            24157
+      ],
+      "238": [
+            "Helen Rich",
+            266336,
+            85,
+            "Asian",
+            21250
+      ],
+      "239": [
+            "Jonathan Gardner",
+            330233,
+            33,
+            "Afican-American",
+            24629
+      ],
+      "240": [
+            "Marcelina Mcelrath",
+            0,
+            5,
+            "Caucasian",
+            21479
+      ],
+      "241": [
+            "Jeffrey Ponce",
+            0,
+            13,
+            "Caucasian",
+            21382
+      ],
+      "242": [
+            "Mildred Dickerson",
+            392261,
+            20,
+            "Asian",
+            20163
+      ],
+      "243": [
+            "Don Southern",
+            441691,
+            79,
+            "Asian",
+            22918
+      ],
+      "244": [
+            "Rebecca Sheppard",
+            134996,
+            58,
+            "Latino",
+            24230
+      ],
+      "245": [
+            "Kimberly Astin",
+            223445,
+            29,
+            "Caucasian",
+            21093
+      ],
+      "246": [
+            "Margaret Anderson",
+            228129,
+            70,
+            "Afican-American",
+            23258
+      ],
+      "247": [
+            "Elizabeth Beers",
+            600750,
+            64,
+            "Caucasian",
+            21241
+      ],
+      "248": [
+            "Margaret Anderson",
+            330174,
+            64,
+            "Latino",
+            23124
+      ],
+      "249": [
+            "Thomas Sears",
+            272421,
+            54,
+            "Asian",
+            21289
+      ],
+      "250": [
+            "Marcella Reason",
+            184526,
+            75,
+            "Asian",
+            24107
+      ],
+      "251": [
+            "Daniel Funchess",
+            0,
+            4,
+            "Caucasian",
+            23712
+      ],
+      "252": [
+            "Robert Hawkins",
+            7701,
+            67,
+            "Afican-American",
+            23815
+      ],
+      "253": [
+            "Jeremy Stefani",
+            333268,
+            34,
+            "Caucasian",
+            24216
+      ],
+      "254": [
+            "William Huffman",
+            696790,
+            42,
+            "Afican-American",
+            22003
+      ],
+      "255": [
+            "Marilyn Fuller",
+            0,
+            5,
+            "Afican-American",
+            21462
+      ],
+      "256": [
+            "Lena Parker",
+            494255,
+            44,
+            "Afican-American",
+            23400
+      ],
+      "257": [
+            "Michael George",
+            594807,
+            55,
+            "Caucasian",
+            20604
+      ],
+      "258": [
+            "Robert Fecteau",
+            565749,
+            82,
+            "Asian",
+            22966
+      ],
+      "259": [
+            "George Martin",
+            99367,
+            68,
+            "Caucasian",
+            21814
+      ],
+      "260": [
+            "Alicia Clark",
+            486342,
+            67,
+            "Asian",
+            22596
+      ],
+      "261": [
+            "Arthur Scott",
+            0,
+            7,
+            "Caucasian",
+            24188
+      ],
+      "262": [
+            "Yong Gallagher",
+            462496,
+            64,
+            "Afican-American",
+            24336
+      ],
+      "263": [
+            "John Murphy",
+            262437,
+            70,
+            "Afican-American",
+            21114
+      ],
+      "264": [
+            "Raymond Rivera",
+            226799,
+            57,
+            "Caucasian",
+            22391
+      ],
+      "265": [
+            "Kevin King",
+            471815,
+            43,
+            "Afican-American",
+            24194
+      ],
+      "266": [
+            "Barbara Green",
+            477219,
+            54,
+            "Latino",
+            21338
+      ],
+      "267": [
+            "Gladys White",
+            0,
+            13,
+            "Caucasian",
+            23188
+      ],
+      "268": [
+            "Helen Larock",
+            654823,
+            47,
+            "Afican-American",
+            20467
+      ],
+      "269": [
+            "Serena Hawks",
+            696248,
+            21,
+            "Caucasian",
+            22264
+      ],
+      "270": [
+            "James Lang",
+            397068,
+            52,
+            "Afican-American",
+            24469
+      ],
+      "271": [
+            "Jessica Henry",
+            380237,
+            81,
+            "Afican-American",
+            22844
+      ],
+      "272": [
+            "Rita Castaneda",
+            548855,
+            28,
+            "Afican-American",
+            22510
+      ],
+      "273": [
+            "Alice Radford",
+            0,
+            8,
+            "Latino",
+            24584
+      ],
+      "274": [
+            "Shirley Treadwell",
+            0,
+            15,
+            "Latino",
+            22164
+      ],
+      "275": [
+            "Andy Garza",
+            553705,
+            20,
+            "Afican-American",
+            24488
+      ],
+      "276": [
+            "Lillie Jahnke",
+            600910,
+            43,
+            "Asian",
+            21356
+      ],
+      "277": [
+            "Ian Haight",
+            88591,
+            69,
+            "Latino",
+            24004
+      ],
+      "278": [
+            "Beverly Moser",
+            538129,
+            73,
+            "Latino",
+            24177
+      ],
+      "279": [
+            "John Dunkle",
+            156510,
+            20,
+            "Caucasian",
+            21402
+      ],
+      "280": [
+            "Scott Minchew",
+            607886,
+            81,
+            "Afican-American",
+            21336
+      ],
+      "281": [
+            "Joseph Christensen",
+            577412,
+            43,
+            "Afican-American",
+            23869
+      ],
+      "282": [
+            "Richard Kinard",
+            641319,
+            37,
+            "Asian",
+            20635
+      ],
+      "283": [
+            "Amy Brungardt",
+            680650,
+            42,
+            "Afican-American",
+            22262
+      ],
+      "284": [
+            "Michael Jarvis",
+            150755,
+            62,
+            "Asian",
+            23273
+      ],
+      "285": [
+            "Carrie Losee",
+            576924,
+            65,
+            "Latino",
+            20564
+      ],
+      "286": [
+            "Dianne Mouzon",
+            0,
+            11,
+            "Afican-American",
+            23178
+      ],
+      "287": [
+            "Angelica Johnson",
+            0,
+            11,
+            "Latino",
+            22257
+      ],
+      "288": [
+            "Michael Makin",
+            271006,
+            59,
+            "Caucasian",
+            23208
+      ],
+      "289": [
+            "Alonzo Willis",
+            15896,
+            65,
+            "Latino",
+            23682
+      ],
+      "290": [
+            "Karyn Bequette",
+            412212,
+            47,
+            "Afican-American",
+            22905
+      ],
+      "291": [
+            "Charlotte Reifsnyder",
+            399556,
+            79,
+            "Caucasian",
+            24342
+      ],
+      "292": [
+            "Stanley Terres",
+            650906,
+            68,
+            "Asian",
+            24383
+      ],
+      "293": [
+            "Samuel Dobbs",
+            0,
+            1,
+            "Asian",
+            23593
+      ],
+      "294": [
+            "Maxine Taylor",
+            331698,
+            69,
+            "Latino",
+            21940
+      ],
+      "295": [
+            "Daniel Miller",
+            0,
+            5,
+            "Latino",
+            22621
+      ],
+      "296": [
+            "Claire Torres",
+            150814,
+            31,
+            "Asian",
+            20792
+      ],
+      "297": [
+            "Matthew Mccormick",
+            388392,
+            24,
+            "Asian",
+            24579
+      ],
+      "298": [
+            "Royce Haines",
+            0,
+            10,
+            "Asian",
+            23098
+      ],
+      "299": [
+            "Deborah Paoli",
+            0,
+            15,
+            "Caucasian",
+            23606
+      ],
+      "300": [
+            "Amanda Powell",
+            560906,
+            83,
+            "Latino",
+            21349
+      ],
+      "301": [
+            "Jeremy Hyatt",
+            192060,
+            33,
+            "Latino",
+            23948
+      ],
+      "302": [
+            "Shannon Doten",
+            601119,
+            76,
+            "Caucasian",
+            22467
+      ],
+      "303": [
+            "Richard Price",
+            359799,
+            43,
+            "Caucasian",
+            22672
+      ],
+      "304": [
+            "Vickie Andrews",
+            574383,
+            63,
+            "Caucasian",
+            24119
+      ],
+      "305": [
+            "Elaine Gilbar",
+            177332,
+            24,
+            "Latino",
+            23117
+      ],
+      "306": [
+            "Ashley Hunter",
+            0,
+            7,
+            "Afican-American",
+            22450
+      ],
+      "307": [
+            "David Jacob",
+            115197,
+            57,
+            "Asian",
+            21538
+      ],
+      "308": [
+            "William Million",
+            0,
+            8,
+            "Latino",
+            20589
+      ],
+      "309": [
+            "Nick Espinoza",
+            667468,
+            38,
+            "Latino",
+            23173
+      ],
+      "310": [
+            "Richard Hutcheson",
+            164142,
+            51,
+            "Asian",
+            23343
+      ],
+      "311": [
+            "Karen Roberts",
+            0,
+            4,
+            "Afican-American",
+            21968
+      ],
+      "312": [
+            "Vince Lee",
+            9340,
+            65,
+            "Caucasian",
+            23500
+      ],
+      "313": [
+            "Larry Chambers",
+            516542,
+            81,
+            "Afican-American",
+            22833
+      ],
+      "314": [
+            "Jacob Fernandez",
+            0,
+            12,
+            "Afican-American",
+            21362
+      ],
+      "315": [
+            "Elizabeth Hubbard",
+            500563,
+            51,
+            "Caucasian",
+            20363
+      ],
+      "316": [
+            "Bobby Meister",
+            0,
+            6,
+            "Latino",
+            23940
+      ],
+      "317": [
+            "Robert Smith",
+            0,
+            4,
+            "Latino",
+            21324
+      ],
+      "318": [
+            "Joanna Heninger",
+            0,
+            17,
+            "Caucasian",
+            24005
+      ],
+      "319": [
+            "Joseph Durant",
+            575449,
+            64,
+            "Afican-American",
+            22376
+      ],
+      "320": [
+            "Julie Proctor",
+            220879,
+            66,
+            "Caucasian",
+            21144
+      ],
+      "321": [
+            "Norman Wilborn",
+            423943,
+            72,
+            "Asian",
+            23946
+      ],
+      "322": [
+            "Fred Vallejo",
+            645277,
+            23,
+            "Afican-American",
+            23867
+      ],
+      "323": [
+            "Douglas Wheeler",
+            394457,
+            65,
+            "Asian",
+            22041
+      ],
+      "324": [
+            "Joseph Pocai",
+            583265,
+            36,
+            "Asian",
+            20926
+      ],
+      "325": [
+            "John Moore",
+            374618,
+            25,
+            "Latino",
+            22260
+      ],
+      "326": [
+            "Sean Mcneil",
+            0,
+            5,
+            "Asian",
+            22833
+      ],
+      "327": [
+            "Eugene Frost",
+            0,
+            2,
+            "Asian",
+            22200
+      ],
+      "328": [
+            "Bertha White",
+            0,
+            7,
+            "Caucasian",
+            21121
+      ],
+      "329": [
+            "Lori Harris",
+            47764,
+            84,
+            "Caucasian",
+            24098
+      ],
+      "330": [
+            "Catherine Kemper",
+            333428,
+            70,
+            "Asian",
+            22985
+      ],
+      "331": [
+            "Michael Guinn",
+            652468,
+            66,
+            "Afican-American",
+            23428
+      ],
+      "332": [
+            "William Harris",
+            555068,
+            72,
+            "Afican-American",
+            21578
+      ],
+      "333": [
+            "Felipe Roach",
+            508458,
+            31,
+            "Caucasian",
+            21156
+      ],
+      "334": [
+            "Virgie Davis",
+            670764,
+            81,
+            "Asian",
+            22699
+      ],
+      "335": [
+            "Beryl Gilyard",
+            414843,
+            45,
+            "Latino",
+            24394
+      ],
+      "336": [
+            "Michael Smith",
+            619056,
+            53,
+            "Latino",
+            24291
+      ],
+      "337": [
+            "Eduardo Minnis",
+            150976,
+            79,
+            "Caucasian",
+            23397
+      ],
+      "338": [
+            "Arthur Johnson",
+            239451,
+            56,
+            "Afican-American",
+            21793
+      ],
+      "339": [
+            "Jeffrey Estrella",
+            0,
+            3,
+            "Afican-American",
+            23208
+      ],
+      "340": [
+            "Henry Moore",
+            562971,
+            65,
+            "Caucasian",
+            22789
+      ],
+      "341": [
+            "Richard York",
+            0,
+            9,
+            "Asian",
+            21507
+      ],
+      "342": [
+            "Robert Benefield",
+            472422,
+            42,
+            "Caucasian",
+            20997
+      ],
+      "343": [
+            "Irene Stoeger",
+            660727,
+            33,
+            "Asian",
+            23858
+      ],
+      "344": [
+            "Evelyn Feldman",
+            316132,
+            29,
+            "Caucasian",
+            23973
+      ],
+      "345": [
+            "Marie Garcia",
+            0,
+            7,
+            "Asian",
+            22034
+      ],
+      "346": [
+            "Mona Kelly",
+            320767,
+            33,
+            "Afican-American",
+            23299
+      ],
+      "347": [
+            "Jeanne Heaney",
+            24616,
+            79,
+            "Afican-American",
+            24374
+      ],
+      "348": [
+            "Frances Mccormick",
+            0,
+            6,
+            "Asian",
+            22065
+      ],
+      "349": [
+            "Sandra Kronenberg",
+            545770,
+            60,
+            "Afican-American",
+            24425
+      ],
+      "350": [
+            "Florence Willingham",
+            682364,
+            32,
+            "Caucasian",
+            24042
+      ],
+      "351": [
+            "Tu Heard",
+            54556,
+            32,
+            "Afican-American",
+            24658
+      ],
+      "352": [
+            "Louise Ingraham",
+            385016,
+            30,
+            "Latino",
+            22112
+      ],
+      "353": [
+            "Rachel Brinkley",
+            109485,
+            41,
+            "Caucasian",
+            23405
+      ],
+      "354": [
+            "Nancy Mcfarland",
+            644378,
+            42,
+            "Afican-American",
+            22140
+      ],
+      "355": [
+            "Rebecca Engle",
+            550517,
+            64,
+            "Afican-American",
+            22829
+      ],
+      "356": [
+            "Gene Finch",
+            689958,
+            37,
+            "Afican-American",
+            22352
+      ],
+      "357": [
+            "Aaron Juarez",
+            448291,
+            74,
+            "Asian",
+            20824
+      ],
+      "358": [
+            "Franklin Schwartz",
+            249375,
+            52,
+            "Latino",
+            23127
+      ],
+      "359": [
+            "Bruce Gallant",
+            689077,
+            43,
+            "Afican-American",
+            21671
+      ],
+      "360": [
+            "Paul Byrd",
+            587435,
+            47,
+            "Afican-American",
+            21524
+      ],
+      "361": [
+            "Brenda Parker",
+            287233,
+            53,
+            "Caucasian",
+            22959
+      ],
+      "362": [
+            "Ellen Mccullough",
+            175978,
+            42,
+            "Latino",
+            22963
+      ],
+      "363": [
+            "Patrick Giles",
+            623480,
+            21,
+            "Latino",
+            24225
+      ],
+      "364": [
+            "Karen Perry",
+            552977,
+            20,
+            "Asian",
+            22769
+      ],
+      "365": [
+            "Thomas Fritz",
+            583455,
+            22,
+            "Latino",
+            23612
+      ],
+      "366": [
+            "Charles Hammond",
+            0,
+            10,
+            "Afican-American",
+            22461
+      ],
+      "367": [
+            "Ryan Edwards",
+            138993,
+            79,
+            "Asian",
+            24387
+      ],
+      "368": [
+            "Michael Martinez",
+            205113,
+            20,
+            "Asian",
+            23651
+      ],
+      "369": [
+            "Mary Milla",
+            272779,
+            67,
+            "Afican-American",
+            22900
+      ],
+      "370": [
+            "Peter Herron",
+            195102,
+            55,
+            "Latino",
+            23797
+      ],
+      "371": [
+            "Shawn Giron",
+            635577,
+            35,
+            "Latino",
+            21283
+      ],
+      "372": [
+            "Mae Walker",
+            0,
+            6,
+            "Caucasian",
+            21599
+      ],
+      "373": [
+            "Ruth Moncada",
+            290461,
+            61,
+            "Afican-American",
+            24390
+      ],
+      "374": [
+            "Ashley Rich",
+            0,
+            12,
+            "Asian",
+            24623
+      ],
+      "375": [
+            "Jeanna Gallant",
+            0,
+            1,
+            "Asian",
+            23306
+      ],
+      "376": [
+            "James Broker",
+            282091,
+            43,
+            "Latino",
+            23603
+      ],
+      "377": [
+            "Susie Lewis",
+            361385,
+            77,
+            "Afican-American",
+            20340
+      ],
+      "378": [
+            "Ted Yoshimura",
+            0,
+            6,
+            "Caucasian",
+            21436
+      ],
+      "379": [
+            "Frances Mcmullen",
+            0,
+            15,
+            "Afican-American",
+            24194
+      ],
+      "380": [
+            "Serena Lints",
+            281939,
+            53,
+            "Afican-American",
+            21739
+      ],
+      "381": [
+            "Bryant Fors",
+            524431,
+            53,
+            "Latino",
+            21654
+      ],
+      "382": [
+            "Robert Wise",
+            320967,
+            24,
+            "Afican-American",
+            22852
+      ],
+      "383": [
+            "Frank Hewitt",
+            519586,
+            70,
+            "Afican-American",
+            24414
+      ],
+      "384": [
+            "Brian Benninger",
+            119536,
+            83,
+            "Caucasian",
+            23844
+      ],
+      "385": [
+            "Brenda Rivera",
+            256178,
+            31,
+            "Asian",
+            22691
+      ],
+      "386": [
+            "Karol Cordova",
+            274942,
+            67,
+            "Latino",
+            23900
+      ],
+      "387": [
+            "Brandon Gibbs",
+            464174,
+            55,
+            "Afican-American",
+            23801
+      ],
+      "388": [
+            "Edna Moore",
+            117226,
+            80,
+            "Caucasian",
+            24589
+      ],
+      "389": [
+            "Cheryl Mildenberger",
+            0,
+            2,
+            "Asian",
+            21467
+      ],
+      "390": [
+            "Marguerite Wilkerson",
+            375275,
+            44,
+            "Caucasian",
+            20682
+      ],
+      "391": [
+            "Douglas Lamb",
+            238466,
+            75,
+            "Caucasian",
+            22121
+      ],
+      "392": [
+            "Rolando Lee",
+            630319,
+            52,
+            "Asian",
+            24143
+      ],
+      "393": [
+            "Ina Worley",
+            0,
+            12,
+            "Afican-American",
+            22412
+      ],
+      "394": [
+            "Joyce Page",
+            614577,
+            50,
+            "Afican-American",
+            23390
+      ],
+      "395": [
+            "Belinda Mcmullen",
+            606574,
+            81,
+            "Afican-American",
+            24328
+      ],
+      "396": [
+            "Garrett Phu",
+            400358,
+            70,
+            "Afican-American",
+            20138
+      ],
+      "397": [
+            "Marco Hack",
+            251209,
+            63,
+            "Latino",
+            23188
+      ],
+      "398": [
+            "Jose Rexford",
+            0,
+            6,
+            "Latino",
+            20159
+      ],
+      "399": [
+            "Grant Brock",
+            141458,
+            79,
+            "Afican-American",
+            21423
+      ],
+      "400": [
+            "Stephen Holloway",
+            240680,
+            77,
+            "Afican-American",
+            22404
+      ],
+      "401": [
+            "Jeffrey Littleton",
+            0,
+            17,
+            "Asian",
+            20168
+      ],
+      "402": [
+            "Eileen Simmons",
+            104547,
+            83,
+            "Caucasian",
+            24602
+      ],
+      "403": [
+            "Pamela Heyne",
+            0,
+            17,
+            "Latino",
+            21637
+      ],
+      "404": [
+            "Justin Sauredo",
+            514383,
+            21,
+            "Asian",
+            21969
+      ],
+      "405": [
+            "Kristal Woodall",
+            93940,
+            31,
+            "Afican-American",
+            22936
+      ],
+      "406": [
+            "Brian Baldwin",
+            309118,
+            56,
+            "Latino",
+            21442
+      ],
+      "407": [
+            "Lakesha Jaworowski",
+            59519,
+            49,
+            "Latino",
+            23248
+      ],
+      "408": [
+            "Zenaida Rauth",
+            0,
+            11,
+            "Caucasian",
+            20180
+      ],
+      "409": [
+            "Thomas Trojillo",
+            347605,
+            48,
+            "Afican-American",
+            21318
+      ],
+      "410": [
+            "Dennis Hansen",
+            371386,
+            53,
+            "Caucasian",
+            23120
+      ],
+      "411": [
+            "Sherrie Locke",
+            524210,
+            25,
+            "Caucasian",
+            22536
+      ],
+      "412": [
+            "Justin Miller",
+            394925,
+            18,
+            "Latino",
+            22207
+      ],
+      "413": [
+            "Rodney Bane",
+            149964,
+            77,
+            "Latino",
+            22570
+      ],
+      "414": [
+            "Mary Rose",
+            375035,
+            57,
+            "Afican-American",
+            22871
+      ],
+      "415": [
+            "Betty Clark",
+            291042,
+            55,
+            "Caucasian",
+            21721
+      ],
+      "416": [
+            "Bennett Anderson",
+            499304,
+            54,
+            "Asian",
+            20237
+      ],
+      "417": [
+            "Marlene Natonabah",
+            332119,
+            82,
+            "Afican-American",
+            23759
+      ],
+      "418": [
+            "Freda Gant",
+            436935,
+            23,
+            "Caucasian",
+            23886
+      ],
+      "419": [
+            "Michael Hill",
+            0,
+            10,
+            "Asian",
+            24455
+      ],
+      "420": [
+            "Jerry Watts",
+            563675,
+            21,
+            "Latino",
+            21616
+      ],
+      "421": [
+            "Kenneth Lopez",
+            0,
+            14,
+            "Caucasian",
+            23892
+      ],
+      "422": [
+            "Elizabeth Beatty",
+            228608,
+            22,
+            "Asian",
+            22147
+      ],
+      "423": [
+            "Susan Booker",
+            294043,
+            39,
+            "Asian",
+            20154
+      ],
+      "424": [
+            "Shiloh Williams",
+            0,
+            10,
+            "Latino",
+            24168
+      ],
+      "425": [
+            "Karen Barber",
+            55662,
+            59,
+            "Latino",
+            21091
+      ],
+      "426": [
+            "Carey Jenkins",
+            187587,
+            76,
+            "Caucasian",
+            22155
+      ],
+      "427": [
+            "Jennifer Bowman",
+            0,
+            15,
+            "Asian",
+            21871
+      ],
+      "428": [
+            "Gregory Wilkinson",
+            0,
+            17,
+            "Asian",
+            23605
+      ],
+      "429": [
+            "John Watson",
+            0,
+            8,
+            "Caucasian",
+            24209
+      ],
+      "430": [
+            "Donnie Mack",
+            441086,
+            30,
+            "Latino",
+            23063
+      ],
+      "431": [
+            "Seth Baker",
+            66186,
+            53,
+            "Afican-American",
+            24043
+      ],
+      "432": [
+            "Elisabeth Jordan",
+            408214,
+            26,
+            "Latino",
+            20395
+      ],
+      "433": [
+            "Katherine Cain",
+            479490,
+            23,
+            "Caucasian",
+            22575
+      ],
+      "434": [
+            "Louis Doria",
+            0,
+            17,
+            "Asian",
+            24393
+      ],
+      "435": [
+            "John Thompson",
+            424596,
+            28,
+            "Afican-American",
+            23828
+      ],
+      "436": [
+            "Robert Neeley",
+            393295,
+            27,
+            "Asian",
+            23255
+      ],
+      "437": [
+            "William Vincent",
+            376408,
+            80,
+            "Caucasian",
+            22520
+      ],
+      "438": [
+            "Stephen Lee",
+            251083,
+            74,
+            "Caucasian",
+            23800
+      ],
+      "439": [
+            "Betsy Busch",
+            193196,
+            55,
+            "Caucasian",
+            22045
+      ],
+      "440": [
+            "Cassandra Kleinschmidt",
+            0,
+            15,
+            "Caucasian",
+            23828
+      ],
+      "441": [
+            "Robert Fenton",
+            0,
+            4,
+            "Afican-American",
+            23814
+      ],
+      "442": [
+            "Leroy Siddoway",
+            431684,
+            47,
+            "Asian",
+            22646
+      ],
+      "443": [
+            "Randy Jefferies",
+            404368,
+            64,
+            "Asian",
+            22412
+      ],
+      "444": [
+            "Kiersten Dicaprio",
+            389963,
+            37,
+            "Asian",
+            20313
+      ],
+      "445": [
+            "Anita Gerow",
+            615404,
+            84,
+            "Afican-American",
+            24279
+      ],
+      "446": [
+            "Mary Brown",
+            25382,
+            62,
+            "Latino",
+            23405
+      ],
+      "447": [
+            "Annette Kolesnik",
+            533422,
+            81,
+            "Asian",
+            20683
+      ],
+      "448": [
+            "Edward Rice",
+            110611,
+            68,
+            "Latino",
+            23798
+      ],
+      "449": [
+            "Ingrid Allegra",
+            353000,
+            42,
+            "Asian",
+            20244
+      ],
+      "450": [
+            "Raquel Mendez",
+            198264,
+            22,
+            "Afican-American",
+            22254
+      ],
+      "451": [
+            "Robert Thomas",
+            559268,
+            22,
+            "Caucasian",
+            21294
+      ],
+      "452": [
+            "Gerald Garcia",
+            487541,
+            81,
+            "Latino",
+            23692
+      ],
+      "453": [
+            "Thelma Klassen",
+            478413,
+            81,
+            "Asian",
+            23478
+      ],
+      "454": [
+            "Isabella Aker",
+            200264,
+            62,
+            "Caucasian",
+            20712
+      ],
+      "455": [
+            "Sun Woods",
+            0,
+            6,
+            "Latino",
+            22208
+      ],
+      "456": [
+            "Rosa Ramos",
+            608343,
+            67,
+            "Latino",
+            23407
+      ],
+      "457": [
+            "Steven Grant",
+            578111,
+            75,
+            "Afican-American",
+            21509
+      ],
+      "458": [
+            "Daniel Tucker",
+            62786,
+            81,
+            "Latino",
+            20799
+      ],
+      "459": [
+            "Bobby Honeycutt",
+            0,
+            16,
+            "Afican-American",
+            21219
+      ],
+      "460": [
+            "Daniel Orellana",
+            555183,
+            31,
+            "Afican-American",
+            21191
+      ],
+      "461": [
+            "Minnie Kamerer",
+            113650,
+            35,
+            "Caucasian",
+            23843
+      ],
+      "462": [
+            "Wes Lopez",
+            299605,
+            35,
+            "Latino",
+            22760
+      ],
+      "463": [
+            "Erick Alvarez",
+            580416,
+            66,
+            "Caucasian",
+            20320
+      ],
+      "464": [
+            "John Perreira",
+            0,
+            17,
+            "Latino",
+            20599
+      ],
+      "465": [
+            "Cindy Briones",
+            0,
+            9,
+            "Caucasian",
+            23870
+      ],
+      "466": [
+            "Richard Bearden",
+            0,
+            11,
+            "Afican-American",
+            22545
+      ],
+      "467": [
+            "Frank Rice",
+            0,
+            13,
+            "Afican-American",
+            23388
+      ],
+      "468": [
+            "Nathan Rhodes",
+            686935,
+            67,
+            "Afican-American",
+            21293
+      ],
+      "469": [
+            "Eric Kieffer",
+            503481,
+            27,
+            "Afican-American",
+            22277
+      ],
+      "470": [
+            "Sarah Causey",
+            0,
+            9,
+            "Afican-American",
+            20376
+      ],
+      "471": [
+            "Georgine Gertz",
+            317053,
+            53,
+            "Latino",
+            20790
+      ],
+      "472": [
+            "George Maher",
+            0,
+            1,
+            "Latino",
+            23242
+      ],
+      "473": [
+            "David Dye",
+            0,
+            13,
+            "Latino",
+            23740
+      ],
+      "474": [
+            "Inez Larimore",
+            648019,
+            54,
+            "Afican-American",
+            24296
+      ],
+      "475": [
+            "Adrienne Baber",
+            0,
+            12,
+            "Latino",
+            21897
+      ],
+      "476": [
+            "Krystal Griffin",
+            234912,
+            42,
+            "Latino",
+            20919
+      ],
+      "477": [
+            "Homer Gero",
+            628802,
+            52,
+            "Latino",
+            20319
+      ],
+      "478": [
+            "Toby Berezny",
+            63760,
+            66,
+            "Latino",
+            23626
+      ],
+      "479": [
+            "Alex Dewey",
+            271699,
+            52,
+            "Latino",
+            23419
+      ],
+      "480": [
+            "Eugene Davis",
+            0,
+            15,
+            "Latino",
+            24280
+      ],
+      "481": [
+            "Eric Purdy",
+            655499,
+            31,
+            "Caucasian",
+            23480
+      ],
+      "482": [
+            "Judith Mirza",
+            10051,
+            40,
+            "Caucasian",
+            20279
+      ],
+      "483": [
+            "Ron Floyd",
+            490419,
+            29,
+            "Latino",
+            23899
+      ],
+      "484": [
+            "Lori Wilson",
+            65715,
+            80,
+            "Caucasian",
+            21796
+      ],
+      "485": [
+            "Derek Mcgough",
+            354339,
+            54,
+            "Afican-American",
+            21937
+      ],
+      "486": [
+            "Amy Wickersham",
+            408612,
+            50,
+            "Caucasian",
+            22845
+      ],
+      "487": [
+            "Matthew Zodrow",
+            189324,
+            76,
+            "Asian",
+            21970
+      ],
+      "488": [
+            "Helen Rodrigues",
+            509611,
+            68,
+            "Latino",
+            21227
+      ],
+      "489": [
+            "Andrew Faines",
+            267973,
+            18,
+            "Caucasian",
+            22516
+      ],
+      "490": [
+            "Mary Estelle",
+            0,
+            8,
+            "Asian",
+            21998
+      ],
+      "491": [
+            "Adam Hise",
+            209876,
+            64,
+            "Afican-American",
+            22658
+      ],
+      "492": [
+            "Glenn Young",
+            365171,
+            79,
+            "Latino",
+            22757
+      ],
+      "493": [
+            "Joyce Cronin",
+            0,
+            4,
+            "Asian",
+            21421
+      ],
+      "494": [
+            "David Medellin",
+            103669,
+            65,
+            "Caucasian",
+            20549
+      ],
+      "495": [
+            "Mary Conner",
+            173914,
+            29,
+            "Caucasian",
+            23270
+      ],
+      "496": [
+            "Lana Champagne",
+            289722,
+            27,
+            "Asian",
+            22291
+      ],
+      "497": [
+            "Jennifer Showers",
+            470166,
+            51,
+            "Latino",
+            22056
+      ],
+      "498": [
+            "Jose Graver",
+            638255,
+            22,
+            "Asian",
+            21157
+      ],
+      "499": [
+            "Wilma Hill",
+            383063,
+            29,
+            "Caucasian",
+            22003
+      ],
+      "500": [
+            "Martha Bird",
+            138118,
+            67,
+            "Asian",
+            23172
+      ],
+      "501": [
+            "Rosemary Lasky",
+            594037,
+            73,
+            "Latino",
+            21952
+      ],
+      "502": [
+            "Edward Ephraim",
+            247823,
+            27,
+            "Caucasian",
+            20467
+      ],
+      "503": [
+            "Sally Coolidge",
+            347598,
+            51,
+            "Asian",
+            24560
+      ],
+      "504": [
+            "Melissa Hill",
+            0,
+            9,
+            "Asian",
+            24414
+      ],
+      "505": [
+            "Stacy Ellis",
+            454242,
+            35,
+            "Caucasian",
+            21146
+      ],
+      "506": [
+            "Jennifer Harper",
+            299425,
+            70,
+            "Latino",
+            20341
+      ],
+      "507": [
+            "Kenneth Goree",
+            237959,
+            84,
+            "Latino",
+            24258
+      ],
+      "508": [
+            "Joseph Robinson",
+            0,
+            1,
+            "Caucasian",
+            23891
+      ],
+      "509": [
+            "Carmen Dilsaver",
+            357202,
+            73,
+            "Asian",
+            20391
+      ],
+      "510": [
+            "Cedric Hereford",
+            556008,
+            84,
+            "Asian",
+            20800
+      ],
+      "511": [
+            "Miguel Ralph",
+            495535,
+            64,
+            "Afican-American",
+            20111
+      ],
+      "512": [
+            "Jamie Siegel",
+            0,
+            3,
+            "Asian",
+            21463
+      ],
+      "513": [
+            "Barbara Smith",
+            99499,
+            80,
+            "Afican-American",
+            22775
+      ],
+      "514": [
+            "Wonda Charles",
+            0,
+            3,
+            "Afican-American",
+            24371
+      ],
+      "515": [
+            "William Evans",
+            519062,
+            70,
+            "Afican-American",
+            22912
+      ],
+      "516": [
+            "Patricia Evans",
+            0,
+            16,
+            "Asian",
+            20226
+      ],
+      "517": [
+            "Karol Trotter",
+            0,
+            9,
+            "Afican-American",
+            20541
+      ],
+      "518": [
+            "Archie Arnold",
+            0,
+            9,
+            "Asian",
+            23121
+      ],
+      "519": [
+            "Scott Rene",
+            579460,
+            69,
+            "Asian",
+            22394
+      ],
+      "520": [
+            "Donald Marcus",
+            246224,
+            61,
+            "Caucasian",
+            22673
+      ],
+      "521": [
+            "Ralph Ingram",
+            207418,
+            69,
+            "Latino",
+            21882
+      ],
+      "522": [
+            "Sherman Wilds",
+            150157,
+            39,
+            "Afican-American",
+            24352
+      ],
+      "523": [
+            "Ella Greene",
+            340372,
+            24,
+            "Caucasian",
+            24658
+      ],
+      "524": [
+            "Lanie Tanner",
+            685310,
+            43,
+            "Asian",
+            21103
+      ],
+      "525": [
+            "Shirlee Cox",
+            349448,
+            80,
+            "Afican-American",
+            22130
+      ],
+      "526": [
+            "Adrian Franty",
+            0,
+            7,
+            "Asian",
+            23692
+      ],
+      "527": [
+            "James Thompson",
+            313553,
+            64,
+            "Afican-American",
+            20856
+      ],
+      "528": [
+            "Valerie Moses",
+            543274,
+            29,
+            "Asian",
+            22449
+      ],
+      "529": [
+            "Amy Simonson",
+            331562,
+            30,
+            "Latino",
+            20109
+      ],
+      "530": [
+            "Phyllis Brown",
+            586359,
+            32,
+            "Caucasian",
+            20157
+      ],
+      "531": [
+            "Staci Dalton",
+            176894,
+            24,
+            "Latino",
+            22740
+      ],
+      "532": [
+            "Martha Bowden",
+            265779,
+            22,
+            "Asian",
+            23744
+      ],
+      "533": [
+            "Ryan Stoeffler",
+            658852,
+            64,
+            "Caucasian",
+            20304
+      ],
+      "534": [
+            "Jose Cordoba",
+            0,
+            16,
+            "Latino",
+            21924
+      ],
+      "535": [
+            "Dorothy Fleming",
+            630411,
+            42,
+            "Afican-American",
+            21015
+      ],
+      "536": [
+            "Rosa Baker",
+            0,
+            5,
+            "Caucasian",
+            22296
+      ],
+      "537": [
+            "Denise Rizo",
+            264189,
+            70,
+            "Asian",
+            22004
+      ],
+      "538": [
+            "Elise Clark",
+            0,
+            10,
+            "Afican-American",
+            22624
+      ],
+      "539": [
+            "Maggie Geronimo",
+            0,
+            15,
+            "Afican-American",
+            20370
+      ],
+      "540": [
+            "Stephanie Smisek",
+            188566,
+            37,
+            "Asian",
+            20803
+      ],
+      "541": [
+            "Mark Gallagher",
+            658854,
+            52,
+            "Latino",
+            20737
+      ],
+      "542": [
+            "Dora Espinoza",
+            0,
+            7,
+            "Asian",
+            23927
+      ],
+      "543": [
+            "Leonard Patrylak",
+            0,
+            8,
+            "Latino",
+            20472
+      ],
+      "544": [
+            "Helen Patillo",
+            36665,
+            85,
+            "Latino",
+            23668
+      ],
+      "545": [
+            "Lesley Coll",
+            561653,
+            54,
+            "Afican-American",
+            21176
+      ],
+      "546": [
+            "Silvia Patel",
+            627380,
+            54,
+            "Afican-American",
+            23903
+      ],
+      "547": [
+            "Susan Parker",
+            0,
+            13,
+            "Latino",
+            21443
+      ],
+      "548": [
+            "Ann Allison",
+            558801,
+            68,
+            "Latino",
+            20741
+      ],
+      "549": [
+            "Georgia Busby",
+            561838,
+            76,
+            "Afican-American",
+            21908
+      ],
+      "550": [
+            "Justin Casano",
+            380847,
+            71,
+            "Latino",
+            21781
+      ],
+      "551": [
+            "Martha Chevrette",
+            604965,
+            62,
+            "Latino",
+            23903
+      ],
+      "552": [
+            "Abdul Culver",
+            319667,
+            33,
+            "Asian",
+            24613
+      ],
+      "553": [
+            "Aaron Trumbo",
+            599326,
+            84,
+            "Latino",
+            21237
+      ],
+      "554": [
+            "Toni Donovan",
+            549577,
+            68,
+            "Caucasian",
+            24495
+      ],
+      "555": [
+            "Ross Mccain",
+            316333,
+            68,
+            "Latino",
+            21994
+      ],
+      "556": [
+            "Michael Finch",
+            548288,
+            26,
+            "Caucasian",
+            24603
+      ],
+      "557": [
+            "George Nguyen",
+            396555,
+            23,
+            "Caucasian",
+            22997
+      ],
+      "558": [
+            "Joan Wright",
+            462664,
+            23,
+            "Latino",
+            22846
+      ],
+      "559": [
+            "April Gordon",
+            103855,
+            18,
+            "Afican-American",
+            22824
+      ],
+      "560": [
+            "Hillary Strohm",
+            453273,
+            80,
+            "Afican-American",
+            20638
+      ],
+      "561": [
+            "Robert Eck",
+            504309,
+            34,
+            "Caucasian",
+            20471
+      ],
+      "562": [
+            "Joann Nightingale",
+            648520,
+            23,
+            "Asian",
+            22047
+      ],
+      "563": [
+            "Dayna Schueller",
+            195553,
+            43,
+            "Latino",
+            21411
+      ],
+      "564": [
+            "Richard Fox",
+            328051,
+            64,
+            "Afican-American",
+            20106
+      ],
+      "565": [
+            "Donald Young",
+            633717,
+            64,
+            "Asian",
+            21395
+      ],
+      "566": [
+            "Alejandra Torres",
+            681719,
+            61,
+            "Afican-American",
+            22407
+      ],
+      "567": [
+            "Grover Macko",
+            387494,
+            66,
+            "Latino",
+            22562
+      ],
+      "568": [
+            "James Pyron",
+            0,
+            9,
+            "Asian",
+            21418
+      ],
+      "569": [
+            "Bobby Huckleberry",
+            306628,
+            45,
+            "Asian",
+            21267
+      ],
+      "570": [
+            "Daniel Spindler",
+            675727,
+            49,
+            "Asian",
+            21988
+      ],
+      "571": [
+            "Barbara Vedovelli",
+            430637,
+            72,
+            "Afican-American",
+            23061
+      ],
+      "572": [
+            "Nicholas Odom",
+            0,
+            15,
+            "Afican-American",
+            22656
+      ],
+      "573": [
+            "Dale Richards",
+            80953,
+            25,
+            "Caucasian",
+            20137
+      ],
+      "574": [
+            "John Lerud",
+            570923,
+            41,
+            "Asian",
+            20500
+      ],
+      "575": [
+            "Daniel Dials",
+            0,
+            15,
+            "Caucasian",
+            23912
+      ],
+      "576": [
+            "George Merrill",
+            44565,
+            67,
+            "Latino",
+            21434
+      ],
+      "577": [
+            "Theresa Sepulveda",
+            324633,
+            20,
+            "Caucasian",
+            21473
+      ],
+      "578": [
+            "Daniel Cabrera",
+            500480,
+            34,
+            "Latino",
+            20438
+      ],
+      "579": [
+            "Bryan Hoover",
+            0,
+            10,
+            "Asian",
+            23163
+      ],
+      "580": [
+            "Travis Kushner",
+            283523,
+            38,
+            "Afican-American",
+            20357
+      ],
+      "581": [
+            "Luis Brunner",
+            645471,
+            82,
+            "Afican-American",
+            24579
+      ],
+      "582": [
+            "Karen Chambers",
+            312728,
+            44,
+            "Asian",
+            20351
+      ],
+      "583": [
+            "Jeannie Charles",
+            0,
+            10,
+            "Afican-American",
+            21463
+      ],
+      "584": [
+            "Velma Fernandez",
+            0,
+            1,
+            "Afican-American",
+            20677
+      ],
+      "585": [
+            "James Webb",
+            556001,
+            25,
+            "Caucasian",
+            22451
+      ],
+      "586": [
+            "Hanna Howard",
+            0,
+            15,
+            "Asian",
+            22978
+      ],
+      "587": [
+            "Shirley Flowers",
+            483723,
+            30,
+            "Afican-American",
+            22558
+      ],
+      "588": [
+            "Karen Looper",
+            680905,
+            78,
+            "Afican-American",
+            21973
+      ],
+      "589": [
+            "Paul Owens",
+            626276,
+            80,
+            "Caucasian",
+            22002
+      ],
+      "590": [
+            "Leo Walls",
+            303510,
+            23,
+            "Caucasian",
+            22857
+      ],
+      "591": [
+            "Erin Cox",
+            258976,
+            80,
+            "Afican-American",
+            20606
+      ],
+      "592": [
+            "Michael Ford",
+            77248,
+            22,
+            "Asian",
+            23758
+      ],
+      "593": [
+            "Jennifer Flores",
+            0,
+            11,
+            "Afican-American",
+            22244
+      ],
+      "594": [
+            "Theresa Ferraro",
+            0,
+            13,
+            "Afican-American",
+            23945
+      ],
+      "595": [
+            "Justin Davis",
+            129692,
+            50,
+            "Asian",
+            21356
+      ],
+      "596": [
+            "Debra Gasca",
+            0,
+            10,
+            "Latino",
+            24349
+      ],
+      "597": [
+            "James Lank",
+            622061,
+            19,
+            "Caucasian",
+            24188
+      ],
+      "598": [
+            "Robert Pullen",
+            591663,
+            23,
+            "Asian",
+            22060
+      ],
+      "599": [
+            "Lawrence Griffin",
+            28023,
+            78,
+            "Caucasian",
+            20977
+      ],
+      "600": [
+            "Donald Niskanen",
+            0,
+            15,
+            "Asian",
+            23704
+      ],
+      "601": [
+            "Michael Rieben",
+            371883,
+            18,
+            "Afican-American",
+            21244
+      ],
+      "602": [
+            "Barbara Jones",
+            645729,
+            26,
+            "Caucasian",
+            20158
+      ],
+      "603": [
+            "Carolyn Wright",
+            563375,
+            38,
+            "Afican-American",
+            24146
+      ],
+      "604": [
+            "Judie Soolua",
+            654482,
+            46,
+            "Caucasian",
+            22836
+      ],
+      "605": [
+            "Lyle Russell",
+            584694,
+            56,
+            "Latino",
+            22927
+      ],
+      "606": [
+            "Arturo Berrian",
+            553471,
+            23,
+            "Afican-American",
+            23284
+      ],
+      "607": [
+            "Ana Fredricks",
+            268,
+            25,
+            "Caucasian",
+            22047
+      ],
+      "608": [
+            "Tamra Johnson",
+            0,
+            13,
+            "Latino",
+            24043
+      ],
+      "609": [
+            "Ryan Grace",
+            574655,
+            36,
+            "Caucasian",
+            21427
+      ],
+      "610": [
+            "Robert Tunney",
+            683714,
+            71,
+            "Asian",
+            21927
+      ],
+      "611": [
+            "Mary Pierce",
+            652541,
+            33,
+            "Latino",
+            21083
+      ],
+      "612": [
+            "Reginald Payne",
+            0,
+            3,
+            "Caucasian",
+            22638
+      ],
+      "613": [
+            "Jorge Salim",
+            146648,
+            78,
+            "Caucasian",
+            21175
+      ],
+      "614": [
+            "Rosemary Hull",
+            536551,
+            77,
+            "Latino",
+            20556
+      ],
+      "615": [
+            "Ruth Tipton",
+            436151,
+            55,
+            "Caucasian",
+            22738
+      ],
+      "616": [
+            "Carol Carroll",
+            52557,
+            80,
+            "Latino",
+            24408
+      ],
+      "617": [
+            "Ila Cohen",
+            279233,
+            30,
+            "Afican-American",
+            21942
+      ],
+      "618": [
+            "Myrtle Eichmann",
+            214779,
+            18,
+            "Latino",
+            20270
+      ],
+      "619": [
+            "Sarah Nohel",
+            351349,
+            26,
+            "Latino",
+            23355
+      ],
+      "620": [
+            "Virginia Palka",
+            500999,
+            68,
+            "Latino",
+            24447
+      ],
+      "621": [
+            "Henry Kelley",
+            3306,
+            78,
+            "Latino",
+            20262
+      ],
+      "622": [
+            "Angelo Seals",
+            628781,
+            28,
+            "Caucasian",
+            22282
+      ],
+      "623": [
+            "Constance Fisher",
+            460529,
+            60,
+            "Afican-American",
+            20317
+      ],
+      "624": [
+            "Justin Crowe",
+            0,
+            12,
+            "Afican-American",
+            23775
+      ],
+      "625": [
+            "Mona Shelton",
+            0,
+            13,
+            "Latino",
+            21201
+      ],
+      "626": [
+            "Luella Obryan",
+            0,
+            7,
+            "Asian",
+            20930
+      ],
+      "627": [
+            "Larry Ruiz",
+            436275,
+            36,
+            "Asian",
+            21077
+      ],
+      "628": [
+            "Sandra Woo",
+            355013,
+            24,
+            "Asian",
+            21442
+      ],
+      "629": [
+            "William Kelley",
+            0,
+            4,
+            "Latino",
+            21849
+      ],
+      "630": [
+            "Mary Jarrell",
+            99029,
+            58,
+            "Latino",
+            20392
+      ],
+      "631": [
+            "Jerry Moultrie",
+            655548,
+            73,
+            "Latino",
+            23332
+      ],
+      "632": [
+            "Ann Nave",
+            257121,
+            83,
+            "Caucasian",
+            24364
+      ],
+      "633": [
+            "Carolyn Williams",
+            0,
+            13,
+            "Asian",
+            21941
+      ],
+      "634": [
+            "Lisa Mai",
+            646751,
+            64,
+            "Caucasian",
+            23340
+      ],
+      "635": [
+            "James Dale",
+            98882,
+            81,
+            "Caucasian",
+            21576
+      ],
+      "636": [
+            "Ben Gallant",
+            456857,
+            50,
+            "Afican-American",
+            23896
+      ],
+      "637": [
+            "Neil Zimmerman",
+            0,
+            1,
+            "Asian",
+            21144
+      ],
+      "638": [
+            "Sherri Berumen",
+            214070,
+            65,
+            "Caucasian",
+            23905
+      ],
+      "639": [
+            "Heather Lebeau",
+            416879,
+            80,
+            "Caucasian",
+            21303
+      ],
+      "640": [
+            "Madeline Gregory",
+            573064,
+            24,
+            "Afican-American",
+            20220
+      ],
+      "641": [
+            "Noel Hunsaker",
+            660131,
+            36,
+            "Caucasian",
+            20140
+      ],
+      "642": [
+            "George Carroll",
+            505640,
+            77,
+            "Latino",
+            21776
+      ],
+      "643": [
+            "Lindsey Musetti",
+            543196,
+            71,
+            "Asian",
+            21747
+      ],
+      "644": [
+            "Ralph Vang",
+            176122,
+            73,
+            "Latino",
+            21396
+      ],
+      "645": [
+            "David Rodgers",
+            339665,
+            76,
+            "Caucasian",
+            21570
+      ],
+      "646": [
+            "Carol Jones",
+            401175,
+            44,
+            "Asian",
+            21884
+      ],
+      "647": [
+            "Dorothy Buff",
+            648855,
+            67,
+            "Asian",
+            20277
+      ],
+      "648": [
+            "Felecia Schneider",
+            693555,
+            21,
+            "Caucasian",
+            22043
+      ],
+      "649": [
+            "Timothy Carney",
+            0,
+            3,
+            "Latino",
+            22246
+      ],
+      "650": [
+            "Christopher Miller",
+            645977,
+            56,
+            "Asian",
+            20702
+      ],
+      "651": [
+            "Carmelo Silvers",
+            331602,
+            61,
+            "Latino",
+            22090
+      ],
+      "652": [
+            "Frederick Jones",
+            164902,
+            24,
+            "Afican-American",
+            22488
+      ],
+      "653": [
+            "Everett Floyd",
+            404431,
+            69,
+            "Asian",
+            23673
+      ],
+      "654": [
+            "Marissa Williamson",
+            0,
+            12,
+            "Afican-American",
+            23995
+      ],
+      "655": [
+            "Douglas Coulter",
+            0,
+            2,
+            "Latino",
+            22439
+      ],
+      "656": [
+            "Martina Erickson",
+            461119,
+            84,
+            "Latino",
+            21066
+      ],
+      "657": [
+            "Robert Queen",
+            156409,
+            62,
+            "Afican-American",
+            23188
+      ],
+      "658": [
+            "Raymond Hill",
+            586385,
+            59,
+            "Latino",
+            22088
+      ],
+      "659": [
+            "Denise Wheeler",
+            0,
+            3,
+            "Asian",
+            22687
+      ],
+      "660": [
+            "Teresa Blaser",
+            149687,
+            70,
+            "Asian",
+            23422
+      ],
+      "661": [
+            "Henry Dornier",
+            0,
+            10,
+            "Caucasian",
+            22312
+      ],
+      "662": [
+            "Diane Whitney",
+            0,
+            17,
+            "Afican-American",
+            24183
+      ],
+      "663": [
+            "Mary Torres",
+            106748,
+            75,
+            "Caucasian",
+            23418
+      ],
+      "664": [
+            "Brandy Kelly",
+            0,
+            2,
+            "Asian",
+            24317
+      ],
+      "665": [
+            "Preston Herrera",
+            168784,
+            51,
+            "Afican-American",
+            21423
+      ],
+      "666": [
+            "Gino Wahl",
+            633764,
+            63,
+            "Caucasian",
+            21586
+      ],
+      "667": [
+            "Lillian Delong",
+            230376,
+            41,
+            "Caucasian",
+            23237
+      ],
+      "668": [
+            "Raymond Terrones",
+            0,
+            14,
+            "Latino",
+            22351
+      ],
+      "669": [
+            "Scott Washington",
+            245360,
+            64,
+            "Asian",
+            20665
+      ],
+      "670": [
+            "Sarah Beach",
+            669814,
+            35,
+            "Asian",
+            21528
+      ],
+      "671": [
+            "Branden Hurla",
+            0,
+            6,
+            "Latino",
+            22125
+      ],
+      "672": [
+            "Denise Lige",
+            660706,
+            18,
+            "Afican-American",
+            23603
+      ],
+      "673": [
+            "Kristopher Stevens",
+            94531,
+            80,
+            "Asian",
+            20784
+      ],
+      "674": [
+            "Joshua Mcneal",
+            239660,
+            30,
+            "Caucasian",
+            22645
+      ],
+      "675": [
+            "Earl Amos",
+            619509,
+            50,
+            "Asian",
+            22682
+      ],
+      "676": [
+            "Jorge Brunelle",
+            136669,
+            19,
+            "Asian",
+            21575
+      ],
+      "677": [
+            "Irene Karcher",
+            408989,
+            36,
+            "Latino",
+            23064
+      ],
+      "678": [
+            "Eugenia Jagers",
+            258228,
+            75,
+            "Caucasian",
+            23776
+      ],
+      "679": [
+            "Willard Palmer",
+            397844,
+            44,
+            "Asian",
+            22580
+      ],
+      "680": [
+            "Helen Buxton",
+            338804,
+            34,
+            "Latino",
+            21783
+      ],
+      "681": [
+            "Daniel Lesage",
+            338009,
+            62,
+            "Afican-American",
+            23854
+      ],
+      "682": [
+            "Paul Schnarr",
+            652248,
+            74,
+            "Caucasian",
+            21092
+      ],
+      "683": [
+            "Linda Duncan",
+            544562,
+            24,
+            "Afican-American",
+            22573
+      ],
+      "684": [
+            "Stanford Goings",
+            377975,
+            80,
+            "Caucasian",
+            24062
+      ],
+      "685": [
+            "David Espinoza",
+            175682,
+            52,
+            "Latino",
+            22967
+      ],
+      "686": [
+            "William Robinson",
+            83668,
+            32,
+            "Afican-American",
+            24033
+      ],
+      "687": [
+            "Gary Pina",
+            73949,
+            47,
+            "Latino",
+            20180
+      ],
+      "688": [
+            "Martha Lindsay",
+            505688,
+            75,
+            "Asian",
+            23668
+      ],
+      "689": [
+            "Paul Parsons",
+            86605,
+            26,
+            "Latino",
+            22921
+      ],
+      "690": [
+            "Clyde Roller",
+            142966,
+            31,
+            "Asian",
+            23293
+      ],
+      "691": [
+            "Victor Walton",
+            593208,
+            30,
+            "Caucasian",
+            23503
+      ],
+      "692": [
+            "Milton Falk",
+            56492,
+            72,
+            "Asian",
+            21798
+      ],
+      "693": [
+            "Donna Roberson",
+            0,
+            7,
+            "Latino",
+            21724
+      ],
+      "694": [
+            "Murray Grawe",
+            565202,
+            80,
+            "Asian",
+            24068
+      ],
+      "695": [
+            "Martha Souers",
+            372991,
+            63,
+            "Asian",
+            20287
+      ],
+      "696": [
+            "Dorothy Mcclung",
+            450500,
+            33,
+            "Afican-American",
+            24178
+      ],
+      "697": [
+            "Alfred Ledbetter",
+            0,
+            2,
+            "Asian",
+            21580
+      ],
+      "698": [
+            "Tim Zwagerman",
+            159101,
+            35,
+            "Caucasian",
+            24632
+      ],
+      "699": [
+            "Teresa Vinion",
+            597395,
+            32,
+            "Afican-American",
+            24588
+      ],
+      "700": [
+            "Gladys Andrus",
+            0,
+            11,
+            "Latino",
+            20879
+      ],
+      "701": [
+            "Kimberly Goss",
+            19923,
+            31,
+            "Latino",
+            21937
+      ],
+      "702": [
+            "Christopher Griswold",
+            0,
+            1,
+            "Asian",
+            23045
+      ],
+      "703": [
+            "Colleen Singleton",
+            223297,
+            77,
+            "Asian",
+            20189
+      ],
+      "704": [
+            "Abbey Kirk",
+            443148,
+            26,
+            "Asian",
+            22550
+      ],
+      "705": [
+            "Glen Limerick",
+            407877,
+            35,
+            "Asian",
+            24301
+      ],
+      "706": [
+            "Mary Marchan",
+            84986,
+            34,
+            "Caucasian",
+            22524
+      ],
+      "707": [
+            "Edward Dickie",
+            455460,
+            33,
+            "Caucasian",
+            23508
+      ],
+      "708": [
+            "Kristin Elamin",
+            362264,
+            49,
+            "Latino",
+            20914
+      ],
+      "709": [
+            "Evangelina Heintz",
+            0,
+            15,
+            "Latino",
+            20810
+      ],
+      "710": [
+            "Henry Cook",
+            372723,
+            25,
+            "Latino",
+            23834
+      ],
+      "711": [
+            "Denise Carlow",
+            0,
+            14,
+            "Latino",
+            23282
+      ],
+      "712": [
+            "Steve Griffin",
+            385045,
+            73,
+            "Afican-American",
+            23889
+      ],
+      "713": [
+            "Gerald Mcclain",
+            0,
+            8,
+            "Latino",
+            23870
+      ],
+      "714": [
+            "Jackie Cook",
+            277386,
+            19,
+            "Latino",
+            24045
+      ],
+      "715": [
+            "Denise Whicker",
+            0,
+            9,
+            "Afican-American",
+            22696
+      ],
+      "716": [
+            "Chase Blanton",
+            576754,
+            19,
+            "Caucasian",
+            20612
+      ],
+      "717": [
+            "Richard Besley",
+            656025,
+            35,
+            "Caucasian",
+            22891
+      ],
+      "718": [
+            "Nestor Kirk",
+            387464,
+            61,
+            "Caucasian",
+            23110
+      ],
+      "719": [
+            "Craig Anderson",
+            635327,
+            57,
+            "Latino",
+            23243
+      ],
+      "720": [
+            "Marian Neff",
+            215588,
+            35,
+            "Caucasian",
+            20602
+      ],
+      "721": [
+            "Ella Hayes",
+            36376,
+            54,
+            "Caucasian",
+            22434
+      ],
+      "722": [
+            "Frances Pouncil",
+            333721,
+            30,
+            "Caucasian",
+            22554
+      ],
+      "723": [
+            "Julia Armstrong",
+            168907,
+            19,
+            "Afican-American",
+            24596
+      ],
+      "724": [
+            "Alan Lopez",
+            75069,
+            40,
+            "Asian",
+            22906
+      ],
+      "725": [
+            "Theodore Fetters",
+            220962,
+            73,
+            "Latino",
+            21744
+      ],
+      "726": [
+            "Angie Padilla",
+            0,
+            2,
+            "Asian",
+            23924
+      ],
+      "727": [
+            "Frederick Cooper",
+            112905,
+            68,
+            "Latino",
+            22972
+      ],
+      "728": [
+            "Bettie Mullings",
+            388110,
+            22,
+            "Afican-American",
+            20491
+      ],
+      "729": [
+            "Dominga Gardner",
+            204128,
+            57,
+            "Caucasian",
+            24234
+      ],
+      "730": [
+            "Minerva Mullins",
+            569551,
+            28,
+            "Caucasian",
+            24520
+      ],
+      "731": [
+            "Toni Cameron",
+            413252,
+            77,
+            "Caucasian",
+            20497
+      ],
+      "732": [
+            "Melinda Leiby",
+            0,
+            4,
+            "Asian",
+            22262
+      ],
+      "733": [
+            "Lily Wente",
+            270765,
+            28,
+            "Afican-American",
+            22722
+      ],
+      "734": [
+            "Amanda Young",
+            558982,
+            51,
+            "Asian",
+            20774
+      ],
+      "735": [
+            "Marilyn Stimpert",
+            0,
+            3,
+            "Asian",
+            24069
+      ],
+      "736": [
+            "Larry Henry",
+            462889,
+            26,
+            "Caucasian",
+            24323
+      ],
+      "737": [
+            "Paula Boone",
+            516205,
+            37,
+            "Afican-American",
+            21745
+      ],
+      "738": [
+            "Donna Faust",
+            371436,
+            65,
+            "Asian",
+            21785
+      ],
+      "739": [
+            "Janet Clark",
+            650768,
+            73,
+            "Caucasian",
+            22417
+      ],
+      "740": [
+            "Rebecca Burget",
+            416891,
+            52,
+            "Asian",
+            21183
+      ],
+      "741": [
+            "Gilbert Vadasy",
+            373238,
+            53,
+            "Latino",
+            24626
+      ],
+      "742": [
+            "Leigh Connolly",
+            552547,
+            57,
+            "Latino",
+            21550
+      ],
+      "743": [
+            "Patricia Gabriele",
+            0,
+            13,
+            "Afican-American",
+            23574
+      ],
+      "744": [
+            "Christopher Kean",
+            305442,
+            74,
+            "Afican-American",
+            24236
+      ],
+      "745": [
+            "Donna Johnson",
+            31644,
+            48,
+            "Caucasian",
+            21154
+      ],
+      "746": [
+            "Thomas Spencer",
+            717,
+            24,
+            "Caucasian",
+            22112
+      ],
+      "747": [
+            "Lamont Chambers",
+            413358,
+            74,
+            "Caucasian",
+            22368
+      ],
+      "748": [
+            "Earlene Young",
+            472065,
+            51,
+            "Asian",
+            22818
+      ],
+      "749": [
+            "Joseph Martinez",
+            449221,
+            31,
+            "Caucasian",
+            23191
+      ],
+      "750": [
+            "Mary Morabito",
+            0,
+            1,
+            "Caucasian",
+            23944
+      ],
+      "751": [
+            "Ricardo Shives",
+            0,
+            16,
+            "Caucasian",
+            22755
+      ],
+      "752": [
+            "Marva White",
+            56960,
+            83,
+            "Afican-American",
+            23803
+      ],
+      "753": [
+            "Thelma Hawthorne",
+            0,
+            10,
+            "Caucasian",
+            23618
+      ],
+      "754": [
+            "Randy Dulany",
+            532374,
+            42,
+            "Caucasian",
+            21322
+      ],
+      "755": [
+            "David Brown",
+            0,
+            16,
+            "Asian",
+            22185
+      ],
+      "756": [
+            "Wayne Vinci",
+            226284,
+            85,
+            "Afican-American",
+            20623
+      ],
+      "757": [
+            "Michael Rivers",
+            0,
+            3,
+            "Asian",
+            21002
+      ],
+      "758": [
+            "Alice Avila",
+            0,
+            1,
+            "Afican-American",
+            21981
+      ],
+      "759": [
+            "Wendy Colburn",
+            264124,
+            68,
+            "Caucasian",
+            20256
+      ],
+      "760": [
+            "Ernest Hodges",
+            0,
+            15,
+            "Afican-American",
+            22429
+      ],
+      "761": [
+            "Dennis Danford",
+            543624,
+            28,
+            "Latino",
+            21759
+      ],
+      "762": [
+            "Billy Mathison",
+            687675,
+            53,
+            "Asian",
+            20153
+      ],
+      "763": [
+            "Thomas Greening",
+            337991,
+            43,
+            "Latino",
+            22840
+      ],
+      "764": [
+            "Reginald Speegle",
+            664903,
+            78,
+            "Caucasian",
+            21061
+      ],
+      "765": [
+            "Jack Nicewander",
+            0,
+            4,
+            "Caucasian",
+            20734
+      ],
+      "766": [
+            "Joseph Burnett",
+            533067,
+            47,
+            "Latino",
+            24064
+      ],
+      "767": [
+            "Janie Salinas",
+            18696,
+            62,
+            "Asian",
+            22338
+      ],
+      "768": [
+            "Leslie Wilson",
+            317966,
+            29,
+            "Asian",
+            22559
+      ],
+      "769": [
+            "Jessie Smith",
+            430562,
+            56,
+            "Latino",
+            20831
+      ],
+      "770": [
+            "Richard Reeves",
+            297335,
+            51,
+            "Asian",
+            22025
+      ],
+      "771": [
+            "Jose Knauer",
+            0,
+            14,
+            "Caucasian",
+            23398
+      ],
+      "772": [
+            "Margaret Reed",
+            0,
+            13,
+            "Caucasian",
+            20152
+      ],
+      "773": [
+            "Darlene Sanches",
+            645112,
+            47,
+            "Caucasian",
+            21406
+      ],
+      "774": [
+            "Allen Larson",
+            240787,
+            75,
+            "Afican-American",
+            20273
+      ],
+      "775": [
+            "Lamar France",
+            53543,
+            39,
+            "Caucasian",
+            20116
+      ],
+      "776": [
+            "Dorothy Aron",
+            298278,
+            70,
+            "Afican-American",
+            24371
+      ],
+      "777": [
+            "Richard Thornton",
+            340719,
+            35,
+            "Caucasian",
+            20536
+      ],
+      "778": [
+            "Mitchell Delacruz",
+            612937,
+            26,
+            "Latino",
+            21422
+      ],
+      "779": [
+            "Thomas Koons",
+            582097,
+            72,
+            "Caucasian",
+            22117
+      ],
+      "780": [
+            "Kay Brown",
+            512709,
+            54,
+            "Caucasian",
+            24400
+      ],
+      "781": [
+            "Jose Strom",
+            519593,
+            79,
+            "Caucasian",
+            23347
+      ],
+      "782": [
+            "Monica Cooley",
+            420278,
+            78,
+            "Afican-American",
+            21217
+      ],
+      "783": [
+            "Vera Long",
+            532209,
+            75,
+            "Caucasian",
+            21920
+      ],
+      "784": [
+            "Bernice Birchler",
+            27299,
+            36,
+            "Asian",
+            20585
+      ],
+      "785": [
+            "Delores Kennedy",
+            596942,
+            71,
+            "Afican-American",
+            20256
+      ],
+      "786": [
+            "Kenneth Zimmerman",
+            454163,
+            62,
+            "Asian",
+            23705
+      ],
+      "787": [
+            "Thomas Schmalz",
+            394265,
+            42,
+            "Afican-American",
+            22179
+      ],
+      "788": [
+            "Sonja Garlock",
+            281049,
+            63,
+            "Asian",
+            22834
+      ],
+      "789": [
+            "Rochelle Morris",
+            414413,
+            53,
+            "Latino",
+            22743
+      ],
+      "790": [
+            "Samuel White",
+            482787,
+            39,
+            "Latino",
+            20954
+      ],
+      "791": [
+            "Terri Madonia",
+            610415,
+            35,
+            "Caucasian",
+            23921
+      ],
+      "792": [
+            "James Burris",
+            50487,
+            56,
+            "Afican-American",
+            21473
+      ],
+      "793": [
+            "Randolph Stoops",
+            693842,
+            41,
+            "Afican-American",
+            21671
+      ],
+      "794": [
+            "Linda Evans",
+            444150,
+            20,
+            "Asian",
+            22470
+      ],
+      "795": [
+            "Kyle Williams",
+            0,
+            6,
+            "Latino",
+            24074
+      ],
+      "796": [
+            "Kimberley Halloran",
+            545689,
+            78,
+            "Latino",
+            21200
+      ],
+      "797": [
+            "Marion Williams",
+            17522,
+            45,
+            "Caucasian",
+            22893
+      ],
+      "798": [
+            "John Leggio",
+            391948,
+            35,
+            "Asian",
+            24098
+      ],
+      "799": [
+            "William Romaine",
+            531133,
+            19,
+            "Caucasian",
+            22339
+      ],
+      "800": [
+            "William Walker",
+            437479,
+            59,
+            "Asian",
+            20508
+      ],
+      "801": [
+            "Cory Peltier",
+            43058,
+            24,
+            "Afican-American",
+            23493
+      ],
+      "802": [
+            "Michael Caddel",
+            130599,
+            25,
+            "Asian",
+            24202
+      ],
+      "803": [
+            "Debra Smallman",
+            640595,
+            66,
+            "Afican-American",
+            22901
+      ],
+      "804": [
+            "Eleanore Buchman",
+            0,
+            10,
+            "Latino",
+            20115
+      ],
+      "805": [
+            "Patricia Hill",
+            303039,
+            79,
+            "Latino",
+            23436
+      ],
+      "806": [
+            "Clifton Reyes",
+            370899,
+            72,
+            "Asian",
+            23939
+      ],
+      "807": [
+            "Rex Horsley",
+            270259,
+            84,
+            "Caucasian",
+            22368
+      ],
+      "808": [
+            "Doris Maroun",
+            179355,
+            71,
+            "Caucasian",
+            24186
+      ],
+      "809": [
+            "Cecil Vega",
+            319143,
+            32,
+            "Latino",
+            22457
+      ],
+      "810": [
+            "Heather Donnelly",
+            387162,
+            53,
+            "Latino",
+            20779
+      ],
+      "811": [
+            "Jennifer Fairrow",
+            526643,
+            75,
+            "Caucasian",
+            21953
+      ],
+      "812": [
+            "Judith Montero",
+            614046,
+            33,
+            "Caucasian",
+            24208
+      ],
+      "813": [
+            "John Weimer",
+            221025,
+            28,
+            "Latino",
+            23392
+      ],
+      "814": [
+            "Jessica Smittle",
+            401608,
+            76,
+            "Caucasian",
+            21956
+      ],
+      "815": [
+            "Dwayne Pease",
+            613616,
+            18,
+            "Afican-American",
+            22103
+      ],
+      "816": [
+            "Karen Coleman",
+            384117,
+            45,
+            "Asian",
+            22427
+      ],
+      "817": [
+            "Thomas Hayden",
+            544504,
+            75,
+            "Afican-American",
+            23974
+      ],
+      "818": [
+            "Robert Slaughter",
+            0,
+            6,
+            "Caucasian",
+            21070
+      ],
+      "819": [
+            "Carletta Hui",
+            614751,
+            82,
+            "Afican-American",
+            20307
+      ],
+      "820": [
+            "Donna Perez",
+            511306,
+            38,
+            "Caucasian",
+            24565
+      ],
+      "821": [
+            "Charles Marquez",
+            0,
+            9,
+            "Latino",
+            22420
+      ],
+      "822": [
+            "Ernie Logan",
+            335821,
+            27,
+            "Caucasian",
+            21538
+      ],
+      "823": [
+            "Angelica Marsingill",
+            584345,
+            47,
+            "Afican-American",
+            20702
+      ],
+      "824": [
+            "Michael Martindale",
+            287816,
+            31,
+            "Latino",
+            20177
+      ],
+      "825": [
+            "John Seay",
+            126128,
+            40,
+            "Caucasian",
+            23341
+      ],
+      "826": [
+            "Debbie Liu",
+            0,
+            10,
+            "Asian",
+            24652
+      ],
+      "827": [
+            "Brian Wilcox",
+            659469,
+            60,
+            "Latino",
+            23028
+      ],
+      "828": [
+            "Marcus Anderson",
+            13318,
+            30,
+            "Caucasian",
+            21074
+      ],
+      "829": [
+            "Ronald Spaeth",
+            97375,
+            21,
+            "Asian",
+            24093
+      ],
+      "830": [
+            "Jason Stone",
+            399248,
+            30,
+            "Asian",
+            23265
+      ],
+      "831": [
+            "Gary Stanley",
+            421305,
+            61,
+            "Afican-American",
+            23011
+      ],
+      "832": [
+            "Beryl Hass",
+            402107,
+            21,
+            "Afican-American",
+            21044
+      ],
+      "833": [
+            "Eddy Goe",
+            0,
+            10,
+            "Caucasian",
+            20215
+      ],
+      "834": [
+            "Robert May",
+            127804,
+            76,
+            "Latino",
+            23433
+      ],
+      "835": [
+            "Pedro Warner",
+            32249,
+            29,
+            "Caucasian",
+            22984
+      ],
+      "836": [
+            "Mercedes Davis",
+            0,
+            16,
+            "Latino",
+            20641
+      ],
+      "837": [
+            "Jami Allen",
+            679072,
+            70,
+            "Caucasian",
+            21256
+      ],
+      "838": [
+            "Dorothy Sheffield",
+            171489,
+            25,
+            "Asian",
+            23819
+      ],
+      "839": [
+            "Joann Hoare",
+            549416,
+            23,
+            "Caucasian",
+            22193
+      ],
+      "840": [
+            "Greg Jones",
+            0,
+            5,
+            "Afican-American",
+            23459
+      ],
+      "841": [
+            "Rita Booher",
+            0,
+            3,
+            "Caucasian",
+            20814
+      ],
+      "842": [
+            "James Pixler",
+            516180,
+            21,
+            "Caucasian",
+            21829
+      ],
+      "843": [
+            "John Dandridge",
+            257299,
+            28,
+            "Afican-American",
+            23461
+      ],
+      "844": [
+            "Charles Rider",
+            577994,
+            50,
+            "Asian",
+            21858
+      ],
+      "845": [
+            "Wai Gray",
+            174040,
+            63,
+            "Caucasian",
+            20266
+      ],
+      "846": [
+            "Kathleen Green",
+            388561,
+            19,
+            "Asian",
+            24526
+      ],
+      "847": [
+            "Bernie Muse",
+            242383,
+            64,
+            "Asian",
+            23825
+      ],
+      "848": [
+            "Christine Nelson",
+            571226,
+            19,
+            "Afican-American",
+            24057
+      ],
+      "849": [
+            "Tonya Gullett",
+            157130,
+            20,
+            "Latino",
+            20782
+      ],
+      "850": [
+            "Marilyn Payne",
+            381901,
+            69,
+            "Asian",
+            23231
+      ],
+      "851": [
+            "Catherine Mova",
+            0,
+            7,
+            "Asian",
+            20273
+      ],
+      "852": [
+            "Allison Powers",
+            624022,
+            64,
+            "Afican-American",
+            20578
+      ],
+      "853": [
+            "Glen Magee",
+            127911,
+            21,
+            "Caucasian",
+            21921
+      ],
+      "854": [
+            "Dennis Bishop",
+            548274,
+            33,
+            "Caucasian",
+            23509
+      ],
+      "855": [
+            "Kevin Gurwell",
+            0,
+            12,
+            "Asian",
+            23915
+      ],
+      "856": [
+            "Gustavo Horton",
+            131779,
+            71,
+            "Asian",
+            21445
+      ],
+      "857": [
+            "Manuel Kelley",
+            461597,
+            78,
+            "Caucasian",
+            23481
+      ],
+      "858": [
+            "John Barksdale",
+            598466,
+            47,
+            "Latino",
+            21631
+      ],
+      "859": [
+            "Vicki Thomas",
+            552909,
+            63,
+            "Latino",
+            23312
+      ],
+      "860": [
+            "Geoffrey Lebovic",
+            645458,
+            30,
+            "Latino",
+            23202
+      ],
+      "861": [
+            "Jimmy Mancha",
+            339417,
+            84,
+            "Caucasian",
+            21159
+      ],
+      "862": [
+            "Donald Glass",
+            94356,
+            65,
+            "Caucasian",
+            21480
+      ],
+      "863": [
+            "Rusty Williams",
+            468618,
+            26,
+            "Caucasian",
+            22070
+      ],
+      "864": [
+            "Matthew Foushee",
+            582106,
+            81,
+            "Caucasian",
+            24014
+      ],
+      "865": [
+            "Gladys Copeland",
+            0,
+            15,
+            "Asian",
+            20767
+      ],
+      "866": [
+            "Mary Andrade",
+            504483,
+            39,
+            "Asian",
+            21455
+      ],
+      "867": [
+            "James Montelongo",
+            586007,
+            49,
+            "Latino",
+            21291
+      ],
+      "868": [
+            "James Shay",
+            512839,
+            63,
+            "Afican-American",
+            21818
+      ],
+      "869": [
+            "Judith Dodson",
+            330636,
+            63,
+            "Afican-American",
+            22555
+      ],
+      "870": [
+            "Charles Alvarez",
+            224434,
+            41,
+            "Latino",
+            23447
+      ],
+      "871": [
+            "Ray Corson",
+            654537,
+            45,
+            "Caucasian",
+            22117
+      ],
+      "872": [
+            "Peter Gilliland",
+            72522,
+            30,
+            "Asian",
+            20155
+      ],
+      "873": [
+            "Frances Robidoux",
+            0,
+            13,
+            "Asian",
+            24592
+      ],
+      "874": [
+            "Jasmine Russell",
+            228631,
+            67,
+            "Caucasian",
+            21222
+      ],
+      "875": [
+            "William Stengel",
+            661763,
+            55,
+            "Afican-American",
+            23479
+      ],
+      "876": [
+            "Karen Williams",
+            650625,
+            53,
+            "Latino",
+            20522
+      ],
+      "877": [
+            "Linda Johnson",
+            59798,
+            25,
+            "Asian",
+            22039
+      ],
+      "878": [
+            "Jeffrey Taylor",
+            161745,
+            82,
+            "Latino",
+            20976
+      ],
+      "879": [
+            "Melissa Hall",
+            189913,
+            40,
+            "Asian",
+            22337
+      ],
+      "880": [
+            "Tamara Lewis",
+            41882,
+            73,
+            "Afican-American",
+            20272
+      ],
+      "881": [
+            "Norma Utz",
+            469487,
+            70,
+            "Caucasian",
+            24138
+      ],
+      "882": [
+            "Beverly James",
+            267567,
+            53,
+            "Latino",
+            22370
+      ],
+      "883": [
+            "Jack Walton",
+            224779,
+            63,
+            "Asian",
+            20766
+      ],
+      "884": [
+            "Wallace Liddell",
+            226314,
+            65,
+            "Afican-American",
+            21610
+      ],
+      "885": [
+            "Ricky Masella",
+            134371,
+            77,
+            "Afican-American",
+            23785
+      ],
+      "886": [
+            "Charles Grissinger",
+            487717,
+            81,
+            "Afican-American",
+            24655
+      ],
+      "887": [
+            "Robyn Agnello",
+            0,
+            6,
+            "Latino",
+            22986
+      ],
+      "888": [
+            "Nina Carter",
+            646451,
+            26,
+            "Latino",
+            23149
+      ],
+      "889": [
+            "James Vasmadjides",
+            0,
+            17,
+            "Caucasian",
+            22336
+      ],
+      "890": [
+            "Judith Watts",
+            11665,
+            34,
+            "Caucasian",
+            20111
+      ],
+      "891": [
+            "Marcus Dennehy",
+            52071,
+            35,
+            "Latino",
+            20478
+      ],
+      "892": [
+            "Megan Stout",
+            697187,
+            66,
+            "Asian",
+            22660
+      ],
+      "893": [
+            "Jay Spurgeon",
+            124521,
+            31,
+            "Afican-American",
+            24363
+      ],
+      "894": [
+            "Ben Larkin",
+            0,
+            10,
+            "Asian",
+            21190
+      ],
+      "895": [
+            "Michael Riggan",
+            501451,
+            38,
+            "Latino",
+            22612
+      ],
+      "896": [
+            "Norma Whalen",
+            113191,
+            80,
+            "Asian",
+            21393
+      ],
+      "897": [
+            "Paul Hill",
+            346964,
+            33,
+            "Asian",
+            21132
+      ],
+      "898": [
+            "Etta Nunez",
+            0,
+            6,
+            "Latino",
+            23922
+      ],
+      "899": [
+            "Delores Holcombe",
+            119745,
+            37,
+            "Afican-American",
+            23323
+      ],
+      "900": [
+            "Darlene Willardson",
+            0,
+            3,
+            "Caucasian",
+            23163
+      ],
+      "901": [
+            "Joelle Martinez",
+            78851,
+            18,
+            "Latino",
+            24641
+      ],
+      "902": [
+            "Willie Davis",
+            0,
+            1,
+            "Caucasian",
+            22321
+      ],
+      "903": [
+            "Darlene Miller",
+            226274,
+            62,
+            "Caucasian",
+            24155
+      ],
+      "904": [
+            "Cameron Martin",
+            586804,
+            71,
+            "Latino",
+            20528
+      ],
+      "905": [
+            "John Jones",
+            0,
+            8,
+            "Asian",
+            24643
+      ],
+      "906": [
+            "Barbara Reed",
+            451979,
+            53,
+            "Afican-American",
+            21417
+      ],
+      "907": [
+            "Kelly Mcvea",
+            657278,
+            19,
+            "Caucasian",
+            21711
+      ],
+      "908": [
+            "Harry Garry",
+            63851,
+            73,
+            "Caucasian",
+            21229
+      ],
+      "909": [
+            "William Sims",
+            120688,
+            40,
+            "Asian",
+            22079
+      ],
+      "910": [
+            "Faye Rogers",
+            210377,
+            79,
+            "Afican-American",
+            24368
+      ],
+      "911": [
+            "Celia Burk",
+            0,
+            17,
+            "Asian",
+            22995
+      ],
+      "912": [
+            "Ann Obryan",
+            677244,
+            68,
+            "Afican-American",
+            23366
+      ],
+      "913": [
+            "Raymond Baumer",
+            333770,
+            18,
+            "Caucasian",
+            23092
+      ],
+      "914": [
+            "Sharlene Mortell",
+            522778,
+            80,
+            "Asian",
+            20729
+      ],
+      "915": [
+            "Wilda Underwood",
+            0,
+            5,
+            "Caucasian",
+            21497
+      ],
+      "916": [
+            "Robert Gionet",
+            0,
+            14,
+            "Latino",
+            23830
+      ],
+      "917": [
+            "Billie Jones",
+            638169,
+            59,
+            "Latino",
+            22002
+      ],
+      "918": [
+            "Myrtle Randolph",
+            123500,
+            66,
+            "Latino",
+            24564
+      ],
+      "919": [
+            "Andra Canter",
+            301871,
+            55,
+            "Latino",
+            24319
+      ],
+      "920": [
+            "Lucy White",
+            64892,
+            69,
+            "Asian",
+            21267
+      ],
+      "921": [
+            "Lucille Martin",
+            204111,
+            47,
+            "Latino",
+            23702
+      ],
+      "922": [
+            "David Gordon",
+            568384,
+            58,
+            "Latino",
+            20840
+      ],
+      "923": [
+            "Judith Cirilo",
+            101651,
+            61,
+            "Caucasian",
+            21627
+      ],
+      "924": [
+            "Lorenzo Mcclurg",
+            154373,
+            40,
+            "Caucasian",
+            21888
+      ],
+      "925": [
+            "Thelma Rivera",
+            0,
+            11,
+            "Asian",
+            23277
+      ],
+      "926": [
+            "Pamela Ressler",
+            144801,
+            33,
+            "Afican-American",
+            21411
+      ],
+      "927": [
+            "Shirley Wallace",
+            9650,
+            76,
+            "Caucasian",
+            23107
+      ],
+      "928": [
+            "Richard Hirsch",
+            23995,
+            49,
+            "Caucasian",
+            24408
+      ],
+      "929": [
+            "Renee Maze",
+            63322,
+            63,
+            "Afican-American",
+            20590
+      ],
+      "930": [
+            "Tanya Mendoza",
+            0,
+            3,
+            "Caucasian",
+            22242
+      ],
+      "931": [
+            "Rebecca Robertson",
+            178549,
+            81,
+            "Caucasian",
+            22099
+      ],
+      "932": [
+            "Michelle Smith",
+            510591,
+            77,
+            "Latino",
+            23674
+      ],
+      "933": [
+            "Elbert Wilson",
+            0,
+            8,
+            "Caucasian",
+            20934
+      ],
+      "934": [
+            "Mindy Conkle",
+            477783,
+            28,
+            "Afican-American",
+            22359
+      ],
+      "935": [
+            "Anna Kelley",
+            127395,
+            67,
+            "Asian",
+            20284
+      ],
+      "936": [
+            "Reginald Mccrary",
+            149938,
+            20,
+            "Latino",
+            22015
+      ],
+      "937": [
+            "Jacob Long",
+            438102,
+            64,
+            "Afican-American",
+            20943
+      ],
+      "938": [
+            "Todd Walker",
+            582456,
+            77,
+            "Afican-American",
+            20294
+      ],
+      "939": [
+            "Rebecca Grosbier",
+            0,
+            6,
+            "Afican-American",
+            23307
+      ],
+      "940": [
+            "John Anderson",
+            85105,
+            21,
+            "Asian",
+            20733
+      ],
+      "941": [
+            "Amy Morgan",
+            254245,
+            46,
+            "Caucasian",
+            20879
+      ],
+      "942": [
+            "Elsie Jensen",
+            524104,
+            55,
+            "Afican-American",
+            24282
+      ],
+      "943": [
+            "John Davis",
+            223774,
+            69,
+            "Caucasian",
+            24379
+      ],
+      "944": [
+            "Wayne Willis",
+            586257,
+            81,
+            "Afican-American",
+            22423
+      ],
+      "945": [
+            "Steve Bright",
+            511605,
+            34,
+            "Asian",
+            21085
+      ],
+      "946": [
+            "Dorothy Tarpey",
+            65437,
+            29,
+            "Latino",
+            23461
+      ],
+      "947": [
+            "Kevin Sears",
+            337616,
+            80,
+            "Latino",
+            23822
+      ],
+      "948": [
+            "Shirley Rodriguez",
+            78878,
+            70,
+            "Afican-American",
+            24238
+      ],
+      "949": [
+            "Beth Nguyen",
+            194272,
+            43,
+            "Asian",
+            21087
+      ],
+      "950": [
+            "Jennifer Johns",
+            671804,
+            61,
+            "Afican-American",
+            20274
+      ],
+      "951": [
+            "Susan Nalley",
+            151691,
+            85,
+            "Caucasian",
+            24345
+      ],
+      "952": [
+            "Sheila Gravois",
+            609125,
+            32,
+            "Latino",
+            21741
+      ],
+      "953": [
+            "Michael Lambertson",
+            510252,
+            68,
+            "Afican-American",
+            24054
+      ],
+      "954": [
+            "Cesar Burnett",
+            246235,
+            41,
+            "Asian",
+            21583
+      ],
+      "955": [
+            "Carmen Pratt",
+            290879,
+            77,
+            "Afican-American",
+            22227
+      ],
+      "956": [
+            "Jerry Perry",
+            321420,
+            37,
+            "Latino",
+            22617
+      ],
+      "957": [
+            "Janie Sherman",
+            0,
+            9,
+            "Latino",
+            22886
+      ],
+      "958": [
+            "Lisa Neuhoff",
+            400164,
+            72,
+            "Asian",
+            21539
+      ],
+      "959": [
+            "Melissa Harter",
+            109510,
+            55,
+            "Latino",
+            20175
+      ],
+      "960": [
+            "Jacqueline Fountain",
+            277620,
+            56,
+            "Afican-American",
+            20347
+      ],
+      "961": [
+            "James Attaway",
+            353860,
+            32,
+            "Asian",
+            21502
+      ],
+      "962": [
+            "Johnny Medina",
+            272677,
+            57,
+            "Afican-American",
+            23368
+      ],
+      "963": [
+            "Flora Clouse",
+            0,
+            17,
+            "Asian",
+            20371
+      ],
+      "964": [
+            "An Pena",
+            480965,
+            48,
+            "Afican-American",
+            22098
+      ],
+      "965": [
+            "Thomas Burley",
+            153994,
+            29,
+            "Latino",
+            23170
+      ],
+      "966": [
+            "Raul Lopez",
+            574201,
+            62,
+            "Asian",
+            24302
+      ],
+      "967": [
+            "Marilyn Fisher",
+            461227,
+            83,
+            "Latino",
+            24130
+      ],
+      "968": [
+            "Ralph Wei",
+            0,
+            7,
+            "Asian",
+            20449
+      ],
+      "969": [
+            "John Manges",
+            0,
+            1,
+            "Asian",
+            23021
+      ],
+      "970": [
+            "Louise Maohu",
+            672389,
+            36,
+            "Afican-American",
+            21060
+      ],
+      "971": [
+            "Manuel Cushing",
+            189705,
+            42,
+            "Caucasian",
+            23459
+      ],
+      "972": [
+            "Jesus Mccage",
+            670553,
+            65,
+            "Afican-American",
+            20695
+      ],
+      "973": [
+            "Laurence Justice",
+            522640,
+            77,
+            "Caucasian",
+            20690
+      ],
+      "974": [
+            "Joseph Wolley",
+            646972,
+            44,
+            "Asian",
+            20541
+      ],
+      "975": [
+            "Joseph Gendreau",
+            0,
+            8,
+            "Caucasian",
+            21991
+      ],
+      "976": [
+            "Earl Barker",
+            392783,
+            80,
+            "Afican-American",
+            21444
+      ],
+      "977": [
+            "Jacquelyn Reeder",
+            85125,
+            76,
+            "Latino",
+            23148
+      ],
+      "978": [
+            "Jennifer Fuller",
+            0,
+            3,
+            "Latino",
+            21682
+      ],
+      "979": [
+            "Renato Carpenter",
+            49739,
+            44,
+            "Caucasian",
+            20999
+      ],
+      "980": [
+            "Leona Spragg",
+            699040,
+            20,
+            "Caucasian",
+            24352
+      ],
+      "981": [
+            "Bradley Gaines",
+            212814,
+            40,
+            "Asian",
+            22150
+      ],
+      "982": [
+            "Anna Giardina",
+            0,
+            15,
+            "Latino",
+            20424
+      ],
+      "983": [
+            "Elizabeth Marler",
+            276754,
+            19,
+            "Caucasian",
+            22670
+      ],
+      "984": [
+            "Katrina Davis",
+            406284,
+            78,
+            "Afican-American",
+            23020
+      ],
+      "985": [
+            "Marc Scerra",
+            301012,
+            75,
+            "Latino",
+            20885
+      ],
+      "986": [
+            "Kenny Garcia",
+            538216,
+            50,
+            "Asian",
+            22049
+      ],
+      "987": [
+            "John Belcher",
+            414424,
+            75,
+            "Afican-American",
+            24231
+      ],
+      "988": [
+            "Jason Craig",
+            12219,
+            59,
+            "Latino",
+            24646
+      ],
+      "989": [
+            "Gloria Crisafi",
+            419861,
+            30,
+            "Afican-American",
+            23100
+      ],
+      "990": [
+            "Constance Kessler",
+            0,
+            4,
+            "Asian",
+            22459
+      ],
+      "991": [
+            "Kristen Jones",
+            79695,
+            54,
+            "Asian",
+            24611
+      ],
+      "992": [
+            "Rhonda Cole",
+            397794,
+            30,
+            "Afican-American",
+            24173
+      ],
+      "993": [
+            "Anette James",
+            0,
+            14,
+            "Afican-American",
+            23124
+      ],
+      "994": [
+            "William Rogers",
+            131779,
+            27,
+            "Caucasian",
+            20707
+      ],
+      "995": [
+            "Devon Brison",
+            95731,
+            66,
+            "Caucasian",
+            24635
+      ],
+      "996": [
+            "Bettie Lyons",
+            537199,
+            47,
+            "Latino",
+            22835
+      ],
+      "997": [
+            "Irene Norris",
+            316130,
+            62,
+            "Latino",
+            24257
+      ],
+      "998": [
+            "Benjamin Martinez",
+            162400,
+            53,
+            "Afican-American",
+            20321
+      ],
+      "999": [
+            "Ross Sams",
+            137059,
+            85,
+            "Latino",
+            21597
+      ]
+}
