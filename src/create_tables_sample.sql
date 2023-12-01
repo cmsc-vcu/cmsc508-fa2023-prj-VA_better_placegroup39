@@ -13,7 +13,7 @@ SET FOREIGN_KEY_CHECKS=1;
 
 
 # zipcode
-CREATE TABLE Education_system(
+CREATE TABLE Zipcode(
     zipcode int not null,
     primary key(zipcode)
 );
@@ -33,10 +33,10 @@ CREATE TABLE Education_system(
 # Criminal Activity
 CREATE TABLE Criminal_Activity (
     zipcode int not null,
+    crime_id int primary key,
     police_coverage_grade varchar(255) not null,
     safety_rating varchar(255),
     foreign key(zipcode) references Zipcode (zipcode),
-    primary key(zipcode)
 );
 
 
@@ -56,11 +56,11 @@ CREATE TABLE Safety_Rating (
  
 # Population
 create table Population( 
+    person_id int primary key, 
+    age int,
+    race varchar(255),
+    networth int, 
     zipcode int not null,
-    Population int,
-    Diversity float,
-    foreign key(zipcode) references Zipcode (zipcode),
-    primary key(zipcode)
 );
 
 
@@ -69,7 +69,7 @@ create table Population(
 create table Transportation( 
     zipcode int not null,
     bike_routes int,
-    HasLightTrains boolean, #T/F
+    HasLightTrains boolean, 
     foreign key(zipcode) references Zipcode (zipcode),
     primary key(zipcode)
 );
@@ -77,21 +77,21 @@ create table Transportation(
 
 # House Market
 create table House_Market( 
+    house_id int primary key,
     zipcode int not null,
-    avg_rent int,
-    avg_price int,
-    houses_4_sale int,
-    foreign key(zipcode) references Zipcode (zipcode),
-    primary key(zipcode)
+    rent_price int,
+    sale_price int,
+    for_sale boolean,
+    for_rent boolean,
 );
 
 
-# Section 
-# Job Security
-create table Job_Security( 
+# Open Jobs
+create table Job_openings( 
+    job_id int primary,
+    job_title varchar(255),
     zipcode int not null,
-    open_jobs int,
-    layoff_rate int,
-    foreign key(zipcode) references Zipcode (zipcode),
-    primary key(zipcode)
+    salary int,
+    actively_hiring boolean,
+    date_posted date,    
 );
