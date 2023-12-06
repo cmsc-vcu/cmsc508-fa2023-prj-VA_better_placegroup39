@@ -1,0 +1,702 @@
+{
+      "0": [
+            "Tracy Elementary School",
+            492,
+            "78%",
+            "A",
+            20559
+      ],
+      "1": [
+            "Walter Middle School",
+            109,
+            "31%",
+            "B",
+            21633
+      ],
+      "2": [
+            "David High School",
+            228,
+            "95%",
+            "C",
+            22054
+      ],
+      "3": [
+            "Marian Elementary School",
+            54,
+            "61%",
+            "D",
+            20896
+      ],
+      "4": [
+            "Betty Middle School",
+            475,
+            "65%",
+            "E",
+            23442
+      ],
+      "5": [
+            "Sang Middle School",
+            20,
+            "64%",
+            "F",
+            21342
+      ],
+      "6": [
+            "Mildred Elementary School",
+            387,
+            "81%",
+            "F",
+            21115
+      ],
+      "7": [
+            "Allan Middle School",
+            465,
+            "36%",
+            "D",
+            20595
+      ],
+      "8": [
+            "Gabriela High School",
+            479,
+            "98%",
+            "A",
+            22898
+      ],
+      "9": [
+            "Linwood High School",
+            11,
+            "0%",
+            "D",
+            24297
+      ],
+      "10": [
+            "Elizabeth Elementary School",
+            122,
+            "17%",
+            "F",
+            24331
+      ],
+      "11": [
+            "James Middle School",
+            189,
+            "100%",
+            "F",
+            20358
+      ],
+      "12": [
+            "Robert Middle School",
+            374,
+            "6%",
+            "D",
+            21136
+      ],
+      "13": [
+            "Erin Elementary School",
+            396,
+            "74%",
+            "A",
+            21148
+      ],
+      "14": [
+            "Loretta Middle School",
+            69,
+            "70%",
+            "F",
+            22871
+      ],
+      "15": [
+            "Patrick Elementary School",
+            459,
+            "7%",
+            "A",
+            22527
+      ],
+      "16": [
+            "Jose Middle School",
+            194,
+            "47%",
+            "C",
+            20333
+      ],
+      "17": [
+            "Keith High School",
+            296,
+            "48%",
+            "B",
+            20989
+      ],
+      "18": [
+            "Thomas Middle School",
+            322,
+            "35%",
+            "F",
+            24154
+      ],
+      "19": [
+            "Royce Elementary School",
+            328,
+            "59%",
+            "A",
+            21906
+      ],
+      "20": [
+            "Patricia Elementary School",
+            158,
+            "53%",
+            "B",
+            20306
+      ],
+      "21": [
+            "Rebecca Elementary School",
+            120,
+            "42%",
+            "C",
+            22395
+      ],
+      "22": [
+            "Al Elementary School",
+            134,
+            "32%",
+            "D",
+            20856
+      ],
+      "23": [
+            "Derrick High School",
+            119,
+            "41%",
+            "F",
+            20107
+      ],
+      "24": [
+            "James High School",
+            331,
+            "38%",
+            "E",
+            21726
+      ],
+      "25": [
+            "Patricia Elementary School",
+            381,
+            "45%",
+            "A",
+            21417
+      ],
+      "26": [
+            "Humberto Middle School",
+            273,
+            "2%",
+            "E",
+            22823
+      ],
+      "27": [
+            "Virginia Middle School",
+            104,
+            "47%",
+            "A",
+            22247
+      ],
+      "28": [
+            "Carrie Elementary School",
+            415,
+            "73%",
+            "A",
+            21722
+      ],
+      "29": [
+            "Mitch Elementary School",
+            232,
+            "49%",
+            "F",
+            23718
+      ],
+      "30": [
+            "Mildred Middle School",
+            473,
+            "76%",
+            "B",
+            21523
+      ],
+      "31": [
+            "Misti Middle School",
+            168,
+            "30%",
+            "F",
+            20962
+      ],
+      "32": [
+            "Marcia High School",
+            139,
+            "100%",
+            "C",
+            21269
+      ],
+      "33": [
+            "Kelli High School",
+            258,
+            "29%",
+            "B",
+            24176
+      ],
+      "34": [
+            "Stefan Middle School",
+            30,
+            "48%",
+            "C",
+            22832
+      ],
+      "35": [
+            "Lee Middle School",
+            484,
+            "69%",
+            "A",
+            21826
+      ],
+      "36": [
+            "Mary Elementary School",
+            66,
+            "1%",
+            "E",
+            20907
+      ],
+      "37": [
+            "Robert Middle School",
+            494,
+            "48%",
+            "D",
+            24241
+      ],
+      "38": [
+            "Winona High School",
+            456,
+            "34%",
+            "D",
+            24057
+      ],
+      "39": [
+            "Charles High School",
+            119,
+            "4%",
+            "E",
+            23162
+      ],
+      "40": [
+            "Gino High School",
+            119,
+            "97%",
+            "C",
+            23162
+      ],
+      "41": [
+            "Phillip Elementary School",
+            169,
+            "57%",
+            "F",
+            24213
+      ],
+      "42": [
+            "Teresa Middle School",
+            210,
+            "36%",
+            "F",
+            21380
+      ],
+      "43": [
+            "Fred High School",
+            486,
+            "23%",
+            "D",
+            22114
+      ],
+      "44": [
+            "Emmett Elementary School",
+            42,
+            "76%",
+            "E",
+            20647
+      ],
+      "45": [
+            "Kelly Middle School",
+            163,
+            "84%",
+            "F",
+            22888
+      ],
+      "46": [
+            "Bridget Middle School",
+            231,
+            "38%",
+            "A",
+            22226
+      ],
+      "47": [
+            "Malcolm Middle School",
+            274,
+            "85%",
+            "D",
+            23308
+      ],
+      "48": [
+            "John Middle School",
+            440,
+            "98%",
+            "D",
+            20221
+      ],
+      "49": [
+            "David Middle School",
+            239,
+            "8%",
+            "E",
+            21666
+      ],
+      "50": [
+            "Cathryn High School",
+            393,
+            "24%",
+            "E",
+            20600
+      ],
+      "51": [
+            "Marcia High School",
+            219,
+            "31%",
+            "B",
+            21033
+      ],
+      "52": [
+            "Stephen Middle School",
+            428,
+            "96%",
+            "F",
+            21585
+      ],
+      "53": [
+            "Tim Middle School",
+            316,
+            "60%",
+            "D",
+            23953
+      ],
+      "54": [
+            "Kevin Middle School",
+            121,
+            "62%",
+            "D",
+            23926
+      ],
+      "55": [
+            "William Elementary School",
+            307,
+            "77%",
+            "D",
+            22622
+      ],
+      "56": [
+            "Iola High School",
+            408,
+            "24%",
+            "F",
+            23056
+      ],
+      "57": [
+            "Denise Elementary School",
+            34,
+            "55%",
+            "D",
+            24237
+      ],
+      "58": [
+            "Daniel Elementary School",
+            299,
+            "48%",
+            "D",
+            23786
+      ],
+      "59": [
+            "Kyle Middle School",
+            289,
+            "37%",
+            "E",
+            24622
+      ],
+      "60": [
+            "Ruth Elementary School",
+            64,
+            "29%",
+            "B",
+            23100
+      ],
+      "61": [
+            "Javier High School",
+            350,
+            "45%",
+            "B",
+            24139
+      ],
+      "62": [
+            "Tracey Middle School",
+            387,
+            "41%",
+            "A",
+            24073
+      ],
+      "63": [
+            "Laura High School",
+            455,
+            "34%",
+            "E",
+            22684
+      ],
+      "64": [
+            "Jeffery High School",
+            450,
+            "36%",
+            "C",
+            21176
+      ],
+      "65": [
+            "Liza Middle School",
+            237,
+            "16%",
+            "B",
+            21805
+      ],
+      "66": [
+            "Timothy Elementary School",
+            296,
+            "20%",
+            "E",
+            22545
+      ],
+      "67": [
+            "Thelma Middle School",
+            480,
+            "50%",
+            "B",
+            20213
+      ],
+      "68": [
+            "David High School",
+            155,
+            "84%",
+            "E",
+            23099
+      ],
+      "69": [
+            "Paula High School",
+            43,
+            "25%",
+            "D",
+            24181
+      ],
+      "70": [
+            "Dawn Elementary School",
+            151,
+            "43%",
+            "B",
+            20286
+      ],
+      "71": [
+            "William Elementary School",
+            409,
+            "30%",
+            "A",
+            20272
+      ],
+      "72": [
+            "Kirsten High School",
+            131,
+            "88%",
+            "E",
+            24451
+      ],
+      "73": [
+            "Bernardo Elementary School",
+            408,
+            "5%",
+            "F",
+            23926
+      ],
+      "74": [
+            "Dwight High School",
+            154,
+            "24%",
+            "D",
+            24510
+      ],
+      "75": [
+            "Jane Elementary School",
+            15,
+            "10%",
+            "E",
+            23000
+      ],
+      "76": [
+            "Ronald Elementary School",
+            141,
+            "22%",
+            "D",
+            20668
+      ],
+      "77": [
+            "Louise Middle School",
+            114,
+            "29%",
+            "C",
+            20290
+      ],
+      "78": [
+            "Shawn High School",
+            100,
+            "12%",
+            "E",
+            20817
+      ],
+      "79": [
+            "Erica Elementary School",
+            303,
+            "72%",
+            "E",
+            20344
+      ],
+      "80": [
+            "Rick Elementary School",
+            444,
+            "14%",
+            "E",
+            23712
+      ],
+      "81": [
+            "Dorothea High School",
+            366,
+            "49%",
+            "C",
+            22119
+      ],
+      "82": [
+            "Paul High School",
+            24,
+            "92%",
+            "A",
+            24059
+      ],
+      "83": [
+            "James Middle School",
+            77,
+            "56%",
+            "B",
+            20456
+      ],
+      "84": [
+            "Jerry High School",
+            62,
+            "99%",
+            "C",
+            22385
+      ],
+      "85": [
+            "Andrea High School",
+            34,
+            "40%",
+            "D",
+            23433
+      ],
+      "86": [
+            "Christy High School",
+            235,
+            "28%",
+            "F",
+            24270
+      ],
+      "87": [
+            "Jacob Middle School",
+            48,
+            "90%",
+            "A",
+            23319
+      ],
+      "88": [
+            "Robert Elementary School",
+            101,
+            "16%",
+            "B",
+            20130
+      ],
+      "89": [
+            "Clifford Middle School",
+            92,
+            "33%",
+            "E",
+            23196
+      ],
+      "90": [
+            "Sandra High School",
+            44,
+            "16%",
+            "B",
+            21783
+      ],
+      "91": [
+            "Anthony High School",
+            100,
+            "80%",
+            "E",
+            22343
+      ],
+      "92": [
+            "Marc High School",
+            335,
+            "4%",
+            "A",
+            22611
+      ],
+      "93": [
+            "Eddie Middle School",
+            145,
+            "85%",
+            "B",
+            20848
+      ],
+      "94": [
+            "Christine High School",
+            260,
+            "41%",
+            "E",
+            21326
+      ],
+      "95": [
+            "Carol High School",
+            408,
+            "39%",
+            "F",
+            20511
+      ],
+      "96": [
+            "Thomas Middle School",
+            135,
+            "16%",
+            "C",
+            23811
+      ],
+      "97": [
+            "Cecile High School",
+            134,
+            "7%",
+            "B",
+            22170
+      ],
+      "98": [
+            "Dorothy Elementary School",
+            252,
+            "14%",
+            "B",
+            20118
+      ],
+      "99": [
+            "Michael High School",
+            417,
+            "30%",
+            "F",
+            22332
+      ]
+}

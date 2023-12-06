@@ -13,10 +13,10 @@ housesDict = {}
 def main():
     crimeId = 0
     housesId = 0
-    ethnicities = ["Caucasian", "Afican-American", "Latino", "Asian"]
+    ethnicities = ["White", "Afican-American", "Latino", "Asian", "American Indian", "Native Hawaiian"]
     for personId in range(1000):
         name = names.get_full_name()
-        ethnicity = ethnicities[random.randint(0,3)]
+        ethnicity = ethnicities[random.randint(0,5)]
         zipcode = random.randint(20101 ,24658)
         age = random.randint(1,85)
         salary = 0
@@ -24,8 +24,7 @@ def main():
             salary = random.randint(0, 700000)
         dict1[personId] = [name, salary, age, ethnicity, zipcode]
         if personId % 10 == 0:
-            randomNum = random.randint(1,10)
-            crimeDict[crimeId] = crimes.generateCrimeData(math.floor(personId/randomNum))
+            crimeDict[crimeId] = crimes.generateCrimeData(name)
             crimeId += 1
         if personId % 10 == 0:
             randomNum = random.randint(1,10)
@@ -33,7 +32,7 @@ def main():
             housesId += 1
 
 
-    outfile = open("population.json", "w")
+    outfile = open("peoples.json", "w")
     json.dump(dict1, outfile, indent = 6)
 
     crimeOutFile = open("crimes.json", "w")

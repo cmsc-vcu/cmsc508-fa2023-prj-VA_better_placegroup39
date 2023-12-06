@@ -10,8 +10,8 @@ for i in range(100):
     diversity = f"{random.randint(0,100)}%"
     quality = Qualities[random.randint(0,5)]
     zipcode = random.randint(20101 ,24658)
-    schoolID = f"School_{i}"
+    schoolID = f"{i}"
     dict1[schoolID] = [schoolName, numberOfTeachers, diversity, quality, zipcode]
 
-outfile = open("education.json", "w")
+outfile = open("schools.json", "w")
 json.dump(dict1, outfile, indent = 6)
