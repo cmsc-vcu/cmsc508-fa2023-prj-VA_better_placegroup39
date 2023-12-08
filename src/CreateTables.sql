@@ -28,7 +28,7 @@ CREATE TABLE Schools (
 CREATE TABLE Crimes (
     crimeId INT PRIMARY KEY,
     fullName VARCHAR(255),
-    typeOfCrime VARCHAR(255),
+    crimeType VARCHAR(255),
     severity VARCHAR(255),
     zipcode INT,
     date_of_crime DATE

@@ -14,7 +14,7 @@ def main():
     crimeId = 0
     housesId = 0
     ethnicities = ["White", "Afican-American", "Latino", "Asian", "American Indian", "Native Hawaiian"]
-    for personId in range(1000):
+    for personId in range(10000):
         name = names.get_full_name()
         ethnicity = ethnicities[random.randint(0,5)]
         zipcode = random.randint(20101 ,24658)
@@ -23,7 +23,7 @@ def main():
         if age > 17:
             salary = random.randint(0, 700000)
         dict1[personId] = [name, salary, age, ethnicity, zipcode]
-        if personId % 10 == 0:
+        if personId % 15 == 0:
             crimeDict[crimeId] = crimes.generateCrimeData(name)
             crimeId += 1
         if personId % 10 == 0:
