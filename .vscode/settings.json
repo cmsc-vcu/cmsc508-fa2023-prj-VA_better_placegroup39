@@ -1,0 +1,31 @@
+{
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "cmsc508.com",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "Group DB",
+            "username": "23FA_tekestede",
+            "database": "23FA_groups_group39"
+        },
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "cmsc508.com",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "Final Project",
+            "database": "23FA_groups_group39",
+            "username": "23FA_tekestede",
+            "password": "Shout4_tekestede_GOME"
+        }
+    ]
+}

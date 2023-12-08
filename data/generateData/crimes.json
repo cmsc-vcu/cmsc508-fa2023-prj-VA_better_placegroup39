@@ -1,602 +1,702 @@
 {
       "0": [
-            0,
-            "Larceny",
-            1,
-            24189
+            "Stephen Thompson",
+            "Vandalism",
+            2,
+            20309,
+            "2020-07-05"
       ],
       "1": [
-            5,
+            "Alonzo Soto",
             "Grand Theft",
             1,
-            20434
+            23463,
+            "2010-01-03"
       ],
       "2": [
-            3,
-            "Robbery",
-            2,
-            23983
+            "Arleen Munro",
+            "Armed Robbery",
+            5,
+            20722,
+            "2012-07-11"
       ],
       "3": [
-            15,
-            "Arson",
-            4,
-            24470
+            "Phyllis Carter",
+            "Armed Robbery",
+            5,
+            21777,
+            "2021-10-07"
       ],
       "4": [
-            4,
-            "Grand Theft",
-            1,
-            22118
+            "Anna Sylvester",
+            "Shoplifting",
+            0,
+            22528,
+            "2022-10-28"
       ],
       "5": [
-            8,
-            "Grand Theft",
-            1,
-            21566
+            "Carol Hey",
+            "Assault",
+            4,
+            21479,
+            "2020-12-19"
       ],
       "6": [
-            30,
-            "Grand Theft",
-            1,
-            20951
+            "Marie Thomas",
+            "Burglary",
+            3,
+            23078,
+            "2015-10-25"
       ],
       "7": [
-            7,
-            "Grand Theft",
-            1,
-            21137
+            "Jeanette Felch",
+            "Arson",
+            4,
+            21568,
+            "2013-08-28"
       ],
       "8": [
-            8,
-            "Larceny",
-            1,
-            21011
+            "Benjamin Juariqui",
+            "Vandalism",
+            2,
+            22131,
+            "2022-08-23"
       ],
       "9": [
-            90,
-            "Shoplifting",
-            0,
-            23138
+            "Connie Ramos",
+            "Arson",
+            4,
+            21315,
+            "2020-06-13"
       ],
       "10": [
-            16,
-            "Shoplifting",
-            0,
-            23292
+            "Buster Jones",
+            "Vandalism",
+            2,
+            23396,
+            "2022-01-11"
       ],
       "11": [
-            55,
+            "Mario Grande",
             "Shoplifting",
             0,
-            24248
+            20757,
+            "2018-09-08"
       ],
       "12": [
-            60,
-            "Grand Theft",
-            1,
-            24292
+            "Jessica Overton",
+            "Armed Robbery",
+            5,
+            22228,
+            "2019-06-19"
       ],
       "13": [
-            26,
-            "Arson",
-            4,
-            23741
+            "Jessica Woods",
+            "Larceny",
+            1,
+            20155,
+            "2011-12-15"
       ],
       "14": [
-            46,
-            "Larceny",
-            1,
-            21972
+            "Michael Reed",
+            "Vandalism",
+            2,
+            24472,
+            "2021-02-07"
       ],
       "15": [
-            50,
-            "Arson",
-            4,
-            20370
+            "Frances Cruz",
+            "Fraud",
+            1,
+            24025,
+            "2015-09-18"
       ],
       "16": [
-            20,
-            "Robbery",
-            2,
-            20106
+            "Robert Hughes",
+            "Armed Robbery",
+            5,
+            24561,
+            "2023-12-01"
       ],
       "17": [
-            21,
-            "Larceny",
+            "Willard Conley",
+            "Fraud",
             1,
-            24482
+            24629,
+            "2023-12-02"
       ],
       "18": [
-            18,
-            "Larceny",
+            "Loan Lara",
+            "Fraud",
             1,
-            22239
+            23939,
+            "2016-11-14"
       ],
       "19": [
-            95,
-            "Grand Theft",
-            1,
-            21650
+            "Paul Shepard",
+            "Robbery",
+            2,
+            23423,
+            "2010-12-24"
       ],
       "20": [
-            20,
-            "Grand Theft",
-            1,
-            21333
+            "Danielle Storey",
+            "Vandalism",
+            2,
+            22071,
+            "2017-10-04"
       ],
       "21": [
-            210,
+            "Flossie Holland",
             "Arson",
             4,
-            22880
+            20440,
+            "2015-08-13"
       ],
       "22": [
-            220,
-            "Armed Robbery",
-            5,
-            24160
+            "Jose Hogue",
+            "Grand Theft",
+            1,
+            24276,
+            "2012-02-17"
       ],
       "23": [
-            230,
+            "Charles Norton",
             "Armed Robbery",
             5,
-            20688
+            21346,
+            "2016-04-22"
       ],
       "24": [
-            34,
-            "Shoplifting",
-            0,
-            20140
+            "Maurice Fox",
+            "Burglary",
+            3,
+            22970,
+            "2020-09-15"
       ],
       "25": [
-            50,
-            "Armed Robbery",
-            5,
-            21623
+            "Brian Wagner",
+            "Grand Theft",
+            1,
+            24177,
+            "2022-06-19"
       ],
       "26": [
-            26,
+            "Aimee Garand",
             "Larceny",
             1,
-            23722
+            21648,
+            "2018-09-09"
       ],
       "27": [
-            90,
-            "Armed Robbery",
-            5,
-            23449
+            "Tommy Dean",
+            "Shoplifting",
+            0,
+            24486,
+            "2020-06-21"
       ],
       "28": [
-            40,
-            "Robbery",
-            2,
-            21276
+            "Jennifer Cass",
+            "Fraud",
+            1,
+            23256,
+            "2019-11-23"
       ],
       "29": [
-            145,
-            "Robbery",
-            2,
-            20182
+            "Clifford Rios",
+            "Fraud",
+            1,
+            23319,
+            "2013-01-26"
       ],
       "30": [
-            300,
-            "Larceny",
-            1,
-            20572
+            "Marie Mccall",
+            "Shoplifting",
+            0,
+            21671,
+            "2012-07-28"
       ],
       "31": [
-            103,
-            "Arson",
-            4,
-            24119
+            "Harriet Wulf",
+            "Shoplifting",
+            0,
+            21836,
+            "2022-09-05"
       ],
       "32": [
-            64,
-            "Arson",
-            4,
-            24454
+            "Hattie Isbrecht",
+            "Shoplifting",
+            0,
+            22090,
+            "2015-08-28"
       ],
       "33": [
-            55,
-            "Grand Theft",
-            1,
-            23443
+            "Shawnda Forman",
+            "Assault",
+            4,
+            24205,
+            "2021-05-01"
       ],
       "34": [
-            113,
-            "Armed Robbery",
-            5,
-            20917
+            "Kevin Koval",
+            "Robbery",
+            2,
+            22939,
+            "2010-10-16"
       ],
       "35": [
-            87,
-            "Larceny",
-            1,
-            20151
+            "Vicki Shisler",
+            "Assault",
+            4,
+            23083,
+            "2016-01-27"
       ],
       "36": [
-            40,
-            "Larceny",
+            "Damian Patterson",
+            "Fraud",
             1,
-            22981
+            22906,
+            "2012-07-21"
       ],
       "37": [
-            370,
-            "Grand Theft",
-            1,
-            20686
+            "William Crawford",
+            "Armed Robbery",
+            5,
+            22905,
+            "2019-01-26"
       ],
       "38": [
-            47,
-            "Arson",
-            4,
-            21345
+            "Flor Angert",
+            "Vandalism",
+            2,
+            20813,
+            "2016-07-15"
       ],
       "39": [
-            195,
-            "Shoplifting",
-            0,
-            24486
+            "Nadia Jacobson",
+            "Vandalism",
+            2,
+            22680,
+            "2019-10-05"
       ],
       "40": [
-            200,
-            "Larceny",
-            1,
-            20761
+            "Tammy Shih",
+            "Burglary",
+            3,
+            24366,
+            "2011-10-11"
       ],
       "41": [
-            45,
-            "Grand Theft",
+            "Edwin Fuller",
+            "Fraud",
             1,
-            21892
+            24528,
+            "2014-03-07"
       ],
       "42": [
-            42,
-            "Robbery",
-            2,
-            21159
+            "John Bruster",
+            "Burglary",
+            3,
+            21029,
+            "2018-11-06"
       ],
       "43": [
-            143,
-            "Grand Theft",
+            "Sabrina Showers",
+            "Fraud",
             1,
-            20875
+            22251,
+            "2020-03-26"
       ],
       "44": [
-            55,
-            "Armed Robbery",
-            5,
-            23293
+            "Dorothy Grant",
+            "Arson",
+            4,
+            24292,
+            "2016-03-20"
       ],
       "45": [
-            64,
+            "Tammy Coffey",
             "Arson",
             4,
-            20634
+            23115,
+            "2023-07-24"
       ],
       "46": [
-            115,
-            "Armed Robbery",
-            5,
-            22976
+            "Richard Wilson",
+            "Grand Theft",
+            1,
+            24638,
+            "2015-10-20"
       ],
       "47": [
-            235,
-            "Shoplifting",
-            0,
-            24161
+            "Joseph Sanchez",
+            "Larceny",
+            1,
+            23065,
+            "2023-01-25"
       ],
       "48": [
-            480,
-            "Shoplifting",
-            0,
-            20583
+            "Martha Myles",
+            "Robbery",
+            2,
+            23984,
+            "2021-09-24"
       ],
       "49": [
-            163,
-            "Armed Robbery",
-            5,
-            20692
+            "Irene May",
+            "Larceny",
+            1,
+            22616,
+            "2013-07-28"
       ],
       "50": [
-            50,
-            "Armed Robbery",
-            5,
-            23496
+            "Kathleen Shaw",
+            "Larceny",
+            1,
+            20528,
+            "2011-09-15"
       ],
       "51": [
-            72,
-            "Larceny",
-            1,
-            22804
+            "Joyce Monroe",
+            "Burglary",
+            3,
+            21994,
+            "2020-11-07"
       ],
       "52": [
-            520,
-            "Arson",
-            4,
-            22285
+            "Nina Durand",
+            "Robbery",
+            2,
+            22560,
+            "2018-04-12"
       ],
       "53": [
-            66,
-            "Grand Theft",
+            "Eric Wolfe",
+            "Larceny",
             1,
-            20843
+            22982,
+            "2021-12-01"
       ],
       "54": [
-            540,
-            "Arson",
-            4,
-            20648
+            "Cynthia Randolph",
+            "Vandalism",
+            2,
+            22216,
+            "2022-11-28"
       ],
       "55": [
-            78,
-            "Shoplifting",
-            0,
-            22322
+            "John Bryant",
+            "Assault",
+            4,
+            23157,
+            "2018-08-21"
       ],
       "56": [
-            70,
-            "Larceny",
+            "Eric Meierhofer",
+            "Grand Theft",
             1,
-            21867
+            21554,
+            "2019-07-08"
       ],
       "57": [
-            190,
-            "Arson",
-            4,
-            22746
+            "Ruby Johnson",
+            "Larceny",
+            1,
+            21533,
+            "2011-09-24"
       ],
       "58": [
-            58,
-            "Grand Theft",
+            "Lawrence Yurko",
+            "Fraud",
             1,
-            24464
+            21978,
+            "2023-11-15"
       ],
       "59": [
-            73,
-            "Larceny",
-            1,
-            20285
+            "Tuan Stevens",
+            "Shoplifting",
+            0,
+            22608,
+            "2021-03-21"
       ],
       "60": [
-            300,
-            "Larceny",
+            "Earlene Lukowski",
+            "Fraud",
             1,
-            20391
+            20901,
+            "2010-03-03"
       ],
       "61": [
-            152,
-            "Arson",
-            4,
-            22975
+            "Jimmy Prendergast",
+            "Burglary",
+            3,
+            23928,
+            "2012-05-20"
       ],
       "62": [
-            68,
+            "Steven Harter",
             "Grand Theft",
             1,
-            20217
+            22208,
+            "2013-03-06"
       ],
       "63": [
-            210,
-            "Larceny",
-            1,
-            23968
+            "Tammy Driskell",
+            "Robbery",
+            2,
+            21592,
+            "2015-09-17"
       ],
       "64": [
-            106,
-            "Grand Theft",
-            1,
-            23370
+            "Maureen Martin",
+            "Assault",
+            4,
+            21979,
+            "2023-10-15"
       ],
       "65": [
-            216,
-            "Grand Theft",
-            1,
-            20894
+            "Denise Makinen",
+            "Armed Robbery",
+            5,
+            20209,
+            "2015-04-22"
       ],
       "66": [
-            82,
-            "Arson",
-            4,
-            24139
+            "Karen Heikes",
+            "Burglary",
+            3,
+            20594,
+            "2017-07-01"
       ],
       "67": [
-            67,
-            "Armed Robbery",
-            5,
-            22801
+            "Jimmy Addison",
+            "Vandalism",
+            2,
+            22709,
+            "2017-03-28"
       ],
       "68": [
-            340,
+            "Frances Johnson",
             "Robbery",
             2,
-            21010
+            20275,
+            "2016-05-17"
       ],
       "69": [
-            172,
-            "Armed Robbery",
-            5,
-            21852
+            "Jessica Brown",
+            "Assault",
+            4,
+            23748,
+            "2017-01-07"
       ],
       "70": [
-            350,
-            "Robbery",
-            2,
-            21820
+            "Larry Cushing",
+            "Assault",
+            4,
+            22121,
+            "2014-08-21"
       ],
       "71": [
-            236,
-            "Larceny",
-            1,
-            20609
+            "John Burns",
+            "Vandalism",
+            2,
+            21839,
+            "2018-12-12"
       ],
       "72": [
-            72,
-            "Grand Theft",
-            1,
-            24003
+            "Heather Catania",
+            "Arson",
+            4,
+            21893,
+            "2018-10-15"
       ],
       "73": [
-            91,
-            "Larceny",
-            1,
-            24601
+            "James Brennan",
+            "Arson",
+            4,
+            22783,
+            "2016-09-14"
       ],
       "74": [
-            74,
-            "Arson",
-            4,
-            23061
+            "Suzette Silvey",
+            "Armed Robbery",
+            5,
+            23150,
+            "2021-03-04"
       ],
       "75": [
-            375,
-            "Shoplifting",
-            0,
-            24391
+            "Bridget Rappold",
+            "Robbery",
+            2,
+            22463,
+            "2010-03-27"
       ],
       "76": [
-            253,
-            "Shoplifting",
-            0,
-            24068
+            "Christopher Tucker",
+            "Larceny",
+            1,
+            24276,
+            "2019-06-23"
       ],
       "77": [
-            385,
-            "Grand Theft",
+            "Brian Venkus",
+            "Larceny",
             1,
-            20870
+            23571,
+            "2022-04-28"
       ],
       "78": [
-            78,
-            "Armed Robbery",
-            5,
-            20163
+            "Carl Singelton",
+            "Assault",
+            4,
+            21246,
+            "2021-11-13"
       ],
       "79": [
-            197,
-            "Arson",
-            4,
-            22854
+            "Mark Clore",
+            "Armed Robbery",
+            5,
+            20992,
+            "2022-02-06"
       ],
       "80": [
-            88,
-            "Grand Theft",
+            "Margaret Reyes",
+            "Larceny",
             1,
-            21711
+            24586,
+            "2016-11-18"
       ],
       "81": [
-            135,
-            "Larceny",
-            1,
-            22933
+            "Alexis Powles",
+            "Robbery",
+            2,
+            20998,
+            "2015-12-09"
       ],
       "82": [
-            91,
-            "Robbery",
-            2,
-            20393
+            "Lawrence Byers",
+            "Burglary",
+            3,
+            22727,
+            "2019-02-06"
       ],
       "83": [
-            83,
-            "Arson",
-            4,
-            24223
+            "Beth Choate",
+            "Armed Robbery",
+            5,
+            23666,
+            "2022-05-19"
       ],
       "84": [
-            105,
-            "Robbery",
+            "Rosalyn White",
+            "Vandalism",
             2,
-            21259
+            21072,
+            "2023-09-06"
       ],
       "85": [
-            94,
-            "Robbery",
-            2,
-            20243
+            "Greg Matt",
+            "Burglary",
+            3,
+            24272,
+            "2014-07-20"
       ],
       "86": [
-            215,
-            "Robbery",
+            "Betsy Freeman",
+            "Vandalism",
             2,
-            23279
+            22138,
+            "2021-07-16"
       ],
       "87": [
-            870,
-            "Arson",
-            4,
-            20437
+            "Cynthia Trent",
+            "Armed Robbery",
+            5,
+            21330,
+            "2016-12-04"
       ],
       "88": [
-            293,
-            "Larceny",
+            "Jean Glover",
+            "Grand Theft",
             1,
-            20960
+            21251,
+            "2014-09-06"
       ],
       "89": [
-            111,
-            "Arson",
-            4,
-            23089
+            "Frances Yarrington",
+            "Larceny",
+            1,
+            24154,
+            "2022-07-05"
       ],
       "90": [
-            112,
-            "Armed Robbery",
-            5,
-            22162
+            "Peggy Cooper",
+            "Fraud",
+            1,
+            23894,
+            "2017-03-07"
       ],
       "91": [
-            91,
-            "Armed Robbery",
-            5,
-            21915
+            "Rosa Klett",
+            "Grand Theft",
+            1,
+            21962,
+            "2018-02-17"
       ],
       "92": [
-            306,
-            "Larceny",
-            1,
-            24205
+            "Peggy Youssefi",
+            "Armed Robbery",
+            5,
+            23874,
+            "2019-09-15"
       ],
       "93": [
-            186,
-            "Larceny",
-            1,
-            22215
-      ],
-      "94": [
-            134,
-            "Grand Theft",
-            1,
-            20634
-      ],
-      "95": [
-            237,
+            "Diane Penson",
             "Shoplifting",
             0,
-            24145
+            20259,
+            "2014-03-17"
       ],
-      "96": [
-            137,
-            "Armed Robbery",
-            5,
-            22824
-      ],
-      "97": [
-            121,
-            "Armed Robbery",
-            5,
-            20981
-      ],
-      "98": [
-            140,
+      "94": [
+            "Hosea Johnson",
             "Arson",
             4,
-            21903
+            23751,
+            "2017-03-23"
+      ],
+      "95": [
+            "Thomas Hill",
+            "Shoplifting",
+            0,
+            24199,
+            "2020-12-06"
+      ],
+      "96": [
+            "Kenneth Holland",
+            "Armed Robbery",
+            5,
+            22973,
+            "2016-04-28"
+      ],
+      "97": [
+            "Luis Morin",
+            "Robbery",
+            2,
+            24523,
+            "2010-06-19"
+      ],
+      "98": [
+            "Victor Johnson",
+            "Fraud",
+            1,
+            23147,
+            "2014-01-17"
       ],
       "99": [
-            495,
-            "Grand Theft",
+            "Sterling Osborne",
+            "Larceny",
             1,
-            21949
+            20987,
+            "2012-11-25"
       ]
 }
