@@ -60,7 +60,6 @@ CREATE TABLE Transportation (
 CREATE TABLE Houses (
     houseId INT PRIMARY KEY,
     ownerPersonId INT,
-    house_num INT,
     zipcode INT,
     ForSale BOOLEAN,
     salePrice DECIMAL,
