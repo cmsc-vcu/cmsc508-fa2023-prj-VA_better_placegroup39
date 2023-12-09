@@ -63,7 +63,8 @@ def get_crimes():
 
 
 @app.route("/api/houses/")
-def get_houses_by_zipcode():
+def get_houses():
+    
     data = {}
     zipcode = request.args.get('zipcode')
     rent = request.args.get('rent')
@@ -79,35 +80,31 @@ def get_houses_by_zipcode():
     if zipcode:
         where_conditions.append(f"zipcode = '{zipcode}'")
     if rent is not None:
-        where_conditions.append(f"ForRent = {rent}")
-    if min_rent_price:
-        where_conditions.append(f"rentPrice >= {min_rent_price}")
-    if max_rent_price:
-        where_conditions.append(f"rentPrice <= {max_rent_price}")
+        where_conditions.append(f"ForRent = 1")
+        if min_rent_price:
+            where_conditions.append(f"rentPrice >= {min_rent_price}")
+        if max_rent_price:
+            where_conditions.append(f"rentPrice <= {max_rent_price}")
     if sale is not None:
-        where_conditions.append(f"ForSale = {sale}")
-    if min_sale_price:
-        where_conditions.append(f"salePrice >= {min_sale_price}")
-    if max_sale_price:
-        where_conditions.append(f"salePrice <= {max_sale_price}")
+        where_conditions.append(f"ForSale = 1")
+        if min_sale_price:
+            where_conditions.append(f"salePrice >= {min_sale_price}")
+        if max_sale_price:
+            where_conditions.append(f"salePrice <= {max_sale_price}")
 
     where_clause = " AND ".join(where_conditions)
 
-    # Debugging information
-    print(f"Generated SQL query: SELECT * FROM Houses WHERE {where_clause}")
+    
 
+    sql = f"SELECT * FROM Houses"
+    if where_clause:
+        sql += f" WHERE {where_clause}"
     with connection.cursor() as cursor:
         # SQL query to retrieve houses based on the provided parameters
-        sql = f"SELECT * FROM Houses"
-        if where_clause:
-            sql += f" WHERE {where_clause}"
-
-        # Debugging information
-        print(f"Executing SQL query: {sql}")
 
         cursor.execute(sql)
         houses = cursor.fetchall()
-
+        print(houses)
         for house in houses:
             house_id, owner_person_id, zipcode, for_sale, sale_price, for_rent, rent_price = house
             data[house_id] = {
@@ -120,10 +117,6 @@ def get_houses_by_zipcode():
             }
 
     return jsonify(data)
-
-
-if __name__ == "__main__":
-    app.run(debug=True)
 
 
 # http://127.0.0.1:5000/api/houses/?zipcode=YOUR_ZIPCODE&rent=True&maxRentPrice=100000   
@@ -195,24 +188,3 @@ def get_schools():
 
 if __name__ == "__main__":
     app.run(debug=True)
-
-
-
-@app.route('/api/data')
-def get_data():
-    data = {'name': 'John Doe', 'age': 25}
-    return data
-
-if __name__ == '__main__':
-    app.run(debug=True)
-
-    
-
-@app.route('/api/data')
-def get_data():
-    data = {'name': 'John Doe', 'age': 25}
-    return data
-
-if __name__ == '__main__':
-    app.run(debug=True)
-    
