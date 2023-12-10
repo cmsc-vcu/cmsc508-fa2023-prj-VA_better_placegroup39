@@ -275,7 +275,60 @@ def get_transportation():
 
 # http://127.0.0.1:5000/api/transportation?zipcode=21983&isBikeRoute=0
  
-   
+
+@app.route("/api/population", methods=["GET"])
+def get_population():
+    data = {}
+    zipcode = request.args.get('zipcode')
+    min_age = request.args.get('minAge')
+    max_age = request.args.get('maxAge')
+    ethnicity = request.args.get('ethnicity')
+
+    # Use a WHERE clause in the SQL query based on the provided parameters
+    where_conditions = []
+
+    if zipcode:
+        where_conditions.append(f"zipcode = {zipcode}")
+    if min_age:
+        where_conditions.append(f"age >= {min_age}")
+    if max_age:
+        where_conditions.append(f"age <= {max_age}")
+    if ethnicity:
+        where_conditions.append(f"ethnicity = '{ethnicity}'")
+
+    where_clause = " AND ".join(where_conditions)
+
+    # Debugging information
+    print(f"Generated SQL query: SELECT * FROM Population WHERE {where_clause}")
+
+    with connection.cursor() as cursor:
+        # SQL query to retrieve population data based on the provided parameters
+        sql = "SELECT * FROM Population"
+        if where_clause:
+            sql += f" WHERE {where_clause}"
+
+        # Debugging information
+        print(f"Executing SQL query: {sql}")
+
+        cursor.execute(sql)
+        population_data = cursor.fetchall()
+
+        for entry in population_data:
+            person_id, age, gender, zipcode, ethnicity = entry
+            data[person_id] = {
+                'age': age,
+                'gender': gender,
+                'zipcode': zipcode,
+                'ethnicity': ethnicity
+            }
+
+    return jsonify(data)
+
+# Example API calls:
+# http://127.0.0.1:5000/api/population?zipcode=24331&minAge=20&maxAge=30&ethnicity=Asian
+# http://127.0.0.1:5000/api/population?zipcode=24331&minAge=25
+# http://127.0.0.1:5000/api/population?maxAge=40&ethnicity=AfricanAmerican
+
 
 
 if __name__ == "__main__":
