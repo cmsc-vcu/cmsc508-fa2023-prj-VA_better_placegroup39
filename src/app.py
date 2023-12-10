@@ -68,11 +68,9 @@ def get_houses():
     data = {}
     zipcode = request.args.get('zipcode')
     rent = request.args.get('rent')
-    min_rent_price = request.args.get('minRentPrice')
-    max_rent_price = request.args.get('maxRentPrice')
     sale = request.args.get('sale')
-    min_sale_price = request.args.get('minSalePrice')
-    max_sale_price = request.args.get('maxSalePrice')
+    minPrice = request.args.get('minPrice')
+    maxPrice = request.args.get('maxPrice')
 
     # Use a WHERE clause in the SQL query based on the provided parameters
     where_conditions = []
@@ -81,16 +79,16 @@ def get_houses():
         where_conditions.append(f"zipcode = '{zipcode}'")
     if rent is not None:
         where_conditions.append(f"ForRent = 1")
-        if min_rent_price:
-            where_conditions.append(f"rentPrice >= {min_rent_price}")
-        if max_rent_price:
-            where_conditions.append(f"rentPrice <= {max_rent_price}")
+        if minPrice:
+            where_conditions.append(f"rentPrice >= {minPrice}")
+        if maxPrice:
+            where_conditions.append(f"rentPrice <= {maxPrice}")
     if sale is not None:
         where_conditions.append(f"ForSale = 1")
-        if min_sale_price:
-            where_conditions.append(f"salePrice >= {min_sale_price}")
-        if max_sale_price:
-            where_conditions.append(f"salePrice <= {max_sale_price}")
+        if minPrice:
+            where_conditions.append(f"salePrice >= {minPrice}")
+        if maxPrice:
+            where_conditions.append(f"salePrice <= {maxPrice}")
 
     where_clause = " AND ".join(where_conditions)
 
@@ -182,6 +180,32 @@ def get_schools():
             }
 
     return jsonify(data)
+
+@app.route("/api/jobs", methods=["GET"])
+def get_open_jobs():
+    zipcode = request.args.get('zipcode')
+    count = request.args.get('count')
+    actively_hiring = request.args.get('actively_hiring')
+
+    query = "SELECT * FROM OpenJobs"
+    if count:
+        query = "SELECT COUNT(*) FROM OpenJobs"
+    if zipcode:
+        query += f" WHERE zipcode = '{zipcode}'"
+    if actively_hiring:
+        query += f" AND actively_hiring = 1"
+
+    with connection.cursor() as cursor:
+        cursor.execute(query)
+        if actively_hiring:
+            result = cursor.fetchone()[0]
+            return jsonify({"total_actively_hiring_jobs" : result})
+        if count:
+            result = cursor.fetchone()[0]
+            return jsonify({"total_open_jobs": result})
+        else:
+            result = cursor.fetchall()
+            return jsonify(result)
 
 
 
