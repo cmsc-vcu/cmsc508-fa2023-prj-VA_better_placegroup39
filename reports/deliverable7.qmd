@@ -16,6 +16,7 @@ format:
 ## Key deliverables:
 * [Pitch Video](https://drive.google.com/file/d/1Sikim-ladH6ERmn24CFSi-oMzZA6jGdi/view?usp=sharing)
 * [Design Video](https://drive.google.com/file/d/1Igr7PYTEao3p3qTgvx8k_nXHOFsSnmG5/view?usp=sharing)
+* [FINAL VIDEO]()
 * [Github Project](https://github.com/cmsc-vcu/cmsc508-fa2023-prj-VA_better_placegroup39)
 
 
@@ -70,10 +71,98 @@ Overall, the Virginia Better Place database will serve as a valuable tool for un
 ## Database design
 **Entity-relationship diagram (ERD)**
 
-![Chen Notation for Virginia Better Place Database](DiagramsImages/ChenDiagram.png)
+### Chen Diagram
+```{dot}
+//| echo: false
+graph ER {
+    fontname="Helvetica,Arial,sans-serif"
+    node [fontname="Helvetica,Arial,sans-serif"]
+    edge [fontname="Helvetica,Arial,sans-serif"]
+    layout=neato
+    node [shape=box]; Crimes; Houses; OpenJobs; Peoples; Schools; Transportation;
+    node [shape=diamond,style=filled,color=lightgrey]; "committed"; "own";
 
+    Peoples -- "committed" [label="n",len=2.00];
+    "committed" -- Crimes [label="n",len=2.00];
+
+    Peoples -- "own"[label="n",len=1.50];
+    "own" -- Houses [label="n",len=1.50];
+    
+    Peoples -- "use"[label="n",len=1.50];
+    "use" -- Transportation [label="n",len=1.50];
+
+    Peoples -- "searching for"[label="n",len=1.50];
+    "searching for" -- OpenJobs [label="n",len=1.50];
+
+    Peoples -- "looking for"[label="n",len=1.50];
+    "looking for" -- Schools [label="n",len=1.50];
+    fontsize=20;
+}
+``` 
 ### Crow's Foot Diagram
-![Crows Foot Ful Diagram](DiagramsImages/CrowsFootDiagram.png)
+
+```{mermaid}
+erDiagram
+
+    Peoples{
+        int peopleId PK
+        string name
+        int age
+        int salary
+        int zipcode
+        string ethnicity
+    }
+
+    Crimes ||--|{ Peoples : committed 
+    Crimes {
+        int crimeId
+        string crimeType
+        date date_of_crime
+        int severity
+        int zipcode
+    }
+    
+    
+    HouseMarket ||--|{ Peoples : own
+    HouseMarket {
+        int houseId PK
+        int zipcode
+        int ForRent
+        int ForSale
+        int rentPrice
+        int salePrice
+    }
+
+    Schools ||--|{ Peoples : looking_for
+    Schools {
+        int schoolId PK
+        string schoolName
+        float diversityPercentage
+        char quality
+        int numberOfTeachers
+        string QualityOfSchools
+        int zipcode
+    }
+
+    OpenJobs ||--|{ Peoples : searching_for
+    OpenJobs {
+        int jobId PK
+        string company
+        date date
+        int salary
+        int actively_hiring
+        int zipcode
+    }
+    
+    Transportation ||--|{ Peoples : use
+    Transportation {
+        int routeId PK
+        int startingZipcode
+        int endingZipcode
+        int isBikeRoute
+        int isLightTrainRoute
+    }
+```
 
 
 

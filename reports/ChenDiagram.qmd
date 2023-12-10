@@ -14,6 +14,14 @@ graph ER {
     Peoples -- "own"[label="n",len=1.50];
     "own" -- Houses [label="n",len=1.50];
     
+    Peoples -- "use"[label="n",len=1.50];
+    "use" -- Transportation [label="n",len=1.50];
+
+    Peoples -- "searching for"[label="n",len=1.50];
+    "searching for" -- OpenJobs [label="n",len=1.50];
+
+    Peoples -- "looking for"[label="n",len=1.50];
+    "looking for" -- Schools [label="n",len=1.50];
     fontsize=20;
 }
 ``` 
