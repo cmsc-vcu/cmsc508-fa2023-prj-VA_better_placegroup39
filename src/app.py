@@ -181,6 +181,10 @@ def get_schools():
 
     return jsonify(data)
 
+# http://127.0.0.1:5000/api/schools?zipcode=24331&quality=F&maxNumberOfTeachers=200
+# http://127.0.0.1:5000/api/schools?zipcode=24331&quality=F&minNumberOfTeachers=100
+
+
 @app.route("/api/jobs", methods=["GET"])
 def get_open_jobs():
     zipcode = request.args.get('zipcode')
@@ -208,6 +212,70 @@ def get_open_jobs():
             return jsonify(result)
 
 
+
+@app.route("/api/transportation", methods=["GET"])
+def get_transportation():
+    try:
+        # Retrieve parameters from the request
+        zipcode = request.args.get('zipcode')
+        is_bike_route = request.args.get('isBikeRoute')
+        is_light_train_route = request.args.get('isLightTrainRoute')
+
+
+        # Use a WHERE clause in the SQL query based on the provided parameters
+        where_conditions = []
+        where_params = []
+
+        if zipcode:
+            # Check if there is any route where the provided zipcode falls between startingZipcode and endingZipcode
+            where_conditions.append("(startingZipcode <= %s AND endingZipcode >= %s)")
+            where_params.extend([zipcode, zipcode])
+
+        if is_bike_route:
+            where_conditions.append("isBikeRoute = %s")
+            where_params.append(is_bike_route)
+
+        if is_light_train_route:
+            where_conditions.append("isLightTrainRoute = %s")
+            where_params.append(is_light_train_route)
+
+        where_clause = " AND ".join(where_conditions)
+        print(f"Generated SQL query: SELECT * FROM Transportation WHERE {where_clause}")
+
+
+        with connection.cursor() as cursor:
+            sql = "SELECT * FROM Transportation"
+            if where_clause:
+                sql += f" WHERE {where_clause}"
+
+            print(f"Executing SQL query: {sql}")
+
+            # Use parameterized query for safety
+            cursor.execute(sql, where_params)
+            transportation = cursor.fetchall()
+            print(transportation)
+
+
+            data = {}
+            for route in transportation:
+                route_id, is_bike_route, is_light_train_route, starting_zipcode, ending_zipcode = route
+                data[route_id] = {
+                    'isBikeRoute': bool(is_bike_route),
+                    'isLightTrainRoute': bool(is_light_train_route),
+                    'startingZipcode': starting_zipcode,
+                    'endingZipcode': ending_zipcode
+                }
+           
+        return jsonify(data)
+
+
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
+
+# http://127.0.0.1:5000/api/transportation?zipcode=21983&isBikeRoute=0
+ 
+   
 
 
 if __name__ == "__main__":
