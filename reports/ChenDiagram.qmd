@@ -1,60 +1,19 @@
 ```{dot}
 //| echo: false
 graph ER {
-	fontname="Helvetica,Arial,sans-serif"
-	node [fontname="Helvetica,Arial,sans-serif"]
-	edge [fontname="Helvetica,Arial,sans-serif"]
-	layout=neato
-	node [shape=box]; Crimes; Houses; OpenJobs; Peoples; Schools; Transportation;
-	node [shape=ellipse]; {node [label="zipcode"] zipcode0; zipcode1; zipcode2; zipcode3; zipcode4;}; {node [label="salary"] salary0; salary1}
-		crimeId; houseId; jobId; personId; schoolId; routeId; crimeType; date_of_crime; fullName; severity; ownerPersonId; ForRent; ForSale; rentPrice; salePrice; actively_hiring; company; date; salary0; age; ethnicity; name; salary1; schoolName; quality; diversityPercentage; numberOfTeachers; endingZipcode; isBikeRoute; isLightTrainRoute; startingZipcode;
-	node [shape=diamond,style=filled,color=lightgrey]; "in"; "with";
+    fontname="Helvetica,Arial,sans-serif"
+    node [fontname="Helvetica,Arial,sans-serif"]
+    edge [fontname="Helvetica,Arial,sans-serif"]
+    layout=neato
+    node [shape=box]; Crimes; Houses; OpenJobs; Peoples; Schools; Transportation;
+    node [shape=diamond,style=filled,color=lightgrey]; "committed"; "have";
 
-	crimeId -- Crimes;
-	zipcode0 -- Crimes;
-    crimeType -- Crimes;
-    date_of_crime -- Crimes;
-    fullName -- Crimes;
-    severity -- Crimes;
-	Crimes -- "in" [label="n",len=1.00];
-	"in" -- Houses [label="1",len=1.00];
-    houseId -- Houses;
-	zipcode1 -- Houses;
-    ownerPersonId -- Houses;
-    ForRent -- Houses;
-    ForSale -- Houses;
-    rentPrice -- Houses;
-    salePrice -- Houses;
+    Peoples -- "committed" [label="n",len=2.00];
+    "committed" -- Crimes [label="n",len=2.00];
 
-    OpenJobs -- jobId;
-    OpenJobs -- zipcode2;
-    OpenJobs -- actively_hiring;
-    OpenJobs -- company;
-    OpenJobs -- date;
-    OpenJobs -- salary0;
-	Houses -- "with" [label="n",len=1.00];
-	"with" -- Peoples [label="1",len=1.00];
-	Peoples -- personId;
-    Peoples -- zipcode3;
-    Peoples -- age;
-    Peoples -- ethnicity;
-    Peoples -- name;
-    Peoples -- salary1;
-    Peoples -- zipcode3;
+    Peoples -- "have"[label="n",len=1.50];
+    "have" -- Houses [label="n",len=1.50];
     
-    schoolId -- Schools;
-	zipcode4 -- Schools;
-    schoolName -- Schools;
-    quality -- Schools;
-    diversityPercentage-- Schools;
-    numberOfTeachers-- Schools;
-	
-	Transportation -- routeId;
-	Transportation -- endingZipcode;
-    Transportation -- isBikeRoute;
-    Transportation -- isLightTrainRoute;
-    Transportation -- startingZipcode;
-
-	fontsize=20;
+    fontsize=20;
 }
-```
+``` 

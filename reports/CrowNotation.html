@@ -129,6 +129,71 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<div>
+<pre class="mermaid mermaid-js">erDiagram
+    Crimes||--|{ Houses : identified_by
+    Crimes{
+        int crimeId;
+        int zipcode0;
+        string crimeType;
+        int date_of_crime;
+        string fullName;
+        int severity;
+    }
+    Houses ||--|{ Peoples : identified_by
+    Houses {
+        int houseId;
+        int zipcode1;
+        int ownerPersonId;
+        int ForRent;
+        int ForSale;
+        int rentPrice;
+        int salePrice;
+    }
+    OpenJobs ||--|{ Schools : identified_by
+    OpenJobs {
+        int jobId;
+        int zipcode2;
+        string actively_hiring;
+        string company;
+        int date;
+        int salary0;
+    }
+    Peoples ||--|{ Houses : identified_by
+    Peoples {
+        int personId;
+        int zipcode3;
+        int age;
+        string ethnicity;
+        string name;
+        int salary1;
+        int zipcode3;
+    }
+    Schools ||--|{ Transportation : identified_by
+    Schools {
+        int schoolId;
+        int zipcode4;
+        string schoolName;
+        int quality;
+        int diversityPercentage;
+        int numberOfTeachers;
+    }
+    Transportation {
+        int routeId;
+        int endingZipcode;
+        int isBikeRoute;
+        int isLightTrainRoute;
+        int startingZipcode;
+    }
+
+</pre>
+</div>
+</div>
+</div>
+</div>
 
 </main>
 <!-- /main column -->
