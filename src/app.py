@@ -91,7 +91,6 @@ def get_houses():
             where_conditions.append(f"salePrice <= {maxPrice}")
 
     where_clause = " AND ".join(where_conditions)
-
     
 
     sql = f"SELECT * FROM Houses"
@@ -275,8 +274,6 @@ def get_transportation():
 
 # http://127.0.0.1:5000/api/transportation?zipcode=21983&isBikeRoute=0
  
-   
-
 
 if __name__ == "__main__":
     app.run(debug=True)
