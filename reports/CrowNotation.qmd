@@ -1,5 +1,5 @@
 ---
-title: "Virginia Database ER Diagrams"
+title: "Virginia Better Database ER Diagrams"
 output: html_document
 ---
 
@@ -7,118 +7,57 @@ output: html_document
 
 ```{mermaid}
 erDiagram
-    EducationSystem ||--|{ ZipCode : identified_by
-    EducationSystem {
-        int PublicSchoolNumbers
-        float Diversity
-        string QualityOfSchools
+    Peoples{
+        int peopleId PK
+        string name
+        int age
+        int salary
+        int zipcode
+        string ethnicity
     }
-    JobSecurity ||--|{ ZipCode : identified_by
-    JobSecurity {
-        int numOpenJobs
-        float layoffRate
-    }
-    CriminalActivity ||--|{ ZipCode : identified_by
-    CriminalActivity {
-        string PoliceCoverage
-        string SafetyRating
+
+    Crimes ||--|{ Peoples : committed 
+    Crimes {
+        int crimeId
+        string crimeType
+        date date_of_crime
+        int severity
+        int zipcode
     }
     
-    Population ||--|{ ZipCode : identified_by
-    Population {
-        int PopulationNumber
-        float Diversity
-    }
-    Transportation ||--|{ ZipCode : identified_by
-    Transportation {
-        int bikeRoutes
-        boolean hasLightTrains
-    }
-    HouseMarket ||--|{ ZipCode : identified_by
+    HouseMarket ||--|{ Peoples : own
     HouseMarket {
-        int AvgRent
-        int AvgPrice
-        int housesForSale
+        int houseId PK
+        int zipcode
+        int ForRent
+        int ForSale
+        int rentPrice
+        int salePrice
     }
-    SafetyRating ||--|{ ZipCode : identified_by
-    SafetyRating ||--|{ RecordID : logs
-    SafetyRating {
-        string CrimeType
-        int NumberOfCrimes
-        string HighestCrimeActivityTime
-        int SeverityPoints
+    Schools {
+        int schoolId PK
+        string schoolName
+        float diversityPercentage
+        char quality
+        int numberOfTeachers
+        string QualityOfSchools
+        int zipcode
     }
-    RecordID {
-        int ID(PK)
-    }
-    ZipCode {
-        int code(PK)
+    JobSecurity {
+        int jobId PK
+        string company
+        date date
+        int salary
+        int actively_hiring
+        int zipcode
     }
     
-    
-
-
-
-
-
+    Transportation {
+        int routeId PK
+        int startingZipcode
+        int endingZipcode
+        int isBikeRoute
+        int isLightTrainRoute
+    }
 ```
 </div>
-
-```{mermaid}
-erDiagram
-    Crimes||--|{ Houses : identified_by
-    Crimes{
-        int crimeId;
-        int zipcode0;
-        string crimeType;
-        int date_of_crime;
-        string fullName;
-        int severity;
-    }
-    Houses ||--|{ Peoples : identified_by
-    Houses {
-        int houseId;
-        int zipcode1;
-        int ownerPersonId;
-        int ForRent;
-        int ForSale;
-        int rentPrice;
-        int salePrice;
-    }
-    OpenJobs ||--|{ Schools : identified_by
-    OpenJobs {
-        int jobId;
-        int zipcode2;
-        string actively_hiring;
-        string company;
-        int date;
-        int salary0;
-    }
-    Peoples ||--|{ Houses : identified_by
-    Peoples {
-        int personId;
-        int zipcode3;
-        int age;
-        string ethnicity;
-        string name;
-        int salary1;
-        int zipcode3;
-    }
-    Schools ||--|{ Transportation : identified_by
-    Schools {
-        int schoolId;
-        int zipcode4;
-        string schoolName;
-        int quality;
-        int diversityPercentage;
-        int numberOfTeachers;
-    }
-    Transportation {
-        int routeId;
-        int endingZipcode;
-        int isBikeRoute;
-        int isLightTrainRoute;
-        int startingZipcode;
-    }
-
-```

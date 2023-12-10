@@ -6,13 +6,13 @@ graph ER {
     edge [fontname="Helvetica,Arial,sans-serif"]
     layout=neato
     node [shape=box]; Crimes; Houses; OpenJobs; Peoples; Schools; Transportation;
-    node [shape=diamond,style=filled,color=lightgrey]; "committed"; "have";
+    node [shape=diamond,style=filled,color=lightgrey]; "committed"; "own";
 
     Peoples -- "committed" [label="n",len=2.00];
     "committed" -- Crimes [label="n",len=2.00];
 
-    Peoples -- "have"[label="n",len=1.50];
-    "have" -- Houses [label="n",len=1.50];
+    Peoples -- "own"[label="n",len=1.50];
+    "own" -- Houses [label="n",len=1.50];
     
     fontsize=20;
 }
