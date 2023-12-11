@@ -297,30 +297,6 @@ def get_population():
     if ethnicity:
         where_conditions.append(f"ethnicity = '{ethnicity}'")
     where_clause = " AND ".join(where_conditions)       
-    
-    if diversity:
-        with connection.cursor() as cursor:
-            # SQL query to retrieve population data based on the provided parameters
-            sql = "SELECT COUNT(*) as population, COUNT(DISTINCT ethnicity) as diversity FROM Peoples"
-            if where_clause:
-                sql += f" WHERE {where_clause}"
-
-            # Debugging information
-            # print(f"Executing SQL query: {sql}")
-
-            cursor.execute(sql)
-            result = cursor.fetchone()
-        print(result)
-        total_population = result['population']
-        total_ethnicities = result['diversity'] if calculate_diversity else 1  # If not calculating diversity, consider 1 ethnicity
-
-        if total_population == 0 or total_ethnicities == 0:
-            return jsonify({'averageDiversity': 0})
-
-        average_diversity = total_population / total_ethnicities
-
-        return jsonify({'averageDiversity': average_diversity})
-
     # Debugging information
 
     with connection.cursor() as cursor:
@@ -334,6 +310,16 @@ def get_population():
 
         cursor.execute(sql)
         population_data = cursor.fetchone()[0]
+    
+    if diversity and ethnicity:
+        with connection.cursor() as cursor:
+            sql = f"SELECT COUNT(*) FROM Peoples WHERE zipcode = {zipcode}"
+            cursor.execute(sql)
+            total_population= cursor.fetchone()[0]
+            diversityRate = round((population_data/total_population) * 100, 2)
+            return jsonify({'diversityRate': f'{diversityRate}% {ethnicity}'})
+
+
     if population_data == {}:
         population_data = 0
     return jsonify({'total population': population_data})
