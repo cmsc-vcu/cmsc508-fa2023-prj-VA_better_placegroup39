@@ -283,6 +283,7 @@ def get_population():
     min_age = request.args.get('minAge')
     max_age = request.args.get('maxAge')
     ethnicity = request.args.get('ethnicity')
+    diversity = request.args.get('diversity')
 
     # Use a WHERE clause in the SQL query based on the provided parameters
     where_conditions = []
@@ -295,15 +296,36 @@ def get_population():
         where_conditions.append(f"age <= {max_age}")
     if ethnicity:
         where_conditions.append(f"ethnicity = '{ethnicity}'")
+    where_clause = " AND ".join(where_conditions)       
+    
+    if diversity:
+        with connection.cursor() as cursor:
+            # SQL query to retrieve population data based on the provided parameters
+            sql = "SELECT COUNT(*) as population, COUNT(DISTINCT ethnicity) as diversity FROM Peoples"
+            if where_clause:
+                sql += f" WHERE {where_clause}"
 
-    where_clause = " AND ".join(where_conditions)
+            # Debugging information
+            # print(f"Executing SQL query: {sql}")
+
+            cursor.execute(sql)
+            result = cursor.fetchone()
+        print(result)
+        total_population = result['population']
+        total_ethnicities = result['diversity'] if calculate_diversity else 1  # If not calculating diversity, consider 1 ethnicity
+
+        if total_population == 0 or total_ethnicities == 0:
+            return jsonify({'averageDiversity': 0})
+
+        average_diversity = total_population / total_ethnicities
+
+        return jsonify({'averageDiversity': average_diversity})
 
     # Debugging information
-    print(f"Generated SQL query: SELECT * FROM Population WHERE {where_clause}")
 
     with connection.cursor() as cursor:
         # SQL query to retrieve population data based on the provided parameters
-        sql = "SELECT * FROM Population"
+        sql = "SELECT COUNT(*) FROM Peoples"
         if where_clause:
             sql += f" WHERE {where_clause}"
 
@@ -311,18 +333,10 @@ def get_population():
         print(f"Executing SQL query: {sql}")
 
         cursor.execute(sql)
-        population_data = cursor.fetchall()
-
-        for entry in population_data:
-            person_id, age, gender, zipcode, ethnicity = entry
-            data[person_id] = {
-                'age': age,
-                'gender': gender,
-                'zipcode': zipcode,
-                'ethnicity': ethnicity
-            }
-
-    return jsonify(data)
+        population_data = cursor.fetchone()[0]
+    if population_data == {}:
+        population_data = 0
+    return jsonify({'total population': population_data})
 
 # Example API calls:
 # http://127.0.0.1:5000/api/population?zipcode=24331&minAge=20&maxAge=30&ethnicity=Asian
