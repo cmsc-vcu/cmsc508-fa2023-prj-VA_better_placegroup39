@@ -1,10 +1,14 @@
 import pymysql
 import os
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, request, render_template, session
 from dotenv import load_dotenv
 from sqlalchemy import create_engine, text
+import bcrypt
 
 app = Flask(__name__)
+
+# Set the secret key for the session
+app.secret_key = "21345sdff"
 
 # Load environment variables from .env file
 load_dotenv()
@@ -16,6 +20,30 @@ connection = pymysql.connect(
     database=os.getenv('DB_NAME')
 )
 
+@app.route("/admin/login", methods=["GET", "POST"])
+def admin_get():
+    username = request.args.get('username')
+    password = request.args.get('password')
+    return jsonify({'authenticated': isAdmin(username, password)})
+
+def isAdmin(username, password):
+    # Check if the username exists in the Admins table
+    query = f"SELECT * FROM Admins WHERE username = %s"
+    with connection.cursor() as cursor:
+        cursor.execute(query, (username,))
+        result = cursor.fetchone()
+    if result:
+        print(result)
+        # Verify if the passwords match
+        hashed_password = result[2]
+        if bcrypt.checkpw(password.encode('utf-8'), hashed_password.encode('utf-8')):
+            return  True  # Redirect to an admin dashboard route
+        else:
+            # Passwords do not match
+            return False
+    else:
+        # Username does not exist
+        return False
 
 @app.route("/")
 def index():
@@ -57,7 +85,6 @@ def get_crimes():
                     data[zipcode] = {}
                 data[zipcode][crime_type] = count
         
-
     return jsonify(data)
 
 
@@ -91,8 +118,6 @@ def get_houses():
             where_conditions.append(f"salePrice <= {maxPrice}")
 
     where_clause = " AND ".join(where_conditions)
-
-    
 
     sql = f"SELECT * FROM Houses"
     if where_clause:
@@ -283,6 +308,7 @@ def get_population():
     min_age = request.args.get('minAge')
     max_age = request.args.get('maxAge')
     ethnicity = request.args.get('ethnicity')
+    diversity = request.args.get('diversity')
 
     # Use a WHERE clause in the SQL query based on the provided parameters
     where_conditions = []
@@ -295,15 +321,12 @@ def get_population():
         where_conditions.append(f"age <= {max_age}")
     if ethnicity:
         where_conditions.append(f"ethnicity = '{ethnicity}'")
-
-    where_clause = " AND ".join(where_conditions)
-
+    where_clause = " AND ".join(where_conditions)       
     # Debugging information
-    print(f"Generated SQL query: SELECT * FROM Population WHERE {where_clause}")
 
     with connection.cursor() as cursor:
         # SQL query to retrieve population data based on the provided parameters
-        sql = "SELECT * FROM Population"
+        sql = "SELECT COUNT(*) FROM Peoples"
         if where_clause:
             sql += f" WHERE {where_clause}"
 
@@ -311,18 +334,20 @@ def get_population():
         print(f"Executing SQL query: {sql}")
 
         cursor.execute(sql)
-        population_data = cursor.fetchall()
+        population_data = cursor.fetchone()[0]
+    
+    if diversity and ethnicity:
+        with connection.cursor() as cursor:
+            sql = f"SELECT COUNT(*) FROM Peoples WHERE zipcode = {zipcode}"
+            cursor.execute(sql)
+            total_population= cursor.fetchone()[0]
+            diversityRate = round((population_data/total_population) * 100, 2)
+            return jsonify({'diversityRate': f'{diversityRate}% {ethnicity}'})
 
-        for entry in population_data:
-            person_id, age, gender, zipcode, ethnicity = entry
-            data[person_id] = {
-                'age': age,
-                'gender': gender,
-                'zipcode': zipcode,
-                'ethnicity': ethnicity
-            }
 
-    return jsonify(data)
+    if population_data == {}:
+        population_data = 0
+    return jsonify({'total population': population_data})
 
 # Example API calls:
 # http://127.0.0.1:5000/api/population?zipcode=24331&minAge=20&maxAge=30&ethnicity=Asian

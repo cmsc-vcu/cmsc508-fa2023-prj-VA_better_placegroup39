@@ -8,6 +8,7 @@ DROP TABLE IF EXISTS Peoples;
 DROP TABLE IF EXISTS Transportation;
 DROP TABLE IF EXISTS Houses;
 DROP TABLE IF EXISTS OpenJobs;
+DROP TABLE IF EXISTS Admins;
 
 SET FOREIGN_KEY_CHECKS=1;
 
@@ -48,7 +49,7 @@ CREATE TABLE Peoples (
 
 # Transportation
 CREATE TABLE Transportation (
-    routeId VARCHAR(255) PRIMARY KEY,
+    routeId int PRIMARY KEY,
     isBikeRoute BOOLEAN,
     isLightTrainRoute BOOLEAN,
     startingZipcode INT,
@@ -76,4 +77,11 @@ CREATE TABLE OpenJobs (
     salary INT,
     actively_hiring BOOLEAN,
     zipcode INT
+);
+
+# Admins
+CREATE TABLE Admins (
+    adminId INT PRIMARY KEY AUTO_INCREMENT,
+    username VARCHAR(255),
+    password VARCHAR(255)
 );
