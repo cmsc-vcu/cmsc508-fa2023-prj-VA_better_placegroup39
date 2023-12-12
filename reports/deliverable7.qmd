@@ -387,69 +387,61 @@ The arrows represent the progression through the normal forms, with 2NF, 3NF, an
 * Decompose multi-valued attributes like safety Rating and decomposing the values needed to calculate for the table other than that the other tables are **4NF** form
 
 
-
-## Project management
-**Draft Project schedule**
-
-![GAANT Graph](DiagramsImages/GAANT Graph.png)
-
-
-
 ## DDL
 
-CREATE TABLE Schools (
-    schoolId INT PRIMARY KEY,
-    schoolName VARCHAR(255),
-    numberOfTeachers INT,
-    diversityPercentage DECIMAL,
-    quality char,
-    zipcode INT
+CREATE TABLE Schools (   
+    schoolId INT PRIMARY KEY,   
+    schoolName VARCHAR(255),   
+    numberOfTeachers INT,   
+    diversityPercentage DECIMAL,   
+    quality char,   
+    zipcode INT    
 );
 
-CREATE TABLE Crimes (
-    crimeId INT PRIMARY KEY,
-    fullName VARCHAR(255),
-    crimeType VARCHAR(255),
-    severity VARCHAR(255),
-    zipcode INT,
-    date_of_crime DATE
+CREATE TABLE Crimes (    
+    crimeId INT PRIMARY KEY,   
+    fullName VARCHAR(255),   
+    crimeType VARCHAR(255),   
+    severity VARCHAR(255),   
+    zipcode INT,   
+    date_of_crime DATE   
+);   
+
+CREATE TABLE Peoples (   
+    personId INT PRIMARY KEY,   
+    name VARCHAR(255),   
+    salary INT,   
+    age INT,     
+    ethnicity VARCHAR(255),    
+    zipcode INT    
+);   
+
+
+CREATE TABLE Transportation (   
+    routeId VARCHAR(255) PRIMARY KEY,   
+    isBikeRoute BOOLEAN,   
+    isLightTrainRoute BOOLEAN,   
+    startingZipcode INT,   
+    endingZipcode INT    
 );
 
-CREATE TABLE Peoples (
-    personId INT PRIMARY KEY,
-    name VARCHAR(255),
-    salary INT,
-    age INT,
-    ethnicity VARCHAR(255),
-    zipcode INT
+CREATE TABLE Houses (   
+    houseId INT PRIMARY KEY,   
+    ownerPersonId INT,    
+    zipcode INT,   
+    ForSale BOOLEAN,    
+    salePrice DECIMAL,    
+    ForRent BOOLEAN,   
+    rentPrice DECIMAL    
 );
 
-
-CREATE TABLE Transportation (
-    routeId VARCHAR(255) PRIMARY KEY,
-    isBikeRoute BOOLEAN,
-    isLightTrainRoute BOOLEAN,
-    startingZipcode INT,
-    endingZipcode INT
-);
-
-CREATE TABLE Houses (
-    houseId INT PRIMARY KEY,
-    ownerPersonId INT,
-    zipcode INT,
-    ForSale BOOLEAN,
-    salePrice DECIMAL,
-    ForRent BOOLEAN,
-    rentPrice DECIMAL
-);
-
-CREATE TABLE OpenJobs (
-    jobId INT PRIMARY KEY,
-    company VARCHAR(255),
-    date DATE,
-    salary INT,
-    actively_hiring BOOLEAN,
-    zipcode INT
+CREATE TABLE OpenJobs (    
+    jobId INT PRIMARY KEY,   
+    company VARCHAR(255),    
+    date DATE,     
+    salary INT,    
+    actively_hiring BOOLEAN,    
+    zipcode INT   
 );
 
 
@@ -470,6 +462,8 @@ all endpoints will be shown
 ## API delete
 
 ## SQL actions
+
+## Future considerations
 
 
 ## Reflections
