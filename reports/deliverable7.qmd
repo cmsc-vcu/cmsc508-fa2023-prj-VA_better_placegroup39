@@ -14,9 +14,7 @@ format:
 
 
 ## Key deliverables:
-* [Pitch Video](https://drive.google.com/file/d/1Sikim-ladH6ERmn24CFSi-oMzZA6jGdi/view?usp=sharing)
-* [Design Video](https://drive.google.com/file/d/1Igr7PYTEao3p3qTgvx8k_nXHOFsSnmG5/view?usp=sharing)
-* [FINAL VIDEO]()
+* [Videos folder](https://drive.google.com/drive/u/1/folders/1OXh3QJs13lfRBONFbVxslJhveOfVw8EN)
 * [Github Project](https://github.com/cmsc-vcu/cmsc508-fa2023-prj-VA_better_placegroup39)
 
 
@@ -217,7 +215,7 @@ erDiagram
 20. `SELECT e.ZipCode FROM EducationSystem e JOIN Population p ON e.ZipCode = p.ZipCode WHERE e.Diversity < 40% AND p.Diversity > 60%;`<br>
 
 
-**Sample Data**
+**Sample Data and SQL actions**
 
 ## Table Names
 ``` {python}
@@ -448,23 +446,256 @@ CREATE TABLE OpenJobs (
 ## API DESIGN
 
 all endpoints will be shown
+/admin/login
+/api/houses
+/api/crimes
+/api/schools
+/api/population
+/api/jobs
+/api/transportation
 
 
 ## API security
-   tokens
+  We salt the password given by form-data when a post,put or delete request is passed
 
 ## API query
 
+We have 21 unique queries for the project
 
-## API filter
+```{python}
+import requests
+
+api_url = "http://34.150.190.189/api/schools?zipcode=21136"
+
+response = requests.get(api_url)
+
+data = response.json()
+print(data)
+
+```
+
+```{python}
+import requests
+
+api_url = f"http://34.150.190.189/api/schools?zipcode=24331&quality=F&maxNumberOfTeachers=200"
+
+response = requests.get(api_url)
+
+data = response.json()
+print(data)
+
+```
+
+```{python}
+import requests
+
+api_url = f"http://34.150.190.189/api/schools?zipcode=24331&minNumberOfTeachers=100"
+
+response = requests.get(api_url)
+
+data = response.json()
+print(data)
+
+```
+
+```{python}
+import requests
+
+api_url = "http://34.150.190.189/api/schools?school_name='David High School'"
+
+response = requests.get(api_url)
+
+data = response.json()
+print(data)
+
+```
+
+```{python}
+import requests
+
+api_url = f"http://34.150.190.189/api/schools?min_diversity=50"
+
+response = requests.get(api_url)
+
+data = response.json()
+print(data)
+
+```
+
+
+```{python}
+import requests
+
+api_url = f"http://34.150.190.189/api/houses/?zipcode=24059&rent=True&maxRentPrice=10000" 
+
+response = requests.get(api_url)
+
+data = response.json()
+print(data)
+
+```
+
+```{python}
+import requests
+
+api_url = f"http://34.150.190.189/api/houses/?zipcode=22770&sale=True&maxSalePrice=10000000"
+
+response = requests.get(api_url)
+
+data = response.json()
+print(data)
+
+```
+
+```{python}
+import requests
+
+api_url = f"http://34.150.190.189/api/houses/?sale=True"
+
+response = requests.get(api_url)
+
+data = response.json()
+print(data)
+
+```
+
+```{python}
+import requests
+
+api_url = f"http://34.150.190.189/api/houses/?sale=True&maxSalePrice=10000000"
+
+response = requests.get(api_url)
+
+data = response.json()
+print(data)
+
+```
+
+```{python}
+import requests
+
+api_url = f"http://34.150.190.189/api/houses/?rent=True&maxRentPrice=10000"
+
+response = requests.get(api_url)
+
+data = response.json()
+print(data)
+
+```
+
+```{python}
+#| echo: false
+# Use a loop to navigate through the first 3 pages.
+# Collect and print the names of the characters from these pages.
+import requests
+
+response = requests.get(f'http://34.150.190.189/api/crimes?zipcode=20155')
+data = response.json()
+print(data)
+```
+
+```{python}
+import requests
+response = requests.get(f'http://34.150.190.189/api/crimes?zipcode=23147&crimeType=fraud')
+data = response.json()
+print(data)
+```
+
+
+```{python}
+import requests
+
+response = requests.get(f'http://34.150.190.189/api/jobs?zipcode=20557')
+data = response.json()
+print(data)
+```
+
+```{python}
+import requests
+response = requests.get(f'http://34.150.190.189/api/jobs?zipcode=20557&actively_hiring=1')
+data = response.json()
+print(data)
+```
+
+```{python}
+import requests
+response = requests.get(f'http://34.150.190.189/api/jobs?zipcode=20557&actively_hiring=1&count=true')
+data = response.json()
+print(data)
+```
+
+
+
+
+```{python}
+import requests
+
+response = requests.get(f'http://34.150.190.189/api/population?zipcode=20111&ethnicity=native hawaiian')
+data = response.json()
+print(data)
+```
+
+
+```{python}
+import requests
+response = requests.get(f'http://34.150.190.189/api/population?zipcode=20111&ethnicity=native hawaiian&min_age=21')
+data = response.json()
+print(data)
+```
+
+```{python}
+import requests
+response = requests.get(f'http://34.150.190.189/api/population?zipcode=20111&ethnicity=native hawaiian&diversity=True')
+data = response.json()
+print(data)
+```
+
+
+```{python}
+import requests
+response = requests.get(f'http://34.150.190.189/api/transportation?zipcode=22278')
+data = response.json()
+print(data)
+```
+
+
+```{python}
+import requests
+response = requests.get(f'http://34.150.190.189/api/transportation?zipcode=22278&idLightTrainRoute=True')
+data = response.json()
+print(data)
+```
+
+
 ## API insert 
-## API update
-## API delete
+```{python}
+import requests
 
-## SQL actions
+# Set the URL and parameters for the POST request
+url = 'http://127.0.0.1:5000/api/crimes'
+params = {
+    'name': 'Donna Guzman',
+    'crimeType': 'Larceny',
+    'date': '2023-12-11',
+    'zipcode': '23220'
+}
+
+# Set the data to be sent in the body of the POST request
+data = {
+    'username': 'dawit',
+    'password': 'password123'
+}
+
+# Send the POST request
+response = requests.post(url, params=params, data=data)
+print(response.json())
+```
+
+
+
 
 ## Future considerations
-
+o elevate the Virginia Better Place project, key priorities involve refining the user experience through an intuitive and visually engaging interface, expanding filtering options in the API, implementing robust security measures, and fortifying data integrity. Additionally, efforts should be directed towards enhancing performance, ensuring scalability, and incorporating automated testing for reliability. User authentication, documentation, and community engagement play vital roles, fostering trust and collaboration.
 
 ## Reflections
 Embarking on the Virginia Better Place project as a team for this class has proven to be a comprehensive and enlightening experience, offering us the opportunity to practically apply database design, SQL, and API development concepts. The project has shed light on the intricacies involved in addressing diverse challenges across various zip codes, collectively enhancing our skills in database design, normalization, and SQL querying. Despite the complexity of the problem domain, the project has served as a practical platform for integrating our theoretical knowledge into real-world scenarios. The class itself has laid a robust foundation in database management, seamlessly combining theoretical understanding with hands-on projects. As we look ahead, we collectively recognize the need for continuous learning and refinement of the project, contemplating the exploration of advanced database concepts and a more in-depth examination of API development to further enrich our collective skill set in this dynamic field. Overall, this project and class have significantly contributed to our growth as a cohesive team of database professionals.
