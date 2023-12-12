@@ -16,7 +16,7 @@ SET FOREIGN_KEY_CHECKS=1;
 # Schools
 -- schoolId, school_name, number_of_teachers, diversity, quality, zipcode
 CREATE TABLE Schools (
-    schoolId INT PRIMARY KEY,
+    schoolId INT PRIMARY KEY AUTO_INCREMENT,
     schoolName VARCHAR(255),
     numberOfTeachers INT,
     diversityPercentage DECIMAL,
@@ -27,7 +27,7 @@ CREATE TABLE Schools (
 # Crimes
 -- (crimeId, fullName, typeOfCrime, severity, zipcode, date_of_crime)
 CREATE TABLE Crimes (
-    crimeId INT PRIMARY KEY,
+    crimeId INT PRIMARY KEY AUTO_INCREMENT,
     fullName VARCHAR(255),
     crimeType VARCHAR(255),
     severity VARCHAR(255),
@@ -38,7 +38,7 @@ CREATE TABLE Crimes (
 # Peoples
 -- # Population aggregate data
 CREATE TABLE Peoples (
-    personId INT PRIMARY KEY,
+    personId INT PRIMARY KEY AUTO_INCREMENT,
     name VARCHAR(255),
     salary INT,
     age INT,
@@ -49,7 +49,7 @@ CREATE TABLE Peoples (
 
 # Transportation
 CREATE TABLE Transportation (
-    routeId int PRIMARY KEY,
+    routeId int PRIMARY KEY AUTO_INCREMENT,
     isBikeRoute BOOLEAN,
     isLightTrainRoute BOOLEAN,
     startingZipcode INT,
@@ -59,7 +59,7 @@ CREATE TABLE Transportation (
 # Houses
 -- house_id, person_id, house_num, zipcode, ForSale, salePrice, ForRent, rentPrice
 CREATE TABLE Houses (
-    houseId INT PRIMARY KEY,
+    houseId INT PRIMARY KEY AUTO_INCREMENT,
     ownerPersonId INT,
     zipcode INT,
     ForSale BOOLEAN,
@@ -71,7 +71,7 @@ CREATE TABLE Houses (
 # Open Jobs
 -- jobId, company, date, salary, actively_hiring, zipcode
 CREATE TABLE OpenJobs (
-    jobId INT PRIMARY KEY,
+    jobId INT PRIMARY KEY AUTO_INCREMENT,
     company VARCHAR(255),
     date DATE,
     salary INT,
