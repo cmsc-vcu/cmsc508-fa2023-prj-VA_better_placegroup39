@@ -14,7 +14,7 @@ for job_id, job_data in open_jobs_data.items():
     salary = job_data[2]
     actively_hiring = job_data[3]
     zipcode = job_data[4]
-    insert_statement = f'INSERT INTO OpenJobs (jobId, company, date, salary, actively_hiring, zipcode) VALUES ({job_id}, "{company}", "{date}", {salary}, {actively_hiring}, "{zipcode}");'
+    insert_statement = f'INSERT INTO OpenJobs (company, date, salary, actively_hiring, zipcode) VALUES ("{company}", "{date}", {salary}, {actively_hiring}, "{zipcode}");'
     insert_statements.append(insert_statement)
 
 # Write the insert statements to the SQL file

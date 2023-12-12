@@ -1,0 +1,704 @@
+---
+title: VA Better Place #1
+author: Aislin John, Donna Guzman, Dawit Tekeste
+date: last-modified
+format:
+    html:
+        toc: true
+        embed-resources: true
+---
+
+
+## Project overview 
+"VA Better Place" focuses on creating a comprehensive database that assesses the quality of living conditions in different ZIP codes within Virginia. This project aims to provide valuable insights into education, employment, housing, crime activity, transportation, and population data, ultimately aiding residents, policymakers, and researchers in making informed decisions to enhance the overall quality of life in the state.
+
+
+## Key deliverables:
+* [Videos folder](https://drive.google.com/drive/u/1/folders/1OXh3QJs13lfRBONFbVxslJhveOfVw8EN)
+* [Github Project](https://github.com/cmsc-vcu/cmsc508-fa2023-prj-VA_better_placegroup39)
+
+
+
+## Problem Description
+
+
+**Problem Domain:**
+
+
+The problem domain of Virginia Better Place revolves around improving the living conditions in different zip codes across the state of Virginia. This encompasses a wide range of aspects including education, housing, employment, crime activity, transportation, and population demographics. To understand this domain, one must consider the unique characteristics, challenges, and opportunities present in each zip code. For instance, some zip codes may have thriving job markets but inadequate public transportation, while others may excel in education but struggle with high crime rates.
+
+
+**Need:**
+
+
+The need for the Virginia Better Place database arises from the desire to comprehensively assess living conditions across Virginia. This database aims to provide valuable insights into each zip code, helping policymakers, local governments, researchers, and residents make informed decisions. By centralizing data on education, housing, employment, crime activity, transportation, and population, this database will help identify areas that require improvements, allocate resources more effectively, and create a better quality of life for Virginia residents.
+
+
+**Context:**
+
+* With how the data mentioned above is scattered all over the internet the goal of this project to put everything in one database so that all teh data for a zip code can be accessed with a single api call or can also do specific queries for each entities attributes
+
+
+**Scope:**
+
+* The scope of the project encompasses the development and maintenance of a comprehensive database aimed at aggregating and presenting data relevant to living conditions across various counties in Virginia. The database will cover a multitude of aspects including education, housing, employment, crime activity, transportation, and population metrics. It's designed to be a one-stop resource for individuals seeking to explore and analyze living conditions in Virginia, whether for short-term or permanent relocation. The scope extends to providing an accessible and user-friendly interface for querying this data, as well as ensuring the data is well-organized, up-to-date, and reliable.
+
+**Perspective:**
+
+- **End User:**
+  The database serves as an invaluable tool for making informed decisions regarding relocation. They can easily compare different zip codes based on their preferences such as rent prices, bike routes, and safety, among other criteria. The project simplifies the research process by aggregating all necessary data into one platform, saving time and ensuring they have all the information needed to make a well-informed decision.
+
+
+- **Developer:**
+  From a developer's standpoint, the project requires a robust backend database system to handle a variety of data types and queries efficiently. It also necessitates a front-end interface that is intuitive and user-friendly. There's a continuous need for data updates, monitoring, and possibly expanding the database to encompass more data or cover additional areas over time.
+
+
+**User Roles and Use Cases:**
+
+
+- **Policymakers:** These users may need access to various data points to inform policies related to education, public transportation, or crime reduction.
+- **Researchers:** Researchers might perform data analysis, studying correlations between different living conditions.
+- **Residents:** Residents could use the database to compare zip codes when considering a new home or assessing the safety of a neighborhood.
+- **Community Organizations:** Non-profit organizations could use the data to target their assistance and outreach programs effectively.
+
+
+
+Overall, the Virginia Better Place database will serve as a valuable tool for understanding and improving the living conditions in Virginia, benefiting a wide range of users and helping to address the unique challenges in different zip codes.
+
+
+## Database design
+**Entity-relationship diagram (ERD)**
+
+### Chen Diagram
+```{dot}
+//| echo: false
+graph ER {
+    fontname="Helvetica,Arial,sans-serif"
+    node [fontname="Helvetica,Arial,sans-serif"]
+    edge [fontname="Helvetica,Arial,sans-serif"]
+    layout=neato
+    node [shape=box]; Crimes; Houses; OpenJobs; Peoples; Schools; Transportation; Admins;
+    node [shape=diamond,style=filled,color=lightgrey]; "committed"; "own";
+
+    Peoples -- "committed" [label="n",len=2.00];
+    "committed" -- Crimes [label="n",len=2.00];
+
+    
+    Peoples -- "use"[label="n",len=1.50];
+    "use" -- Transportation [label="n",len=1.50];
+
+    Peoples -- "searching for"[label="n",len=1.50];
+    "searching for" -- OpenJobs [label="n",len=1.50];
+
+    Peoples -- "own"[label="n",len=1.50];
+    "own" -- Houses [label="n",len=1.50];
+
+    Peoples -- "looking for"[label="n",len=1.50];
+    "looking for" -- Schools [label="n",len=1.50];
+
+    
+    "can change" -- Crimes [label="n",len=2.00];
+
+    Admins -- "can change" [label="n",len=2.00];
+    "can change" -- Schools [label="n",len=2.00];
+
+    "can change" -- Houses [label="n",len=2.00];
+    "can change" -- OpenJobs [label="n",len=2.00];
+
+    "can change" -- Transportation [label="n",len=2.00];
+
+    
+
+    
+    fontsize=20;
+}
+``` 
+### Crow's Foot Diagram
+
+```{mermaid}
+erDiagram
+    Admins ||--|{ Peoples : canchange
+    Admins ||--|{ Schools : canchange
+    Admins ||--|{ Transportation : canchange
+    Admins ||--|{ OpenJobs : canchange
+    Admins ||--|{ HouseMarket : canchange
+    
+
+    Admins{
+        string  username PK
+        string password
+    }
+
+    Peoples{
+        int peopleId PK
+        string name
+        int age
+        int salary
+        int zipcode
+        string ethnicity
+    }
+
+    Crimes ||--|{ Peoples : committed 
+    Crimes {
+        int crimeId
+        string crimeType
+        date date_of_crime
+        int severity
+        int zipcode
+    }
+    
+    
+    HouseMarket ||--|{ Peoples : own
+    HouseMarket {
+        int houseId PK
+        int zipcode
+        int ForRent
+        int ForSale
+        int rentPrice
+        int salePrice
+    }
+
+    Schools ||--|{ Peoples : looking_for
+    Schools {
+        int schoolId PK
+        string schoolName
+        float diversityPercentage
+        char quality
+        int numberOfTeachers
+        string QualityOfSchools
+        int zipcode
+    }
+
+    OpenJobs ||--|{ Peoples : searching_for
+    OpenJobs {
+        int jobId PK
+        string company
+        date date
+        int salary
+        int actively_hiring
+        int zipcode
+    }
+    
+    Transportation ||--|{ Peoples : use
+    Transportation {
+        int routeId PK
+        int startingZipcode
+        int endingZipcode
+        int isBikeRoute
+        int isLightTrainRoute
+    }
+```
+
+
+
+**Specific queries**
+
+1. `SELECT ZipCode, PublicSchoolNumbers FROM EducationSystem WHERE QualityOfSchools IS NOT NULL;`<br>
+2. `SELECT ZipCode, SafetyRating FROM CriminalActivity WHERE PoliceCoverage = 'A';`<br>
+3. `SELECT ZipCode, CrimeType FROM SafetyRating WHERE NumberofCrimes > 10;`<br>
+4. `SELECT ZipCode, PopulationNumber FROM Population WHERE Diversity < 40%;`<br>
+5. `SELECT ZipCode FROM Transportation WHERE bikeRoutes > 10 AND hasLightTrains = TRUE;`<br>
+6. `SELECT ZipCode, AvgRent, AvgPrice FROM HouseMarket WHERE AvgRent < 1000;`<br>
+7. `SELECT ZipCode, numOpenJobs FROM JobSecurity WHERE layoffRate < 12%;`<br>
+8. `SELECT ZipCode FROM EducationSystem WHERE Diversity > 50%;`<br>
+9. `SELECT ZipCode FROM CriminalActivity WHERE SafetyRating = 'A' AND PoliceCoverage = 'B';`<br>
+10. `SELECT DISTINCT sr.ZipCode FROM SafetyRating sr JOIN Population p ON sr.ZipCode = p.ZipCode WHERE p.Diversity > 50% AND sr.CrimeType = 'Shoplifting';`<br>
+11. `SELECT ZipCode, housesForSale FROM HouseMarket WHERE AvgPrice > 500000;`<br>
+12. `SELECT ZipCode FROM Transportation WHERE bikeRoutes < 5 AND hasLightTrains = FALSE;`<br>
+13. `SELECT ZipCode FROM Population WHERE PopulationNumber > 50000 AND Diversity < 40%;`<br>
+14. `SELECT sr.ZipCode, sr.CrimeType, ca.SafetyRating FROM SafetyRating sr JOIN CriminalActivity ca ON sr.ZipCode = ca.ZipCode WHERE sr.NumberofCrimes > 50;`<br>
+15. `SELECT ZipCode FROM HouseMarket WHERE AvgRent BETWEEN 1000 AND 1300;`<br>
+16. `SELECT ZipCode, Diversity FROM EducationSystem WHERE PublicSchoolNumbers < 50;`<br>
+17. `SELECT ZipCode, hasLightTrains FROM Transportation WHERE bikeRoutes > 8;`<br>
+18. `SELECT ZipCode, layoffRate FROM JobSecurity WHERE numOpenJobs < 80;`<br>
+19. `SELECT h.ZipCode FROM HouseMarket h JOIN JobSecurity j ON h.ZipCode = j.ZipCode WHERE j.layoffRate > 10% AND h.AvgRent < 1000;`<br>
+20. `SELECT e.ZipCode FROM EducationSystem e JOIN Population p ON e.ZipCode = p.ZipCode WHERE e.Diversity < 40% AND p.Diversity > 60%;`<br>
+
+
+**Sample Data and SQL actions**
+
+## Table Names
+``` {python}
+#| eval: true
+#| echo: false
+import os
+import pandas as pd
+from sqlalchemy import create_engine
+from dotenv import load_dotenv
+from IPython.display import Markdown
+from tabulate import tabulate
+# load credentials from file ~/.env to OS environment
+load_dotenv()
+
+# use these credentials to populate a dictionary
+config = {
+    
+    'user': os.getenv("DB_USER"),
+    'password': os.getenv("DB_PASSWORD"),
+    'host': os.getenv("DB_HOST"),
+    'database': os.getenv("DB_NAME")
+}
+
+engine_uri = f"mysql+pymysql://{config['user']}:{config['password']}@{config['host']}/{config['database']}"
+cnx = create_engine(engine_uri)
+engine_uri_for_show = f"mysql+pymysql://{config['user']}:pwd-goes-here@{config['host']}/{config['database']}"
+
+# use SQL command to show tables in database
+tables = pd.read_sql(f"""
+show tables
+""",cnx)
+
+tables.columns = ["table_name"]
+tables
+```
+
+## Admins table
+```{python}
+#| eval: true
+#| echo: false
+fields = pd.read_sql("""
+select
+  *
+from 
+  23FA_groups_group39.Admins
+
+"""
+,cnx)
+
+print(fields.head(5))
+```
+
+## Crimes Table
+```{python}
+#| eval: true
+#| echo: false
+fields = pd.read_sql("""
+select
+  *
+from 
+  23FA_groups_group39.Crimes
+
+"""
+,cnx)
+
+print(fields.head(5))
+```
+
+
+## OpenJobs Table
+```{python}
+#| eval: true
+#| echo: false
+fields = pd.read_sql("""
+select
+  *
+from 
+  23FA_groups_group39.OpenJobs
+
+"""
+,cnx)
+
+print(fields.head(5))
+```
+
+## Peoples Table
+```{python}
+#| eval: true
+#| echo: false
+fields = pd.read_sql("""
+select
+  *
+from 
+  23FA_groups_group39.Peoples
+
+"""
+,cnx)
+
+print(fields.head(5))
+```
+
+## Schools Table
+```{python}
+#| eval: true
+#| echo: false
+fields = pd.read_sql("""
+select
+  *
+from 
+  23FA_groups_group39.Schools
+"""
+,cnx)
+
+print(fields.head(5))
+```
+
+## Transportation Table
+```{python}
+#| eval: true
+#| echo: false
+fields = pd.read_sql("""
+select
+  *
+from 
+  23FA_groups_group39.Transportation
+
+"""
+,cnx)
+
+print(fields.head(5))
+```
+
+## Functional Dependencies and Normalization
+
+Certainly! I'll provide a textual representation of the functional dependencies and their progression through the normal forms with arrows:
+
+1. **EducationSystem Table:**
+   - `schoolId -> schoolName, zipcode`
+   - ![2NF](https://latex.codecogs.com/svg.latex?%5Cinline%20%5Ctext%7B2NF%7D%20%5Crightarrow%20%5Ctext%7B3NF%7D%20%5Crightarrow%20%5Ctext%7BBCNF%7D)
+
+2. **Criminal Activity Table:**
+   - `crimeId -> fullName, severity, zipcode, date_of_crime`
+   - ![2NF](https://latex.codecogs.com/svg.latex?%5Cinline%20%5Ctext%7B2NF%7D%20%5Crightarrow%20%5Ctext%7B3NF%7D%20%5Crightarrow%20%5Ctext%7BBCNF%7D)
+
+3. **Population Table:**
+   - `personId -> name, salary, age, ethnicity, zipcode`
+   - ![2NF](https://latex.codecogs.com/svg.latex?%5Cinline%20%5Ctext%7B2NF%7D%20%5Crightarrow%20%5Ctext%7B3NF%7D%20%5Crightarrow%20%5Ctext%7BBCNF%7D)
+
+4. **Transportation Table:**
+   - `routeId -> isBikeRoute, isLightTrainRoute, startingZipcode, endingZipcode`
+   - ![2NF](https://latex.codecogs.com/svg.latex?%5Cinline%20%5Ctext%7B2NF%7D%20%5Crightarrow%20%5Ctext%7B3NF%7D%20%5Crightarrow%20%5Ctext%7BBCNF%7D)
+
+5. **HouseMarket Table:**
+   - `houseId -> ownerPersonId, zipcode`
+   - ![2NF](https://latex.codecogs.com/svg.latex?%5Cinline%20%5Ctext%7B2NF%7D%20%5Crightarrow%20%5Ctext%7B3NF%7D%20%5Crightarrow%20%5Ctext%7BBCNF%7D)
+
+6. **JobSecurity Table:**
+   - `jobId -> company, date, salary, actively_hiring, zipcode`
+   - ![2NF](https://latex.codecogs.com/svg.latex?%5Cinline%20%5Ctext%7B2NF%7D%20%5Crightarrow%20%5Ctext%7B3NF%7D%20%5Crightarrow%20%5Ctext%7BBCNF%7D)
+
+7. **Admins Table:**
+   - `adminId -> username, password`
+   - ![2NF](https://latex.codecogs.com/svg.latex?%5Cinline%20%5Ctext%7B2NF%7D%20%5Crightarrow%20%5Ctext%7B3NF%7D%20%5Crightarrow%20%5Ctext%7BBCNF%7D)
+
+The arrows represent the progression through the normal forms, with 2NF, 3NF, and BCNF indicated for each table.
+
+* Decompose multi-valued attributes like safety Rating and decomposing the values needed to calculate for the table other than that the other tables are **4NF** form
+
+
+## DDL
+
+CREATE TABLE Schools (   
+    schoolId INT PRIMARY KEY,   
+    schoolName VARCHAR(255),   
+    numberOfTeachers INT,   
+    diversityPercentage DECIMAL,   
+    quality char,   
+    zipcode INT    
+);
+
+CREATE TABLE Crimes (    
+    crimeId INT PRIMARY KEY,   
+    fullName VARCHAR(255),   
+    crimeType VARCHAR(255),   
+    severity VARCHAR(255),   
+    zipcode INT,   
+    date_of_crime DATE   
+);   
+
+CREATE TABLE Peoples (   
+    personId INT PRIMARY KEY,   
+    name VARCHAR(255),   
+    salary INT,   
+    age INT,     
+    ethnicity VARCHAR(255),    
+    zipcode INT    
+);   
+
+
+CREATE TABLE Transportation (   
+    routeId VARCHAR(255) PRIMARY KEY,   
+    isBikeRoute BOOLEAN,   
+    isLightTrainRoute BOOLEAN,   
+    startingZipcode INT,   
+    endingZipcode INT    
+);
+
+CREATE TABLE Houses (   
+    houseId INT PRIMARY KEY,   
+    ownerPersonId INT,    
+    zipcode INT,   
+    ForSale BOOLEAN,    
+    salePrice DECIMAL,    
+    ForRent BOOLEAN,   
+    rentPrice DECIMAL    
+);
+
+CREATE TABLE OpenJobs (    
+    jobId INT PRIMARY KEY,   
+    company VARCHAR(255),    
+    date DATE,     
+    salary INT,    
+    actively_hiring BOOLEAN,    
+    zipcode INT   
+);
+
+
+## API DESIGN
+
+all endpoints will be shown
+/admin/login
+/api/houses
+/api/crimes
+/api/schools
+/api/population
+/api/jobs
+/api/transportation
+
+
+## API security
+  We salt the password given by form-data when a post,put or delete request is passed
+
+## API query
+
+We have 21 unique queries for the project
+
+```{python}
+import requests
+
+api_url = "http://34.150.190.189/api/schools?zipcode=21136"
+
+response = requests.get(api_url)
+
+data = response.json()
+print(data)
+
+```
+
+```{python}
+import requests
+
+api_url = f"http://34.150.190.189/api/schools?zipcode=24331&quality=F&maxNumberOfTeachers=200"
+
+response = requests.get(api_url)
+
+data = response.json()
+print(data)
+
+```
+
+```{python}
+import requests
+
+api_url = f"http://34.150.190.189/api/schools?zipcode=24331&minNumberOfTeachers=100"
+
+response = requests.get(api_url)
+
+data = response.json()
+print(data)
+
+```
+
+```{python}
+import requests
+
+api_url = "http://34.150.190.189/api/schools?school_name='David High School'"
+
+response = requests.get(api_url)
+
+data = response.json()
+print(data)
+
+```
+
+```{python}
+import requests
+
+api_url = f"http://34.150.190.189/api/schools?min_diversity=50"
+
+response = requests.get(api_url)
+
+data = response.json()
+print(data)
+
+```
+
+
+```{python}
+import requests
+
+api_url = f"http://34.150.190.189/api/houses/?zipcode=24059&rent=True&maxRentPrice=10000" 
+
+response = requests.get(api_url)
+
+data = response.json()
+print(data)
+
+```
+
+```{python}
+import requests
+
+api_url = f"http://34.150.190.189/api/houses/?zipcode=22770&sale=True&maxSalePrice=10000000"
+
+response = requests.get(api_url)
+
+data = response.json()
+print(data)
+
+```
+
+```{python}
+import requests
+
+api_url = f"http://34.150.190.189/api/houses/?sale=True"
+
+response = requests.get(api_url)
+
+data = response.json()
+print(data)
+
+```
+
+```{python}
+import requests
+
+api_url = f"http://34.150.190.189/api/houses/?sale=True&maxSalePrice=10000000"
+
+response = requests.get(api_url)
+
+data = response.json()
+print(data)
+
+```
+
+```{python}
+import requests
+
+api_url = f"http://34.150.190.189/api/houses/?rent=True&maxRentPrice=10000"
+
+response = requests.get(api_url)
+
+data = response.json()
+print(data)
+
+```
+
+```{python}
+#| echo: false
+# Use a loop to navigate through the first 3 pages.
+# Collect and print the names of the characters from these pages.
+import requests
+
+response = requests.get(f'http://34.150.190.189/api/crimes?zipcode=20155')
+data = response.json()
+print(data)
+```
+
+```{python}
+import requests
+response = requests.get(f'http://34.150.190.189/api/crimes?zipcode=23147&crimeType=fraud')
+data = response.json()
+print(data)
+```
+
+
+```{python}
+import requests
+
+response = requests.get(f'http://34.150.190.189/api/jobs?zipcode=20557')
+data = response.json()
+print(data)
+```
+
+```{python}
+import requests
+response = requests.get(f'http://34.150.190.189/api/jobs?zipcode=20557&actively_hiring=1')
+data = response.json()
+print(data)
+```
+
+```{python}
+import requests
+response = requests.get(f'http://34.150.190.189/api/jobs?zipcode=20557&actively_hiring=1&count=true')
+data = response.json()
+print(data)
+```
+
+
+
+
+```{python}
+import requests
+
+response = requests.get(f'http://34.150.190.189/api/population?zipcode=20111&ethnicity=native hawaiian')
+data = response.json()
+print(data)
+```
+
+
+```{python}
+import requests
+response = requests.get(f'http://34.150.190.189/api/population?zipcode=20111&ethnicity=native hawaiian&min_age=21')
+data = response.json()
+print(data)
+```
+
+```{python}
+import requests
+response = requests.get(f'http://34.150.190.189/api/population?zipcode=20111&ethnicity=native hawaiian&diversity=True')
+data = response.json()
+print(data)
+```
+
+
+```{python}
+import requests
+response = requests.get(f'http://34.150.190.189/api/transportation?zipcode=22278')
+data = response.json()
+print(data)
+```
+
+
+```{python}
+import requests
+response = requests.get(f'http://34.150.190.189/api/transportation?zipcode=22278&idLightTrainRoute=True')
+data = response.json()
+print(data)
+```
+
+
+## API insert 
+```{python}
+import requests
+
+# Set the URL and parameters for the POST request
+url = 'http://127.0.0.1:5000/api/crimes'
+params = {
+    'name': 'Donna Guzman',
+    'crimeType': 'Larceny',
+    'date': '2023-12-11',
+    'zipcode': '23220'
+}
+
+# Set the data to be sent in the body of the POST request
+data = {
+    'username': 'dawit',
+    'password': 'password123'
+}
+
+# Send the POST request
+response = requests.post(url, params=params, data=data)
+print(response.json())
+```
+
+
+
+
+## Future considerations
+o elevate the Virginia Better Place project, key priorities involve refining the user experience through an intuitive and visually engaging interface, expanding filtering options in the API, implementing robust security measures, and fortifying data integrity. Additionally, efforts should be directed towards enhancing performance, ensuring scalability, and incorporating automated testing for reliability. User authentication, documentation, and community engagement play vital roles, fostering trust and collaboration.
+
+## Reflections
+Embarking on the Virginia Better Place project as a team for this class has proven to be a comprehensive and enlightening experience, offering us the opportunity to practically apply database design, SQL, and API development concepts. The project has shed light on the intricacies involved in addressing diverse challenges across various zip codes, collectively enhancing our skills in database design, normalization, and SQL querying. Despite the complexity of the problem domain, the project has served as a practical platform for integrating our theoretical knowledge into real-world scenarios. The class itself has laid a robust foundation in database management, seamlessly combining theoretical understanding with hands-on projects. As we look ahead, we collectively recognize the need for continuous learning and refinement of the project, contemplating the exploration of advanced database concepts and a more in-depth examination of API development to further enrich our collective skill set in this dynamic field. Overall, this project and class have significantly contributed to our growth as a cohesive team of database professionals.
+
+
+
