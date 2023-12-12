@@ -196,40 +196,37 @@ erDiagram
 
 ## Functional Dependencies and Normalization
 
-1. EducationSystem Table:
+Certainly! I'll provide a textual representation of the functional dependencies and their progression through the normal forms with arrows:
 
-        ZipCode -> PublicSchoolNumbers<br>
-        ZipCode -> QualityOfSchools<br>
-        ZipCode -> Diversity<br>
+1. **EducationSystem Table:**
+   - `schoolId -> schoolName, zipcode`
+   - ![2NF](https://latex.codecogs.com/svg.latex?%5Cinline%20%5Ctext%7B2NF%7D%20%5Crightarrow%20%5Ctext%7B3NF%7D%20%5Crightarrow%20%5Ctext%7BBCNF%7D)
 
-2. Criminal Activity Table:
+2. **Criminal Activity Table:**
+   - `crimeId -> fullName, severity, zipcode, date_of_crime`
+   - ![2NF](https://latex.codecogs.com/svg.latex?%5Cinline%20%5Ctext%7B2NF%7D%20%5Crightarrow%20%5Ctext%7B3NF%7D%20%5Crightarrow%20%5Ctext%7BBCNF%7D)
 
-        RecordID -> SafetyRating<br>
-        RecordID -> NumberofCrimes<br>
-        RecordID -> CrimeType<br>
+3. **Population Table:**
+   - `personId -> name, salary, age, ethnicity, zipcode`
+   - ![2NF](https://latex.codecogs.com/svg.latex?%5Cinline%20%5Ctext%7B2NF%7D%20%5Crightarrow%20%5Ctext%7B3NF%7D%20%5Crightarrow%20%5Ctext%7BBCNF%7D)
 
-3. Population Table:
+4. **Transportation Table:**
+   - `routeId -> isBikeRoute, isLightTrainRoute, startingZipcode, endingZipcode`
+   - ![2NF](https://latex.codecogs.com/svg.latex?%5Cinline%20%5Ctext%7B2NF%7D%20%5Crightarrow%20%5Ctext%7B3NF%7D%20%5Crightarrow%20%5Ctext%7BBCNF%7D)
 
-        ZipCode -> PopulationNumber<br>
-        ZipCode -> Diversity<br>
+5. **HouseMarket Table:**
+   - `houseId -> ownerPersonId, zipcode`
+   - ![2NF](https://latex.codecogs.com/svg.latex?%5Cinline%20%5Ctext%7B2NF%7D%20%5Crightarrow%20%5Ctext%7B3NF%7D%20%5Crightarrow%20%5Ctext%7BBCNF%7D)
 
-4. Transportation Table:
+6. **JobSecurity Table:**
+   - `jobId -> company, date, salary, actively_hiring, zipcode`
+   - ![2NF](https://latex.codecogs.com/svg.latex?%5Cinline%20%5Ctext%7B2NF%7D%20%5Crightarrow%20%5Ctext%7B3NF%7D%20%5Crightarrow%20%5Ctext%7BBCNF%7D)
 
-        ZipCode -> bikeRoutes<br>
-        ZipCode -> hasLightTrains<br>
+7. **Admins Table:**
+   - `adminId -> username, password`
+   - ![2NF](https://latex.codecogs.com/svg.latex?%5Cinline%20%5Ctext%7B2NF%7D%20%5Crightarrow%20%5Ctext%7B3NF%7D%20%5Crightarrow%20%5Ctext%7BBCNF%7D)
 
-5. HouseMarket Table:
-
-        ZipCode -> AvgRent<br>
-        ZipCode -> AvgPrice<br>
-        ZipCode -> housesForSale<br>
-
-6. JobSecurity Table:
-
-        ZipCode -> numOpenJobs<br>
-        ZipCode -> layoffRate<br>
-
-Forth Normal Form (4NF)
+The arrows represent the progression through the normal forms, with 2NF, 3NF, and BCNF indicated for each table.
 
 * Decompose multi-valued attributes like safety Rating and decomposing the values needed to calculate for the table other than that the other tables are **4NF** form
 
