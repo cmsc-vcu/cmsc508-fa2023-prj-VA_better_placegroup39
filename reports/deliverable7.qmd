@@ -79,14 +79,12 @@ graph ER {
     node [fontname="Helvetica,Arial,sans-serif"]
     edge [fontname="Helvetica,Arial,sans-serif"]
     layout=neato
-    node [shape=box]; Crimes; Houses; OpenJobs; Peoples; Schools; Transportation;
+    node [shape=box]; Crimes; Houses; OpenJobs; Peoples; Schools; Transportation; Admins;
     node [shape=diamond,style=filled,color=lightgrey]; "committed"; "own";
 
     Peoples -- "committed" [label="n",len=2.00];
     "committed" -- Crimes [label="n",len=2.00];
 
-    Peoples -- "own"[label="n",len=1.50];
-    "own" -- Houses [label="n",len=1.50];
     
     Peoples -- "use"[label="n",len=1.50];
     "use" -- Transportation [label="n",len=1.50];
@@ -94,8 +92,26 @@ graph ER {
     Peoples -- "searching for"[label="n",len=1.50];
     "searching for" -- OpenJobs [label="n",len=1.50];
 
+    Peoples -- "own"[label="n",len=1.50];
+    "own" -- Houses [label="n",len=1.50];
+
     Peoples -- "looking for"[label="n",len=1.50];
     "looking for" -- Schools [label="n",len=1.50];
+
+    
+    "can change" -- Crimes [label="n",len=2.00];
+
+    Admins -- "can change" [label="n",len=2.00];
+    "can change" -- Schools [label="n",len=2.00];
+
+    "can change" -- Houses [label="n",len=2.00];
+    "can change" -- OpenJobs [label="n",len=2.00];
+
+    "can change" -- Transportation [label="n",len=2.00];
+
+    
+
+    
     fontsize=20;
 }
 ``` 
@@ -103,6 +119,17 @@ graph ER {
 
 ```{mermaid}
 erDiagram
+    Admins ||--|{ Peoples : canchange
+    Admins ||--|{ Schools : canchange
+    Admins ||--|{ Transportation : canchange
+    Admins ||--|{ OpenJobs : canchange
+    Admins ||--|{ HouseMarket : canchange
+    
+
+    Admins{
+        string  username PK
+        string password
+    }
 
     Peoples{
         int peopleId PK
@@ -191,8 +218,137 @@ erDiagram
 
 
 **Sample Data**
- [Sample Data Table](SampleDataTable.png)
- <br> Click on the link
+
+## Table Names
+``` {python}
+#| eval: true
+#| echo: false
+import os
+import pandas as pd
+from sqlalchemy import create_engine
+from dotenv import load_dotenv
+from IPython.display import Markdown
+from tabulate import tabulate
+# load credentials from file ~/.env to OS environment
+load_dotenv()
+
+# use these credentials to populate a dictionary
+config = {
+    
+    'user': os.getenv("DB_USER"),
+    'password': os.getenv("DB_PASSWORD"),
+    'host': os.getenv("DB_HOST"),
+    'database': os.getenv("DB_NAME")
+}
+
+engine_uri = f"mysql+pymysql://{config['user']}:{config['password']}@{config['host']}/{config['database']}"
+cnx = create_engine(engine_uri)
+engine_uri_for_show = f"mysql+pymysql://{config['user']}:pwd-goes-here@{config['host']}/{config['database']}"
+
+# use SQL command to show tables in database
+tables = pd.read_sql(f"""
+show tables
+""",cnx)
+
+tables.columns = ["table_name"]
+tables
+```
+
+## Admins table
+```{python}
+#| eval: true
+#| echo: false
+fields = pd.read_sql("""
+select
+  *
+from 
+  23FA_groups_group39.Admins
+
+"""
+,cnx)
+
+print(fields.head(5))
+```
+
+## Crimes Table
+```{python}
+#| eval: true
+#| echo: false
+fields = pd.read_sql("""
+select
+  *
+from 
+  23FA_groups_group39.Crimes
+
+"""
+,cnx)
+
+print(fields.head(5))
+```
+
+
+## OpenJobs Table
+```{python}
+#| eval: true
+#| echo: false
+fields = pd.read_sql("""
+select
+  *
+from 
+  23FA_groups_group39.OpenJobs
+
+"""
+,cnx)
+
+print(fields.head(5))
+```
+
+## Peoples Table
+```{python}
+#| eval: true
+#| echo: false
+fields = pd.read_sql("""
+select
+  *
+from 
+  23FA_groups_group39.Peoples
+
+"""
+,cnx)
+
+print(fields.head(5))
+```
+
+## Schools Table
+```{python}
+#| eval: true
+#| echo: false
+fields = pd.read_sql("""
+select
+  *
+from 
+  23FA_groups_group39.Schools
+"""
+,cnx)
+
+print(fields.head(5))
+```
+
+## Transportation Table
+```{python}
+#| eval: true
+#| echo: false
+fields = pd.read_sql("""
+select
+  *
+from 
+  23FA_groups_group39.Transportation
+
+"""
+,cnx)
+
+print(fields.head(5))
+```
 
 ## Functional Dependencies and Normalization
 
