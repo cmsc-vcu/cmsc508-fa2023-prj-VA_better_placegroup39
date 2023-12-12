@@ -1,0 +1,114 @@
+
+
+```{python}
+import requests
+
+api_url = f"https://34.150.190.189/api/schools?zipcode=21136"
+
+response = requests.get(api_url)
+
+data = response.json()
+
+```
+
+```{python}
+import requests
+
+api_url = f"http://34.150.190.189/api/schools?zipcode=24331&quality=F&maxNumberOfTeachers=200"
+
+response = requests.get(api_url)
+
+data = response.json()
+
+```
+
+```{python}
+import requests
+
+api_url = f"http://34.150.190.189/api/schools?zipcode=24331&minNumberOfTeachers=100"
+
+response = requests.get(api_url)
+
+data = response.json()
+
+```
+
+```{python}
+import requests
+
+api_url = "http://34.150.190.189/api/schools?school_name='David High School'"
+
+response = requests.get(api_url)
+
+data = response.json()
+
+```
+
+```{python}
+import requests
+
+api_url = f"http://34.150.190.189/api/schools?min_diversity=50"
+
+response = requests.get(api_url)
+
+data = response.json()
+
+```
+
+##########################
+
+```{python}
+import requests
+
+api_url = f"http://34.150.190.189/api/houses/?zipcode=24059&rent=True&maxRentPrice=10000" 
+
+response = requests.get(api_url)
+
+data = response.json()
+
+```
+
+```{python}
+import requests
+
+api_url = f"http://34.150.190.189/api/houses/?zipcode=22770&sale=True&maxSalePrice=10000000"
+
+response = requests.get(api_url)
+
+data = response.json()
+
+```
+
+```{python}
+import requests
+
+api_url = f"http://34.150.190.189/api/houses/?sale=True"
+
+response = requests.get(api_url)
+
+data = response.json()
+
+```
+
+```{python}
+import requests
+
+api_url = f"http://34.150.190.189/api/houses/?sale=True&maxSalePrice=10000000"
+
+response = requests.get(api_url)
+
+data = response.json()
+
+```
+
+```{python}
+import requests
+
+api_url = f"http://34.150.190.189/api/houses/?rent=True&maxRentPrice=10000"
+
+response = requests.get(api_url)
+
+data = response.json()
+
+```
+

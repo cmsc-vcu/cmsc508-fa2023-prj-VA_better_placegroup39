@@ -1,5 +1,3 @@
-## Chen Notation
-
 ```{dot}
 //| echo: false
 graph ER {
@@ -7,32 +5,23 @@ graph ER {
     node [fontname="Helvetica,Arial,sans-serif"]
     edge [fontname="Helvetica,Arial,sans-serif"]
     layout=neato
-    node [shape=box]; zipcode; education; transportation; population; houseMarket; jobSecurity; criminalActivity;
-    node [shape=ellipse]; {node [label="diversity"] }
-    {node [label="zipCode"] }
-        
-    node [shape=diamond,style=filled,color=lightgrey]; "with"; "carries"; "own";"retains";"having"; "has"; 
-    
-    zipcode -- "with" [label="1",len=1.00];
-    "with" -- education [label="n",len=1.00];
-    
-    zipcode -- "having" [label="1",len=1.00];
-    "having" -- transportation [label="n",len=1.00];
-    
-    zipcode -- "retains" [label="1",len=1.00];
-    "retains" -- houseMarket [label="n",len=1.00];
+    node [shape=box]; Crimes; Houses; OpenJobs; Peoples; Schools; Transportation;
+    node [shape=diamond,style=filled,color=lightgrey]; "committed"; "own";
 
-    zipcode -- "own" [label="1",len=1.00];
-    "own" -- population [label="n",len=1.00];
-    
-    zipcode -- "carries" [label="1",len=1.00];
-    "carries" -- jobSecurity [label="n",len=1.00];
-   
-    zipcode -- "has" [label="1",len=1.00];
-    "has" -- criminalActivity [label="n",len=1.00];
-  
+    Peoples -- "committed" [label="n",len=2.00];
+    "committed" -- Crimes [label="n",len=2.00];
 
+    Peoples -- "own"[label="n",len=1.50];
+    "own" -- Houses [label="n",len=1.50];
+    
+    Peoples -- "use"[label="n",len=1.50];
+    "use" -- Transportation [label="n",len=1.50];
+
+    Peoples -- "searching for"[label="n",len=1.50];
+    "searching for" -- OpenJobs [label="n",len=1.50];
+
+    Peoples -- "looking for"[label="n",len=1.50];
+    "looking for" -- Schools [label="n",len=1.50];
     fontsize=20;
-
 }
-```
+``` 
