@@ -14,7 +14,7 @@ for school_id, school_data in schools_data.items():
     diversity = school_data[2].replace("%", "")
     quality = f'{school_data[3]}'
     zipcode = school_data[4]
-    insert_statement = f"INSERT INTO Schools (schoolId, schoolName, numberOfTeachers, diversityPercentage, quality, zipcode) VALUES ('{school_id}', '{school_name}', {number_of_teachers}, {diversity}, '{quality}', '{zipcode}');"
+    insert_statement = f"INSERT INTO Schools (schoolName, numberOfTeachers, diversityPercentage, quality, zipcode) VALUES ('{school_name}', {number_of_teachers}, {diversity}, '{quality}', '{zipcode}');"
     insert_statements.append(insert_statement)
 
 # Write the insert statements to the SQL file

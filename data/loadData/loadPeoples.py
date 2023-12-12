@@ -13,7 +13,7 @@ for person_id, person_data in peoples_data.items():
     age = person_data[2]
     race = person_data[3]
     zipcode = person_data[4]
-    insert_statement = f"INSERT INTO Peoples (personId, name, salary, age, ethnicity, zipcode) VALUES ('{person_id}', '{name}', {salary}, {age}, '{race}', {zipcode});"
+    insert_statement = f"INSERT INTO Peoples (name, salary, age, ethnicity, zipcode) VALUES ('{name}', {salary}, {age}, '{race}', {zipcode});"
     insert_statements.append(insert_statement)
 
 # Write the insert statements to the SQL file

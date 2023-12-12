@@ -16,7 +16,7 @@ for house_id, house_data in houses_data.items():
     sale_price = house_data[3]
     for_rent = house_data[4]
     rent_price = house_data[5]
-    insert_statement = f"INSERT INTO Houses (houseId, ownerPersonID, zipcode, ForSale, salePrice, ForRent, rentPrice) VALUES ('{house_id}', '{person_id}', '{zipcode}', {for_sale}, {sale_price}, {for_rent}, {rent_price});"
+    insert_statement = f"INSERT INTO Houses (ownerPersonID, zipcode, ForSale, salePrice, ForRent, rentPrice) VALUES ('{person_id}', '{zipcode}', {for_sale}, {sale_price}, {for_rent}, {rent_price});"
     insert_statements.append(insert_statement)
 
 # Write the insert statements to the SQL file
