@@ -250,7 +250,7 @@ def get_schools():
     
     if request.method== "POST":
         if isAdmin(username, password):
-            sql=f("INSERT INTO Schools (schoolName, numberOfTeachers, diversityPercentage, quality, zipcode) VALUES ('{school_name}', {number_of_teachers}, {diversity_percentage}, '{quality}', {zipcode});")
+            sql=(f"INSERT INTO Schools (schoolName, numberOfTeachers, diversityPercentage, quality, zipcode) VALUES ('{school_name}', {number_of_teachers}, {diversity_percentage}, '{quality}', {zipcode});")
             with connection.cursor() as cursor:
                 cursor.execute(sql)
                 connection.commit()
@@ -350,7 +350,7 @@ def get_open_jobs():
 
     if request.method== "POST":
         if isAdmin(username, password):
-            sql=f("INSERT INTO OpenJobs (company, date, salary, actively_hiring, zipcode) VALUES ('{company}', {date}, {salary}, {actively_hiring}, {zipcode});")
+            sql=(f"INSERT INTO OpenJobs (company, date, salary, actively_hiring, zipcode) VALUES ('{company}', {date}, {salary}, {actively_hiring}, {zipcode});")
             with connection.cursor() as cursor:
                 cursor.execute(sql)
                 connection.commit()
@@ -425,7 +425,7 @@ def get_transportation():
 
     if request.method== "POST":
         if isAdmin(username, password):
-            sql=f("INSERT INTO Transportation (isBikeRoute, isLightTrainTraining, startingZipcode, endingZipcode, zipcode) VALUES ({is_bike_route}, {is_light_train_route}, {starting_zipcode}, {ending_zipcode}, {zipcode});")
+            sql=(f"INSERT INTO Transportation (isBikeRoute, isLightTrainTraining, startingZipcode, endingZipcode, zipcode) VALUES ({is_bike_route}, {is_light_train_route}, {starting_zipcode}, {ending_zipcode}, {zipcode});")
             with connection.cursor() as cursor:
                 cursor.execute(sql)
                 connection.commit()
@@ -533,7 +533,7 @@ def get_population():
 
     if request.method== "POST":
             if isAdmin(username, password):
-                sql=f("INSERT INTO Peoples (name, salary, age, ethnicity, zipcode) VALUES ('{name}', {salary}, {age}, '{ethnicity}', {zipcode});")
+                sql=(f"INSERT INTO Peoples (name, salary, age, ethnicity, zipcode) VALUES ('{name}', {salary}, {age}, '{ethnicity}', {zipcode});")
                 with connection.cursor() as cursor:
                     cursor.execute(sql)
                     connection.commit()
