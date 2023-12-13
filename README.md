@@ -11,7 +11,8 @@ The Virginia Better Place Database is a comprehensive resource for assessing and
 - [Credits](#credits)
 
 ## Important Links
-* [Pitch Video](https://drive.google.com/file/d/1Sikim-ladH6ERmn24CFSi-oMzZA6jGdi/view?usp=sharing)
+* [Pitch Video](https://drive.google.com/file/d/1Sikim-ladH6ERmn24CFSi-oMzZA6jGdi/view?usp=drive_link)
+* [Final Video](https://drive.google.com/file/d/1fTAIpo-ZfMOT-c5ui8iCkgihkUn2pq7D/view?usp=drive_link)
 * [Phase 1](https://google.com)
 * [Github Project](https://github.com/cmsc-vcu/cmsc508-fa2023-prj-VA_better_placegroup39)
 
