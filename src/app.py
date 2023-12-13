@@ -233,106 +233,207 @@ def houses():
 #http://127.0.0.1:5000/api/houses/?zipcode=22770&sale=True&maxSalePrice=10000000
 
 
-@app.route("/api/schools", methods=["GET"])
+@app.route("/api/schools", methods=["GET", "POST"])
 def get_schools():
     data = {}
     zipcode = request.args.get('zipcode')
     school_name = request.args.get('schoolName')
+    number_of_teachers = request.args.get('teachers')
+    diversity_percentage = request.args.get('diversity')
     min_teachers = request.args.get('minNumberOfTeachers')
     max_teachers = request.args.get('maxNumberOfTeachers')
     min_diversity = request.args.get('minDiversity')
     max_diversity = request.args.get('maxDiversity')
     quality = request.args.get('quality')
+    username = request.form.get('username')
+    password = request.form.get('password')
+    
+    if request.method== "POST":
+        if isAdmin(username, password):
+            sql=f("INSERT INTO Schools (schoolName, numberOfTeachers, diversityPercentage, quality, zipcode) VALUES ('{school_name}', {number_of_teachers}, {diversity_percentage}, '{quality}', {zipcode});")
+            with connection.cursor() as cursor:
+                cursor.execute(sql)
+                connection.commit()
+                return jsonify({'code': 200, 'message': 'Successfully added schools'})
+        else:
+            return jsonify({'code': 401, 'message': 'Wrong Username and Password'})
+    if request.method=="GET":
+        # Use a WHERE clause in the SQL query based on the provided parameters
+        where_conditions = []
 
-    # Use a WHERE clause in the SQL query based on the provided parameters
-    where_conditions = []
+        if zipcode:
+            where_conditions.append(f"zipcode = {zipcode}")
+        if school_name:
+            where_conditions.append(f"schoolName = '{school_name}'")
+        if min_teachers:
+            where_conditions.append(f"numberOfTeachers >= {min_teachers}")
+        if max_teachers:
+            where_conditions.append(f"numberOfTeachers <= {max_teachers}")
+        if min_diversity:
+            where_conditions.append(f"diversityPercentage >= {min_diversity}")
+        if max_diversity:
+            where_conditions.append(f"diversityPercentage <= {max_diversity}")
+        if quality:
+            where_conditions.append(f"quality = '{quality}'")
 
-    if zipcode:
-        where_conditions.append(f"zipcode = {zipcode}")
-    if school_name:
-        where_conditions.append(f"schoolName = '{school_name}'")
-    if min_teachers:
-        where_conditions.append(f"numberOfTeachers >= {min_teachers}")
-    if max_teachers:
-        where_conditions.append(f"numberOfTeachers <= {max_teachers}")
-    if min_diversity:
-        where_conditions.append(f"diversityPercentage >= {min_diversity}")
-    if max_diversity:
-        where_conditions.append(f"diversityPercentage <= {max_diversity}")
-    if quality:
-        where_conditions.append(f"quality = '{quality}'")
-
-    where_clause = " AND ".join(where_conditions)
-
-    # Debugging information
-    print(f"Generated SQL query: SELECT * FROM Schools WHERE {where_clause}")
-
-    with connection.cursor() as cursor:
-        # SQL query to retrieve schools based on the provided parameters
-        sql = f"SELECT * FROM Schools"
-        if where_clause:
-            sql += f" WHERE {where_clause}"
+        where_clause = " AND ".join(where_conditions)
 
         # Debugging information
-        print(f"Executing SQL query: {sql}")
+        print(f"Generated SQL query: SELECT * FROM Schools WHERE {where_clause}")
 
-        cursor.execute(sql)
-        schools = cursor.fetchall()
+        with connection.cursor() as cursor:
+            # SQL query to retrieve schools based on the provided parameters
+            sql = f"SELECT * FROM Schools"
+            if where_clause:
+                sql += f" WHERE {where_clause}"
 
-        for school in schools:
-            school_id, school_name, number_of_teachers, diversity_percentage, school_quality, school_zipcode = school
-            data[school_id] = {
-                'schoolName': school_name,
-                'numberOfTeachers': number_of_teachers,
-                'diversityPercentage': diversity_percentage,
-                'quality': school_quality,
-                'zipcode': school_zipcode
-            }
+            # Debugging information
+            print(f"Executing SQL query: {sql}")
 
-    return jsonify(data)
+            cursor.execute(sql)
+            schools = cursor.fetchall()
 
-# http://127.0.0.1:5000/api/schools?zipcode=24331&quality=F&maxNumberOfTeachers=200
-# http://127.0.0.1:5000/api/schools?zipcode=24331&quality=F&minNumberOfTeachers=100
+            for school in schools:
+                school_id, school_name, number_of_teachers, diversity_percentage, school_quality, school_zipcode = school
+                data[school_id] = {
+                    'schoolName': school_name,
+                    'numberOfTeachers': number_of_teachers,
+                    'diversityPercentage': diversity_percentage,
+                    'quality': school_quality,
+                    'zipcode': school_zipcode
+                }
+        return jsonify(data)
+    
+@app.route("/api/schools/<id>", methods=["DELETE", "PUT"])
+def schools(id):
+    username = request.form.get('username')
+    password = request.form.get('password')
+    zipcode = request.args.get('zipcode')
+    school_name = request.args.get('schoolName')
+    number_of_teachers = request.args.get('teachers')
+    diversity_percentage = request.args.get('diversity')
+    quality = request.args.get('quality')
+    if request.method=="DELETE":
+        if isAdmin(username, password):
+            sql= f"DELETE FROM Schools WHERE schoolId = {id};"
+            with connection.cursor() as cursor:
+                cursor.execute(sql)
+                connection.commit()
+                return jsonify({'code': 200, 'message': f'Successfully deleted school {id}'})
+        else:
+            return jsonify({'code': 401, 'message': 'Wrong Username and Password'})
+    if request.method== "PUT":
+        if isAdmin(username, password):
+            sql= f"UPDATE Schools SET schoolName= '{school_name}', numberOfTeachers'{number_of_teachers}', diversityPercentage='{diversity_percentage}', quality='{quality}', zipcode='{zipcode}' WHERE schoolId= {id};"
+            with connection.cursor() as cursor:
+                cursor.execute(sql)
+                connection.commit()
+                return jsonify({'code': 200, 'message': f'Successfully updated school {id}'})
+        else:
+            return jsonify({'code': 401, 'message': 'Wrong Username and Password'})
+      
+
+    # http://127.0.0.1:5000/api/schools?zipcode=24331&quality=F&maxNumberOfTeachers=200
+    # http://127.0.0.1:5000/api/schools?zipcode=24331&quality=F&minNumberOfTeachers=100
 
 
-@app.route("/api/jobs", methods=["GET"])
+@app.route("/api/jobs", methods=["GET", "POST"])
 def get_open_jobs():
+    username = request.form.get('username')
+    password = request.form.get('password')
     zipcode = request.args.get('zipcode')
     count = request.args.get('count')
     actively_hiring = request.args.get('actively_hiring')
+    company = request.args.get('company')
+    date = request.args.get('date')
+    salary = request.args.get('salary')
 
-    query = "SELECT * FROM OpenJobs"
-    if count:
-        query = "SELECT COUNT(*) FROM OpenJobs"
-    if zipcode:
-        query += f" WHERE zipcode = \"{zipcode}\""
-    if actively_hiring:
-        query += f" AND actively_hiring = 1"
-
-    with connection.cursor() as cursor:
-        cursor.execute(query)
-        print(query)
-        if actively_hiring:
-            result = cursor.fetchone()[0]
-            return jsonify({"total_actively_hiring_jobs" : result})
-        if count:
-            result = cursor.fetchone()[0]
-            return jsonify({"total_open_jobs": result})
+    if request.method== "POST":
+        if isAdmin(username, password):
+            sql=f("INSERT INTO OpenJobs (company, date, salary, actively_hiring, zipcode) VALUES ('{company}', {date}, {salary}, {actively_hiring}, {zipcode});")
+            with connection.cursor() as cursor:
+                cursor.execute(sql)
+                connection.commit()
+                return jsonify({'code': 200, 'message': 'Successfully added jobs'})
         else:
-            result = cursor.fetchall()
-            return jsonify(result)
+            return jsonify({'code': 401, 'message': 'Wrong Username and Password'})
+    
+    if request.method=="GET":
+        query = "SELECT * FROM OpenJobs"
+        if count:
+            query = "SELECT COUNT(*) FROM OpenJobs"
+        if zipcode:
+            query += f" WHERE zipcode = \"{zipcode}\""
+        if actively_hiring:
+            query += f" AND actively_hiring = 1"
+
+        with connection.cursor() as cursor:
+            cursor.execute(query)
+            print(query)
+            if actively_hiring:
+                result = cursor.fetchone()[0]
+                return jsonify({"total_actively_hiring_jobs" : result})
+            if count:
+                result = cursor.fetchone()[0]
+                return jsonify({"total_open_jobs": result})
+            else:
+                result = cursor.fetchall()
+                return jsonify(result)
+
+
+@app.route("/api/jobs/<id>", methods=["DELETE", "PUT"])
+def schools(id):
+    username = request.form.get('username')
+    password = request.form.get('password')
+    zipcode = request.args.get('zipcode')
+    count = request.args.get('count')
+    actively_hiring = request.args.get('actively_hiring')
+    company = request.args.get('company')
+    date = request.args.get('date')
+    salary = request.args.get('salary')
+    if request.method=="DELETE":
+        if isAdmin(username, password):
+            sql= f"DELETE FROM OpenJobs WHERE jobId = {id};"
+            with connection.cursor() as cursor:
+                cursor.execute(sql)
+                connection.commit()
+                return jsonify({'code': 200, 'message': f'Successfully deleted job {id}'})
+        else:
+            return jsonify({'code': 401, 'message': 'Wrong Username and Password'})
+    if request.method== "PUT":
+        if isAdmin(username, password):
+            sql= f"UPDATE OpenJobs SET company = '{company}', date= '{date}', salary= '{salary}', actively_hiring = '{actively_hiring}', zipcode='{zipcode}' WHERE schoolId= {id};"
+            with connection.cursor() as cursor:
+                cursor.execute(sql)
+                connection.commit()
+                return jsonify({'code': 200, 'message': f'Successfully updated job {id}'})
+        else:
+            return jsonify({'code': 401, 'message': 'Wrong Username and Password'})
 
 
 
-@app.route("/api/transportation", methods=["GET"])
+@app.route("/api/transportation", methods=["GET", "POST"])
 def get_transportation():
-    try:
-        # Retrieve parameters from the request
-        zipcode = request.args.get('zipcode')
-        is_bike_route = request.args.get('isBikeRoute')
-        is_light_train_route = request.args.get('isLightTrainRoute')
+    # Retrieve parameters from the request
+    username = request.form.get('username')
+    password = request.form.get('password')
+    zipcode = request.args.get('zipcode')
+    is_bike_route = request.args.get('isBikeRoute')
+    is_light_train_route = request.args.get('isLightTrainRoute')
+    starting_zipcode = request.args.get('startingZipcode')
+    ending_zipcode = request.args.get('endingZipcode')
 
-
+    if request.method== "POST":
+        if isAdmin(username, password):
+            sql=f("INSERT INTO Transportation (isBikeRoute, isLightTrainTraining, startingZipcode, endingZipcode, zipcode) VALUES ({is_bike_route}, {is_light_train_route}, {starting_zipcode}, {ending_zipcode}, {zipcode});")
+            with connection.cursor() as cursor:
+                cursor.execute(sql)
+                connection.commit()
+                return jsonify({'code': 200, 'message': 'Successfully added transportation'})
+        else:
+            return jsonify({'code': 401, 'message': 'Wrong Username and Password'})
+        
+    if request.method=="GET":
         # Use a WHERE clause in the SQL query based on the provided parameters
         where_conditions = []
         where_params = []
@@ -378,6 +479,35 @@ def get_transportation():
                 }
            
         return jsonify(data)
+    
+@app.route("/api/transportation/<id>", methods=["DELETE", "PUT"])
+def transportation(id):
+    username = request.form.get('username')
+    password = request.form.get('password')
+    zipcode = request.args.get('zipcode')
+    is_bike_route = request.args.get('isBikeRoute')
+    is_light_train_route = request.args.get('isLightTrainRoute')
+    starting_zipcode = request.args.get('startingZipcode')
+    ending_zipcode = request.args.get('endingZipcode')
+
+    if request.method=="DELETE":
+        if isAdmin(username, password):
+            sql= f"DELETE FROM Transportation WHERE routeId = {id};"
+            with connection.cursor() as cursor:
+                cursor.execute(sql)
+                connection.commit()
+                return jsonify({'code': 200, 'message': f'Successfully deleted route {id}'})
+        else:
+            return jsonify({'code': 401, 'message': 'Wrong Username and Password'})
+    if request.method== "PUT":
+        if isAdmin(username, password):
+            sql= f"UPDATE Transportation SET isBikeRoute= '{is_bike_route}', isLightTrainRoute= '{is_light_train_route}', startingZipcode= '{starting_zipcode}', endingZipcode = '{ending_zipcode}' WHERE routeId= {id};"
+            with connection.cursor() as cursor:
+                cursor.execute(sql)
+                connection.commit()
+                return jsonify({'code': 200, 'message': f'Successfully updated route {id}'})
+        else:
+            return jsonify({'code': 401, 'message': 'Wrong Username and Password'})
 
 
     except Exception as e:
@@ -387,53 +517,102 @@ def get_transportation():
 # http://127.0.0.1:5000/api/transportation?zipcode=21983&isBikeRoute=0
  
 
-@app.route("/api/population", methods=["GET"])
+@app.route("/api/population", methods=["GET", "POST"])
 def get_population():
     data = {}
+    username = request.form.get('username')
+    password = request.form.get('password')
     zipcode = request.args.get('zipcode')
     min_age = request.args.get('minAge')
     max_age = request.args.get('maxAge')
     ethnicity = request.args.get('ethnicity')
     diversity = request.args.get('diversity')
+    name = request.args.get('name')
+    salary = request.args.get('salary')
+    age = request.args.get('age')
 
+    if request.method== "POST":
+            if isAdmin(username, password):
+                sql=f("INSERT INTO Peoples (name, salary, age, ethnicity, zipcode) VALUES ('{name}', {salary}, {age}, '{ethnicity}', {zipcode});")
+                with connection.cursor() as cursor:
+                    cursor.execute(sql)
+                    connection.commit()
+                    return jsonify({'code': 200, 'message': 'Successfully added person'})
+            else:
+                return jsonify({'code': 401, 'message': 'Wrong Username and Password'})
+    
     # Use a WHERE clause in the SQL query based on the provided parameters
     where_conditions = []
+    if request.method=="GET":
 
-    if zipcode:
-        where_conditions.append(f"zipcode = {zipcode}")
-    if min_age:
-        where_conditions.append(f"age >= {min_age}")
-    if max_age:
-        where_conditions.append(f"age <= {max_age}")
-    if ethnicity:
-        where_conditions.append(f"ethnicity = '{ethnicity}'")
-    where_clause = " AND ".join(where_conditions)       
-    # Debugging information
-
-    with connection.cursor() as cursor:
-        # SQL query to retrieve population data based on the provided parameters
-        sql = "SELECT COUNT(*) FROM Peoples"
-        if where_clause:
-            sql += f" WHERE {where_clause}"
-
+        if zipcode:
+            where_conditions.append(f"zipcode = {zipcode}")
+        if min_age:
+            where_conditions.append(f"age >= {min_age}")
+        if max_age:
+            where_conditions.append(f"age <= {max_age}")
+        if ethnicity:
+            where_conditions.append(f"ethnicity = '{ethnicity}'")
+        where_clause = " AND ".join(where_conditions)       
         # Debugging information
-        print(f"Executing SQL query: {sql}")
 
-        cursor.execute(sql)
-        population_data = cursor.fetchone()[0]
-    
-    if diversity and ethnicity:
         with connection.cursor() as cursor:
-            sql = f"SELECT COUNT(*) FROM Peoples WHERE zipcode = {zipcode}"
+            # SQL query to retrieve population data based on the provided parameters
+            sql = "SELECT COUNT(*) FROM Peoples"
+            if where_clause:
+                sql += f" WHERE {where_clause}"
+
+            # Debugging information
+            print(f"Executing SQL query: {sql}")
+
             cursor.execute(sql)
-            total_population= cursor.fetchone()[0]
-            diversityRate = round((population_data/total_population) * 100, 2)
-            return jsonify({'diversityRate': f'{diversityRate}% {ethnicity}'})
+            population_data = cursor.fetchone()[0]
+        
+        if diversity and ethnicity:
+            with connection.cursor() as cursor:
+                sql = f"SELECT COUNT(*) FROM Peoples WHERE zipcode = {zipcode}"
+                cursor.execute(sql)
+                total_population= cursor.fetchone()[0]
+                diversityRate = round((population_data/total_population) * 100, 2)
+                return jsonify({'diversityRate': f'{diversityRate}% {ethnicity}'})
 
 
-    if population_data == {}:
-        population_data = 0
-    return jsonify({'total population': population_data})
+        if population_data == {}:
+            population_data = 0
+        return jsonify({'total population': population_data})
+
+@app.route("/api/population/<id>", methods=["DELETE", "PUT"])
+def population(id):
+    username = request.form.get('username')
+    password = request.form.get('password')
+    zipcode = request.args.get('zipcode')
+    min_age = request.args.get('minAge')
+    max_age = request.args.get('maxAge')
+    ethnicity = request.args.get('ethnicity')
+    diversity = request.args.get('diversity')
+    name = request.args.get('name')
+    salary = request.args.get('salary')
+    age = request.args.get('age')
+
+    if request.method=="DELETE":
+        if isAdmin(username, password):
+            sql= f"DELETE FROM Peoples WHERE personId = {id};"
+            with connection.cursor() as cursor:
+                cursor.execute(sql)
+                connection.commit()
+                return jsonify({'code': 200, 'message': f'Successfully deleted person {id}'})
+        else:
+            return jsonify({'code': 401, 'message': 'Wrong Username and Password'})
+    if request.method== "PUT":
+        if isAdmin(username, password):
+            sql= f"UPDATE Peoples SET name='{name}', salary = '{salary}', age= '{age}', ethnicity= '{ethnicity}', zipcode= '{zipcode}' WHERE personId= {id};"
+            with connection.cursor() as cursor:
+                cursor.execute(sql)
+                connection.commit()
+                return jsonify({'code': 200, 'message': f'Successfully updated person {id}'})
+        else:
+            return jsonify({'code': 401, 'message': 'Wrong Username and Password'})
+
 
 # Example API calls:
 # http://127.0.0.1:5000/api/population?zipcode=24331&minAge=20&maxAge=30&ethnicity=Asian
