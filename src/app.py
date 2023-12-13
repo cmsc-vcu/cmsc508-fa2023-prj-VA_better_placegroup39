@@ -131,30 +131,30 @@ def changeCrimes(id):
         "assault": 4,
         "fraud": 1
     }
-    try:
-        name = request.args.get("name")
-        crimeType = request.args.get("crimeType")
-        severity = crimes[crimeType]
-        date = request.args.get("date")
-        username = request.form.get('username')
-        password = request.form.get('password')
-        if isAdmin(username, password):
-            if request.method == "PUT":
-                sql = f"UPDATE Crimes SET fullName = '{name}', crimeType = '{crimeType}', severity = '{severity}', date_of_crime = '{date}' WHERE crimeId = {id};"
-                with connection.cursor() as cursor:
-                    cursor.execute(sql)
-                    connection.commit()
-                    return jsonify({'code': 200, 'message': 'Successfully updated crime'})
-            if request.method == "DELETE":
-                sql = f"DELETE FROM Crimes WHERE crimeId = {id};"
-                with connection.cursor() as cursor:
-                    cursor.execute(sql)
-                    connection.commit()
-                    return jsonify({'code': 200, 'message': 'Successfully deleted crime'})
-        else:
-            return jsonify({'code': 401, 'message': 'Wrong Username and Password'})
-    except Exception as e:
-        return jsonify({'code': 400, 'message': 'Failed', 'error': str(e)}), 400
+
+    name = request.args.get("name")
+    crimeType = request.args.get("crimeType")
+    severity = crimes[crimeType.lower()]
+    date = request.args.get("date")
+    username = request.form.get('username')
+    password = request.form.get('password')
+    if isAdmin(username, password):
+        if request.method == "PUT":
+            sql = f"UPDATE Crimes SET fullName = '{name}', crimeType = '{crimeType}', severity = '{severity}', date_of_crime = '{date}' WHERE crimeId = {id};"
+            with connection.cursor() as cursor:
+                cursor.execute(sql)
+                connection.commit()
+                return jsonify({'code': 200, 'message': 'Successfully updated crime'})
+        if request.method == "DELETE":
+            sql = f"DELETE FROM Crimes WHERE crimeId = {id};"
+            with connection.cursor() as cursor:
+                cursor.execute(sql)
+                connection.commit()
+                return jsonify({'code': 200, 'message': 'Successfully deleted crime'})
+    else:
+        
+        return jsonify({'code': 401, 'message': 'Wrong Username and Password'})
+
         
 @app.route("/api/houses/", methods=["GET", "POST"])
 def houses():
